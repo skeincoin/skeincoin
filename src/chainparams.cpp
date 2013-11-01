@@ -23,33 +23,33 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         // The message start string is designed to be unlikely to occur in normal data.
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xb5;
-        pchMessageStart[2] = 0x03;
-        pchMessageStart[3] = 0xdf;
-        vAlertPubKey = ParseHex("04f09702847840aaf195de8442ebecedf5b095cdbb9bc716bda9110971b28a49e0ead8564ff0db22209e0374782c093bb899692d524e9d6a6956e7c5ecbcd68284");
-        nDefaultPort = 17333;
-        nRPCPort = 8332;
+        pchMessageStart[0] = 0xf7;
+        pchMessageStart[1] = 0x26;
+        pchMessageStart[2] = 0xa1;
+        pchMessageStart[3] = 0xbf;
+        vAlertPubKey = ParseHex("04f09702800000aaf195de8442ebecedf5b095cdbb9bc716bda9110971b28a49e0ead8564ff0db22209e0374782c093bb899692d524e9d6a6956e7c5ecbcd68284");
+        nDefaultPort = 11230;
+        nRPCPort = 21230;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
-        nSubsidyHalvingInterval = 80640;
+        nSubsidyHalvingInterval = 262800;
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
   
-        const char* pszTimestamp = "3 Aug 2013 - M&G - Mugabe wins Zim election with more than 60% of votes";
+        const char* pszTimestamp = "Guardian - 1 Nov 2013 - RBS places troublesome assets worth £38bn in internal 'bad bank'";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 1000 * COIN;
+        txNew.vout[0].nValue = COIN / 10000;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1375548986;
+        genesis.nTime    = 1383313611;
         genesis.nBits    = 0x1e0fffff;
-        genesis.nNonce   = 2089928209;
+        genesis.nNonce   = 2094010698;
         
         //// debug print
         hashGenesisBlock = genesis.GetHash();
@@ -62,19 +62,21 @@ public:
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
         printf("%x\n", bnProofOfWorkLimit.GetCompact());
         genesis.print();
-        
-        
-        assert(hashGenesisBlock == uint256("0x000006cab7aa2be2da91015902aa4458dd5fbb8778d175c36d429dc986f2bff4"));
-        assert(genesis.hashMerkleRoot == uint256("0xd0227b8c3e3d07bce9656b3d9e474f050d23458aaead93357dcfdac9ab9b79f9"));
+                
+        assert(hashGenesisBlock == uint256("0x0000046cebed69de151ada93a60cb8a5f9490a196399abe714bb83ad5b20f985"));
+        assert(genesis.hashMerkleRoot == uint256("0xa4b385e3bc4907593d15be30d69cb28439684893f4dc2e637503cf3156b149a3"));
 
-        vSeeds.push_back(CDNSSeedData("zetacoin.zapto.org", "zetacoin.zapto.org"));
-        vSeeds.push_back(CDNSSeedData("zetacoin.no-ip.org", "zetacoin.no-ip.org"));
-        vSeeds.push_back(CDNSSeedData("zetacoin.strangled.net", "zetacoin.strangled.net"));
-        vSeeds.push_back(CDNSSeedData("zetacoin.ignorelist.com", "zetacoin.ignorelist.com"));
+        vSeeds.push_back(CDNSSeedData("seed1.skeincoin.org", "seed1.skeincoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed2.skeincoin.org", "seed2.skeincoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed3.skeincoin.org", "seed3.skeincoin.org"));
+        vSeeds.push_back(CDNSSeedData("skeincoin.zapto.org", "skeincoin.zapto.org"));
+        vSeeds.push_back(CDNSSeedData("skeincoin.no-ip.org", "skeincoin.no-ip.org"));
+        vSeeds.push_back(CDNSSeedData("skeincoin.strangled.net", "skeincoin.strangled.net"));
+        vSeeds.push_back(CDNSSeedData("skeincoin.ignorelist.com", "skeincoin.ignorelist.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = 80;
-        base58Prefixes[SCRIPT_ADDRESS] = 9;
-        base58Prefixes[SECRET_KEY] = 224;
+        base58Prefixes[PUBKEY_ADDRESS] = 63;
+        base58Prefixes[SCRIPT_ADDRESS] = 12;
+        base58Prefixes[SECRET_KEY] = 226;
 
         // Convert the pnSeeds array into usable address objects.
         for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
@@ -111,20 +113,19 @@ class CTestNetParams : public CMainParams {
 public:
     CTestNetParams() {
         // The message start string is designed to be unlikely to occur in normal data.
-        pchMessageStart[0] = 0x05;
-        pchMessageStart[1] = 0xfe;
-        pchMessageStart[2] = 0xa9;
-        pchMessageStart[3] = 0x01;
-        vAlertPubKey = ParseHex("04303390343f91cc401d56d68b123028bf52e5fca1939df127f63c6467cdf9c8e2c14b61104cf817d0b780da337893ecc4aaff1309e536162dabbdb45200ca2b0a");
-        nDefaultPort = 27333;
-        nRPCPort = 18332;
+        pchMessageStart[0] = 0x07;
+        pchMessageStart[1] = 0xa0;
+        pchMessageStart[2] = 0x55;
+        pchMessageStart[3] = 0x03;
+        vAlertPubKey = ParseHex("04303390343f91cc401d56d000000028bf52e5fca1939df127f63c6467cdf9c8e2c14b61104cf817d0b780da337893ecc4aaff1309e536162dabbdb45200ca2b0a");
+        nDefaultPort = 27711;
+        nRPCPort = 37711;
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1374901773;
-        genesis.nNonce = 414708675;
-        
-        
+        genesis.nTime = 1382385267;
+        genesis.nNonce = 416003859;
+                
         //// debug print
         hashGenesisBlock = genesis.GetHash();
         //while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
@@ -136,15 +137,15 @@ public:
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
         genesis.print();
         
-        assert(hashGenesisBlock == uint256("0x000007717e2e2df52a9ff29b0771901c9c12f5cbb4914cdf0c8047b459bb21d8"));
+        assert(hashGenesisBlock == uint256("0x00000015f9fb4c1c9cc55ad08b6ec47fcce2b00bc482a2c48914ab6506daf439"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        // vSeeds.push_back(CDNSSeedData("zetacoin.test", "test.zetacoin.org"));
+        // vSeeds.push_back(CDNSSeedData("skeincoin.test", "test.skeincoin.org"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = 88;
+        base58Prefixes[PUBKEY_ADDRESS] = 56;
         base58Prefixes[SCRIPT_ADDRESS] = 188;
-        base58Prefixes[SECRET_KEY] = 239;
+        base58Prefixes[SECRET_KEY] = 237;
 
     }
     virtual Network NetworkID() const { return CChainParams::TESTNET; }
@@ -166,7 +167,7 @@ public:
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
         genesis.nTime = 1296688602;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 3;
+        genesis.nNonce = 4;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18444;
         strDataDir = "regtest";
@@ -182,7 +183,7 @@ public:
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
         genesis.print();
 
-        // assert(hashGenesisBlock == uint256("0x13d8d31dde96874006da503dd2b63fa68c698dc823334359e417aa3a92f80433"));
+        assert(hashGenesisBlock == uint256("0x6620ff0f4b001bb6c6999d85a61f406a3b213a4ed0364d1b10a46596fcb09785"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
 

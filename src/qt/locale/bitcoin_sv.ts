@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Zetacoin</source>
-        <translation>Om Zetacoin</translation>
+        <source>About Skeincoin</source>
+        <translation>Om Skeincoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Zetacoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Zetacoin&lt;/b&gt;-version</translation>
+        <source>&lt;b&gt;Skeincoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Skeincoin&lt;/b&gt;-version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -35,8 +35,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+0"/>
-        <source>The Zetacoin developers</source>
-        <translation>Zetacoin-utvecklarna</translation>
+        <source>The Skeincoin developers</source>
+        <translation>Skeincoin-utvecklarna</translation>
     </message>
 </context>
 <context>
@@ -68,8 +68,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Zetacoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Detta är dina Zetacoin-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
+        <source>These are your Skeincoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Detta är dina Skeincoin-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -83,7 +83,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Zetacoin address</source>
+        <source>Sign a message to prove you own a Skeincoin address</source>
         <translation>Signera ett meddelande för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -108,8 +108,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Zetacoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den specificerade Zetacoin-adressen</translation>
+        <source>Verify a message to ensure it was signed with a specified Skeincoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den specificerade Skeincoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -123,8 +123,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Zetacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina Zetacoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Zetacoins.</translation>
+        <source>These are your Skeincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Detta är dina Skeincoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Skeincoins.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -139,7 +139,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="+1"/>
         <source>Send &amp;Coins</source>
-        <translation>Skicka &amp;Zetacoins</translation>
+        <translation>Skicka &amp;Skeincoins</translation>
     </message>
     <message>
         <location line="+260"/>
@@ -249,7 +249,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZETACOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
         <translation>VARNING: Om du krypterar din plånbok och glömmer ditt lösenord, kommer du att &lt;b&gt;FÖRLORA ALLA DINA TILLGÅNGAR&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -276,7 +276,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-56"/>
-        <source>Zetacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your zetacoins from being stolen by malware infecting your computer.</source>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
         <translation>Programmet kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -375,8 +375,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Zetacoin</source>
-        <translation>Visa information om Zetacoin</translation>
+        <source>Show information about Skeincoin</source>
+        <translation>Visa information om Skeincoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -420,13 +420,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Zetacoin address</source>
-        <translation>Skicka mynt till en Zetacoin-adress</translation>
+        <source>Send coins to a Skeincoin address</source>
+        <translation>Skicka mynt till en Skeincoin-adress</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Zetacoin</source>
-        <translation>Ändra konfigurationsalternativ för Zetacoin</translation>
+        <source>Modify configuration options for Skeincoin</source>
+        <translation>Ändra konfigurationsalternativ för Skeincoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -456,8 +456,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Zetacoin</source>
-        <translation>Zetacoin</translation>
+        <source>Skeincoin</source>
+        <translation>Skeincoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -481,8 +481,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Zetacoin</source>
-        <translation>&amp;Om Zetacoin</translation>
+        <source>&amp;About Skeincoin</source>
+        <translation>&amp;Om Skeincoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -501,13 +501,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Zetacoin addresses to prove you own them</source>
-        <translation>Signera meddelanden med din Zetacoinadress för att bevisa att du äger dem</translation>
+        <source>Sign messages with your Skeincoin addresses to prove you own them</source>
+        <translation>Signera meddelanden med din Skeincoinadress för att bevisa att du äger dem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Zetacoin addresses</source>
-        <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade Zetacoin-adressen</translation>
+        <source>Verify messages to ensure they were signed with specified Skeincoin addresses</source>
+        <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade Skeincoin-adressen</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -537,13 +537,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+47"/>
-        <source>Zetacoin client</source>
-        <translation>Zetacoin-klient</translation>
+        <source>Skeincoin client</source>
+        <translation>Skeincoin-klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Zetacoin network</source>
-        <translation><numerusform>%n aktiv anslutning till Zetacoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till Zetacoin-nätverket</numerusform></translation>
+        <source>%n active connection(s) to Skeincoin network</source>
+        <translation><numerusform>%n aktiv anslutning till Skeincoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till Skeincoin-nätverket</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -657,8 +657,8 @@ Adress: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Zetacoin address or malformed URI parameters.</source>
-        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig Zetacoin-adress eller felaktiga URI parametrar.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Skeincoin address or malformed URI parameters.</source>
+        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig Skeincoin-adress eller felaktiga URI parametrar.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -672,8 +672,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Zetacoin can no longer continue safely and will quit.</source>
-        <translation>Ett allvarligt fel har uppstått. Zetacoin kan inte längre köras säkert och kommer att avslutas.</translation>
+        <source>A fatal error occurred. Skeincoin can no longer continue safely and will quit.</source>
+        <translation>Ett allvarligt fel har uppstått. Skeincoin kan inte längre köras säkert och kommer att avslutas.</translation>
     </message>
 </context>
 <context>
@@ -738,8 +738,8 @@ Adress: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Zetacoin address.</source>
-        <translation>Den angivna adressen &quot;%1&quot; är inte en giltig Zetacoin-adress.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Skeincoin address.</source>
+        <translation>Den angivna adressen &quot;%1&quot; är inte en giltig Skeincoin-adress.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -757,8 +757,8 @@ Adress: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Zetacoin-Qt</source>
-        <translation>Zetacoin-Qt</translation>
+        <source>Skeincoin-Qt</source>
+        <translation>Skeincoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -820,13 +820,13 @@ Adress: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Zetacoin after logging in to the system.</source>
-        <translation>Starta Zetacoin automatiskt efter inloggning.</translation>
+        <source>Automatically start Skeincoin after logging in to the system.</source>
+        <translation>Starta Skeincoin automatiskt efter inloggning.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Zetacoin on system login</source>
-        <translation>&amp;Starta Zetacoin vid systemstart</translation>
+        <source>&amp;Start Skeincoin on system login</source>
+        <translation>&amp;Starta Skeincoin vid systemstart</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -845,8 +845,8 @@ Adress: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Zetacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt Zetacoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
+        <source>Automatically open the Skeincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt Skeincoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -855,8 +855,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Zetacoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Anslut till Zetacoin-nätverket genom en SOCKS-proxy (t.ex. när du ansluter genom Tor).</translation>
+        <source>Connect to the Skeincoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Anslut till Skeincoin-nätverket genom en SOCKS-proxy (t.ex. när du ansluter genom Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -930,8 +930,8 @@ Adress: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Zetacoin.</source>
-        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av Zetacoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Skeincoin.</source>
+        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av Skeincoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -945,8 +945,8 @@ Adress: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Zetacoin addresses in the transaction list or not.</source>
-        <translation>Anger om Zetacoin-adresser skall visas i transaktionslistan.</translation>
+        <source>Whether to show Skeincoin addresses in the transaction list or not.</source>
+        <translation>Anger om Skeincoin-adresser skall visas i transaktionslistan.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -997,8 +997,8 @@ Adress: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Zetacoin.</source>
-        <translation>Denna inställning träder i kraft efter en omstart av Zetacoin.</translation>
+        <source>This setting will take effect after restarting Skeincoin.</source>
+        <translation>Denna inställning träder i kraft efter en omstart av Skeincoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1016,8 +1016,8 @@ Adress: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zetacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Zetacoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Skeincoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Skeincoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1070,7 +1070,7 @@ Adress: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start zetacoin: click-to-pay handler</source>
+        <source>Cannot start skeincoin: click-to-pay handler</source>
         <translation>Kan inte starta bitcin: klicka-och-betala handhavare</translation>
     </message>
 </context>
@@ -1220,8 +1220,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Zetacoin-Qt help message to get a list with possible Zetacoin command-line options.</source>
-        <translation>Visa Zetacoin-Qt hjälpmeddelande för att få en lista med möjliga Zetacoin kommandoradsalternativ.</translation>
+        <source>Show the Skeincoin-Qt help message to get a list with possible Skeincoin command-line options.</source>
+        <translation>Visa Skeincoin-Qt hjälpmeddelande för att få en lista med möjliga Skeincoin kommandoradsalternativ.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1240,13 +1240,13 @@ Adress: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Zetacoin - Debug window</source>
-        <translation>Zetacoin - Debug fönster</translation>
+        <source>Skeincoin - Debug window</source>
+        <translation>Skeincoin - Debug fönster</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Zetacoin Core</source>
-        <translation>Zetacoin Kärna</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Kärna</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1255,8 +1255,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Zetacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna Zetacoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
+        <source>Open the Skeincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna Skeincoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1265,8 +1265,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Zetacoin RPC console.</source>
-        <translation>Välkommen till Zetacoin RPC-konsollen.</translation>
+        <source>Welcome to the Skeincoin RPC console.</source>
+        <translation>Välkommen till Skeincoin RPC-konsollen.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1449,8 +1449,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Zetacoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ange en Zetacoin-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Skeincoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Ange en Skeincoin-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1514,7 +1514,7 @@ Adress: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Zetacoin address</source>
+        <source>Sign the message to prove you own this Skeincoin address</source>
         <translation>Signera meddelandet för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -1550,8 +1550,8 @@ Adress: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Zetacoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna Zetacoin-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Skeincoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna Skeincoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1566,8 +1566,8 @@ Adress: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Zetacoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ange en Zetacoin-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Skeincoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Ange en Skeincoin-adress (t.ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1576,8 +1576,8 @@ Adress: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Zetacoin signature</source>
-        <translation>Ange Zetacoin-signatur</translation>
+        <source>Enter Skeincoin signature</source>
+        <translation>Ange Skeincoin-signatur</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1650,8 +1650,8 @@ Adress: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+25"/>
-        <source>The Zetacoin developers</source>
-        <translation>Zetacoin-utvecklarna</translation>
+        <source>The Skeincoin developers</source>
+        <translation>Skeincoin-utvecklarna</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2188,8 +2188,8 @@ Adress: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Zetacoin version</source>
-        <translation>Zetacoin version</translation>
+        <source>Skeincoin version</source>
+        <translation>Skeincoin version</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2198,8 +2198,8 @@ Adress: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or zetacoind</source>
-        <translation>Skicka kommando till -server eller zetacoind</translation>
+        <source>Send command to -server or skeincoind</source>
+        <translation>Skicka kommando till -server eller skeincoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2218,13 +2218,13 @@ Adress: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: zetacoin.conf)</source>
-        <translation>Ange konfigurationsfil (förvalt: zetacoin.conf)</translation>
+        <source>Specify configuration file (default: skeincoin.conf)</source>
+        <translation>Ange konfigurationsfil (förvalt: skeincoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: zetacoind.pid)</source>
-        <translation>Ange pid fil (förvalt: zetacoind.pid)</translation>
+        <source>Specify pid file (default: skeincoind.pid)</source>
+        <translation>Ange pid fil (förvalt: skeincoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2301,24 +2301,24 @@ Adress: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=zetacoinrpc
+rpcuser=skeincoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Skeincoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, du behöver sätta ett rpclösensord i konfigurationsfilen:
 %s
 Det är rekommenderat att använda följande slumpade lösenord:
-rpcuser=zetacoinrpc
+rpcuser=skeincoinrpc
 rpcpassword=%s
 (du behöver inte komma ihåg lösenordet)
 Användarnamnet och lösenordet FÅR INTE bara detsamma.
 Om filen inte existerar, skapa den med enbart ägarläsbara filrättigheter.
 Det är också rekommenderat att sätta alertnotify så du meddelas om problem;
-till exempel: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo.com
+till exempel: alertnotify=echo %%s | mail -s &quot;Skeincoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2333,8 +2333,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Zetacoin is probably already running.</source>
-        <translation>Kan inte låsa data-mappen %s. Zetacoin körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. Skeincoin is probably already running.</source>
+        <translation>Kan inte låsa data-mappen %s. Skeincoin körs förmodligen redan.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2344,7 +2344,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@fo
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna zetacoins!</translation>
+        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna skeincoins!</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2378,8 +2378,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Zetacoin will not work properly.</source>
-        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Zetacoin inte fungera korrekt.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Skeincoin will not work properly.</source>
+        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Skeincoin inte fungera korrekt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2628,8 +2628,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Zetacoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-inställningar: (se Zetacoin-wikin för SSL-setup instruktioner)</translation>
+        <source>SSL options: (see the Skeincoin Wiki for SSL setup instructions)</source>
+        <translation>SSL-inställningar: (se Skeincoin-wikin för SSL-setup instruktioner)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2818,13 +2818,13 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Zetacoin</source>
-        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av Zetacoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Skeincoin</source>
+        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av Skeincoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Zetacoin to complete</source>
-        <translation>Plånboken behöver skrivas om: Starta om Zetacoin för att färdigställa</translation>
+        <source>Wallet needed to be rewritten: restart Skeincoin to complete</source>
+        <translation>Plånboken behöver skrivas om: Starta om Skeincoin för att färdigställa</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2869,7 +2869,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@fo
     <message>
         <location line="-6"/>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med zetacoins</translation>
+        <translation>Otillräckligt med skeincoins</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2883,8 +2883,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Zetacoin is probably already running.</source>
-        <translation>Det går inte att binda till %s på den här datorn. Zetacoin är förmodligen redan igång.</translation>
+        <source>Unable to bind to %s on this computer. Skeincoin is probably already running.</source>
+        <translation>Det går inte att binda till %s på den här datorn. Skeincoin är förmodligen redan igång.</translation>
     </message>
     <message>
         <location line="+64"/>

@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2013 Zetacoin developers
+// Copyright (c) 2013 Skeincoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -66,7 +66,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Zetacoin Signed Message:\n";
+const string strMessageMagic = "Skeincoin Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -1245,35 +1245,43 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
-static const int64 nStartSubsidy = 1000 * COIN;
-static const int64 nMinSubsidy = 1 * COIN;
+static const int64 nReleaseBlocks = 100;
+static const int64 nStartSubsidy = 32 * COIN;
+static const int64 nMinSubsidy = COIN / 10000;
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = nStartSubsidy;
-
-    // Mining phase: Subsidy is cut in half every SubsidyHalvingInterval
-    nSubsidy >>= (nHeight / Params().SubsidyHalvingInterval());
+    int64 nSubsidy;
     
-    // Inflation phase: Subsidy reaches minimum subsidy
-    // Network is rewarded for transaction processing with transaction fees and 
-    // the inflationary subsidy
-    if (nSubsidy < nMinSubsidy)
+    if (nHeight < nReleaseBlocks)
     {
         nSubsidy = nMinSubsidy;
     }
-
+    else
+    {
+        nSubsidy = nStartSubsidy;
+        // Mining phase: Subsidy is cut in half every SubsidyHalvingInterval
+        nSubsidy >>= (nHeight / Params().SubsidyHalvingInterval());
+        // Inflation phase: Subsidy reaches minimum subsidy
+        // Network is rewarded for transaction processing with transaction fees and 
+        // the inflationary subsidy
+        if (nSubsidy < nMinSubsidy)
+        {
+            nSubsidy = nMinSubsidy;
+        }
+    }
+    
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 2 * 60; // 2 minutes
-static const int64 nTargetSpacing = 30; // 30 seconds
+static const int64 nTargetTimespan = 4 * 120; // 8 minutes
+static const int64 nTargetSpacing = 120; // 2 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing; // 4 blocks
 
-static const int64 nAveragingInterval = nInterval * 20; // 80 blocks
-static const int64 nAveragingTargetTimespan = nAveragingInterval * nTargetSpacing; // 40 minutes
+static const int64 nAveragingInterval = nInterval * 4; // 16 blocks
+static const int64 nAveragingTargetTimespan = nAveragingInterval * nTargetSpacing; // 32 minutes
 
-static const int64 nMaxAdjustDown = 20; // 20% adjustment down
+static const int64 nMaxAdjustDown = 8; // 8% adjustment down
 static const int64 nMaxAdjustUp = 1; // 1% adjustment up
 
 static const int64 nTargetTimespanAdjDown = nTargetTimespan * (100 + nMaxAdjustDown) / 100;
@@ -4202,22 +4210,29 @@ void SHA256Transform(void* pstate, void* pinput, const void* pinit)
 // between calls, but periodically or if nNonce is 0xffff0000 or above,
 // the block is rebuilt and nNonce starts over at zero.
 //
-unsigned int static ScanHash_CryptoPP(char* pmidstate, char* pdata, char* phash1, char* phash, unsigned int& nHashesDone)
+/*
+unsigned int static ScanHash_CryptoPP(CBlock *pblock, char* pdata, char* phash1, char* phash, unsigned int& nHashesDone)
 {
-    unsigned int& nNonce = *(unsigned int*)(pdata + 12);
+    uint256 hashn;
+    
+    unsigned int nNonce = (pblock->nNonce);
     for (;;)
     {
         // Crypto++ SHA256
         // Hash pdata using pmidstate as the starting state into
         // pre-formatted buffer phash1, then hash phash1 into phash
         nNonce++;
-        SHA256Transform(phash1, pdata, pmidstate);
-        SHA256Transform(phash, phash1, pSHA256InitState);
+        pblock->nNonce = nNonce;
+        
+        hashn = pblock->GetHash();
+        memcpy(&hashn, phash, 32);
+        // SHA256Transform(phash1, pdata, pmidstate);
+        // SHA256Transform(phash, phash1, pSHA256InitState);
 
         // Return the nonce if the hash has at least some zero bits,
         // caller will check if it has enough to reach the target
         if (((unsigned short*)phash)[14] == 0)
-            return nNonce;
+            return pblock->nNonce;
 
         // If nothing found after trying for a while, return -1
         if ((nNonce & 0xffff) == 0)
@@ -4229,6 +4244,7 @@ unsigned int static ScanHash_CryptoPP(char* pmidstate, char* pdata, char* phash1
             boost::this_thread::interruption_point();
     }
 }
+*/
 
 // Some explaining would be appreciated
 class COrphan
@@ -4582,10 +4598,10 @@ void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash
         ((unsigned int*)&tmp)[i] = ByteReverse(((unsigned int*)&tmp)[i]);
 
     // Precalc the first half of the first hash, which stays constant
-    SHA256Transform(pmidstate, &tmp.block, pSHA256InitState);
+    //SHA256Transform(pmidstate, &tmp.block, pSHA256InitState);
 
     memcpy(pdata, &tmp.block, 128);
-    memcpy(phash1, &tmp.hash1, 64);
+    //memcpy(phash1, &tmp.hash1, 64);
 }
 
 
@@ -4598,7 +4614,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("ZetacoinMiner:\n");
+    printf("SkeincoinMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4607,7 +4623,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("ZetacoinMiner : generated block is stale");
+            return error("SkeincoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4621,7 +4637,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("ZetacoinMiner : ProcessBlock, block not accepted");
+            return error("SkeincoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
@@ -4629,7 +4645,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static BitcoinMiner(CWallet *pwallet)
 {
-    printf("ZetacoinMiner started\n");
+    printf("SkeincoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("bitcoin-miner");
 
@@ -4657,12 +4673,13 @@ void static BitcoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running ZetacoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running SkeincoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
         // Pre-build hash buffers
         //
+        /*
         char pmidstatebuf[32+16]; char* pmidstate = alignup<16>(pmidstatebuf);
         char pdatabuf[128+16];    char* pdata     = alignup<16>(pdatabuf);
         char phash1buf[64+16];    char* phash1    = alignup<16>(phash1buf);
@@ -4672,24 +4689,43 @@ void static BitcoinMiner(CWallet *pwallet)
         unsigned int& nBlockTime = *(unsigned int*)(pdata + 64 + 4);
         unsigned int& nBlockBits = *(unsigned int*)(pdata + 64 + 8);
         unsigned int& nBlockNonce = *(unsigned int*)(pdata + 64 + 12);
+        */
 
 
         //
         // Search
         //
+        /*
         int64 nStart = GetTime();
         uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
         uint256 hashbuf[2];
         uint256& hash = *alignup<16>(hashbuf);
+        */
+        
+        uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
+        int64 nStart = GetTime();
+        uint256 hash;
+        static int64 nHashCounter;
+        
         loop
         {
             unsigned int nHashesDone = 0;
-            unsigned int nNonceFound;
 
-            // Crypto++ SHA256
-            nNonceFound = ScanHash_CryptoPP(pmidstate, pdata + 64, phash1,
-                                            (char*)&hash, nHashesDone);
+            hash = pblock->GetHash();
+            if (hash <= hashTarget){
+                SetThreadPriority(THREAD_PRIORITY_NORMAL);
 
+                printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+                pblock->print();
+
+                CheckWork(pblock, *pwalletMain, reservekey);
+                SetThreadPriority(THREAD_PRIORITY_LOWEST);
+                break;
+            }
+            ++pblock->nNonce;
+            nHashesDone++;
+            
+            /*               
             // Check if something found
             if (nNonceFound != (unsigned int) -1)
             {
@@ -4714,9 +4750,10 @@ void static BitcoinMiner(CWallet *pwallet)
                     break;
                 }
             }
+            
+            */
 
             // Meter hashes/sec
-            static int64 nHashCounter;
             if (nHPSTimerStart == 0)
             {
                 nHPSTimerStart = GetTimeMillis();
@@ -4734,21 +4771,22 @@ void static BitcoinMiner(CWallet *pwallet)
                         dHashesPerSec = 1000.0 * nHashCounter / (GetTimeMillis() - nHPSTimerStart);
                         nHPSTimerStart = GetTimeMillis();
                         nHashCounter = 0;
-                        static int64 nLogTime;
-                        if (GetTime() - nLogTime > 30 * 60)
-                        {
-                            nLogTime = GetTime();
+                        //static int64 nLogTime;
+                        //if (GetTime() - nLogTime > 30 * 60)
+                        //{
+                            // nLogTime = GetTime();
                             printf("hashmeter %6.0f khash/s\n", dHashesPerSec/1000.0);
-                        }
+                        //}
                     }
                 }
             }
 
             // Check for stop or if block needs to be rebuilt
             boost::this_thread::interruption_point();
-            if (vNodes.empty() && Params().NetworkID() != CChainParams::REGTEST)
+            // disable in testing
+            if (vNodes.empty())
                 break;
-            if (nBlockNonce >= 0xffff0000)
+            if (++pblock->nNonce >= 0xffff0000)
                 break;
             if (nTransactionsUpdated != nTransactionsUpdatedLast && GetTime() - nStart > 60)
                 break;
@@ -4756,19 +4794,21 @@ void static BitcoinMiner(CWallet *pwallet)
                 break;
 
             // Update nTime every few seconds
-            UpdateTime(*pblock, pindexPrev);
-            nBlockTime = ByteReverse(pblock->nTime);
-            if (TestNet())
-            {
+            pblock->nTime = max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());
+            
+            // pblock->UpdateTime(pindexPrev);
+            //nBlockTime = ByteReverse(pblock->nTime);
+//            if (fTestNet)
+//            {
                 // Changing pblock->nTime can change work required on testnet:
-                nBlockBits = ByteReverse(pblock->nBits);
-                hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
-            }
+                //nBlockBits = ByteReverse(pblock->nBits);
+//                hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
+//            }
         }
     } }
     catch (boost::thread_interrupted)
     {
-        printf("ZetacoinMiner terminated\n");
+        printf("SkeincoinMiner terminated\n");
         throw;
     }
 }

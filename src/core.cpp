@@ -227,7 +227,7 @@ bool CCoins::Spend(int nPos) {
 
 uint256 CBlockHeader::GetHash() const
 {
-    return Hash(BEGIN(nVersion), END(nNonce));
+    return HashSkein(BEGIN(nVersion), END(nNonce));
 }
 
 uint256 CBlock::BuildMerkleTree() const

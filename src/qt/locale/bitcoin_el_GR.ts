@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Zetacoin</source>
-        <translation>Σχετικά με το Zetacoin</translation>
+        <source>About Skeincoin</source>
+        <translation>Σχετικά με το Skeincoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Zetacoin&lt;/b&gt; version</source>
-        <translation>Έκδοση Zetacoin</translation>
+        <source>&lt;b&gt;Skeincoin&lt;/b&gt; version</source>
+        <translation>Έκδοση Skeincoin</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Zetacoin developers</source>
-        <translation>Οι Zetacoin προγραμματιστές </translation>
+        <source>The Skeincoin developers</source>
+        <translation>Οι Skeincoin προγραμματιστές </translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Zetacoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Αυτές είναι οι Zetacoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
+        <source>These are your Skeincoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Αυτές είναι οι Skeincoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Zetacoin address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση Zetacoin</translation>
+        <source>Sign a message to prove you own a Skeincoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση Skeincoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Zetacoin address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Zetacoin</translation>
+        <source>Verify a message to ensure it was signed with a specified Skeincoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Skeincoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Zetacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Αυτές είναι οι Zetacoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
+        <source>These are your Skeincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Αυτές είναι οι Skeincoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Δίνοντας μία ξεχωριστή διεύθυνση σε κάθε αποστολέα, θα μπορείτε να ελέγχετε ποιος σας πληρώνει.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -248,8 +248,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZETACOINS&lt;/b&gt;!</source>
-        <translation>Προσοχη: Εαν κρυπτογραφησεις το πορτοφολι σου και χάσεις τον κωδικο σου θα χάσεις &lt;b&gt; ΟΛΑ ΣΟΥ ΤΑ ZETACOINS&lt;/b&gt;!
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
+        <translation>Προσοχη: Εαν κρυπτογραφησεις το πορτοφολι σου και χάσεις τον κωδικο σου θα χάσεις &lt;b&gt; ΟΛΑ ΣΟΥ ΤΑ SKEINCOINS&lt;/b&gt;!
 Είσαι σίγουρος ότι θέλεις να κρυπτογραφησεις το πορτοφολι;</translation>
     </message>
     <message>
@@ -276,8 +276,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Zetacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your zetacoins from being stolen by malware infecting your computer.</source>
-        <translation>Το Zetacoin θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογραφησης. Θυμησου ότι κρυπτογραφώντας το πορτοφολι σου δεν μπορείς να προστατέψεις πλήρως τα zetacoins σου από κλοπή στην περίπτωση όπου μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικο.</translation>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
+        <translation>Το Skeincoin θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογραφησης. Θυμησου ότι κρυπτογραφώντας το πορτοφολι σου δεν μπορείς να προστατέψεις πλήρως τα skeincoins σου από κλοπή στην περίπτωση όπου μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικο.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -375,8 +375,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Zetacoin</source>
-        <translation>Εμφάνισε πληροφορίες σχετικά με το Zetacoin</translation>
+        <source>Show information about Skeincoin</source>
+        <translation>Εμφάνισε πληροφορίες σχετικά με το Skeincoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -420,13 +420,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Zetacoin address</source>
-        <translation>Στείλε νομισματα σε μια διεύθυνση zetacoin</translation>
+        <source>Send coins to a Skeincoin address</source>
+        <translation>Στείλε νομισματα σε μια διεύθυνση skeincoin</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Zetacoin</source>
-        <translation>Επεργασία  ρυθμισεων επιλογών για το Zetacoin</translation>
+        <source>Modify configuration options for Skeincoin</source>
+        <translation>Επεργασία  ρυθμισεων επιλογών για το Skeincoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -456,8 +456,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Zetacoin</source>
-        <translation>Zetacoin</translation>
+        <source>Skeincoin</source>
+        <translation>Skeincoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -481,8 +481,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Zetacoin</source>
-        <translation>&amp;Σχετικα:Zetacoin</translation>
+        <source>&amp;About Skeincoin</source>
+        <translation>&amp;Σχετικα:Skeincoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -501,13 +501,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Zetacoin addresses to prove you own them</source>
+        <source>Sign messages with your Skeincoin addresses to prove you own them</source>
         <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Zetacoin addresses</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Zetacoin</translation>
+        <source>Verify messages to ensure they were signed with specified Skeincoin addresses</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Skeincoin</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -537,13 +537,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Zetacoin client</source>
-        <translation>Πελάτης Zetacoin</translation>
+        <source>Skeincoin client</source>
+        <translation>Πελάτης Skeincoin</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Zetacoin network</source>
-        <translation><numerusform>%n ενεργή σύνδεση στο δίκτυο Zetacoin</numerusform><numerusform>%n ενεργές συνδέσεις στο δίκτυο Βitcoin</numerusform></translation>
+        <source>%n active connection(s) to Skeincoin network</source>
+        <translation><numerusform>%n ενεργή σύνδεση στο δίκτυο Skeincoin</numerusform><numerusform>%n ενεργές συνδέσεις στο δίκτυο Βitcoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -659,8 +659,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Zetacoin address or malformed URI parameters.</source>
-        <translation>Το URI δεν μπορεί να αναλυθεί! Αυτό μπορεί να προκληθεί από μια μη έγκυρη διεύθυνση Zetacoin ή ακατάλληλη παραμέτρο URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Skeincoin address or malformed URI parameters.</source>
+        <translation>Το URI δεν μπορεί να αναλυθεί! Αυτό μπορεί να προκληθεί από μια μη έγκυρη διεύθυνση Skeincoin ή ακατάλληλη παραμέτρο URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -674,8 +674,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Zetacoin can no longer continue safely and will quit.</source>
-        <translation>Παρουσιάστηκε ανεπανόρθωτο σφάλμα. Το Zetacoin δεν μπορεί πλέον να συνεχίσει με ασφάλεια και θα τερματισθει.</translation>
+        <source>A fatal error occurred. Skeincoin can no longer continue safely and will quit.</source>
+        <translation>Παρουσιάστηκε ανεπανόρθωτο σφάλμα. Το Skeincoin δεν μπορεί πλέον να συνεχίσει με ασφάλεια και θα τερματισθει.</translation>
     </message>
 </context>
 <context>
@@ -740,8 +740,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Zetacoin address.</source>
-        <translation>Η διεύθυνση &quot;%1&quot; δεν είναι έγκυρη Zetacoin διεύθυνση.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Skeincoin address.</source>
+        <translation>Η διεύθυνση &quot;%1&quot; δεν είναι έγκυρη Skeincoin διεύθυνση.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -759,8 +759,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Zetacoin-Qt</source>
-        <translation>zetacoin-qt</translation>
+        <source>Skeincoin-Qt</source>
+        <translation>skeincoin-qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -822,12 +822,12 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Zetacoin after logging in to the system.</source>
-        <translation>Αυτόματη εκκίνηση του Zetacoin μετά την εισαγωγή στο σύστημα</translation>
+        <source>Automatically start Skeincoin after logging in to the system.</source>
+        <translation>Αυτόματη εκκίνηση του Skeincoin μετά την εισαγωγή στο σύστημα</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Zetacoin on system login</source>
+        <source>&amp;Start Skeincoin on system login</source>
         <translation>&amp;Έναρξη του Βιtcoin κατά την εκκίνηση του συστήματος</translation>
     </message>
     <message>
@@ -847,8 +847,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Zetacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Αυτόματο άνοιγμα των θυρών Zetacoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>Automatically open the Skeincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Αυτόματο άνοιγμα των θυρών Skeincoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -857,8 +857,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Zetacoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Σύνδεση στο Zetacoin δίκτυο μέσω διαμεσολαβητή SOCKS4 (π.χ. για σύνδεση μέσω Tor)</translation>
+        <source>Connect to the Skeincoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Σύνδεση στο Skeincoin δίκτυο μέσω διαμεσολαβητή SOCKS4 (π.χ. για σύνδεση μέσω Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -932,8 +932,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Zetacoin.</source>
-        <translation>Εδώ μπορεί να ρυθμιστεί η γλώσσα διεπαφής χρήστη. Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του Zetacoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Skeincoin.</source>
+        <translation>Εδώ μπορεί να ρυθμιστεί η γλώσσα διεπαφής χρήστη. Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του Skeincoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -947,8 +947,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Zetacoin addresses in the transaction list or not.</source>
-        <translation>Επιλέξτε αν θέλετε να εμφανίζονται οι διευθύνσεις Zetacoin στη λίστα συναλλαγών.</translation>
+        <source>Whether to show Skeincoin addresses in the transaction list or not.</source>
+        <translation>Επιλέξτε αν θέλετε να εμφανίζονται οι διευθύνσεις Skeincoin στη λίστα συναλλαγών.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -999,8 +999,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Zetacoin.</source>
-        <translation>Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του Zetacoin.</translation>
+        <source>This setting will take effect after restarting Skeincoin.</source>
+        <translation>Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του Skeincoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1018,8 +1018,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zetacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Zetacoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Skeincoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Skeincoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1072,8 +1072,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start zetacoin: click-to-pay handler</source>
-        <translation>Δεν είναι δυνατή η εκκίνηση του Zetacoin: click-to-pay handler</translation>
+        <source>Cannot start skeincoin: click-to-pay handler</source>
+        <translation>Δεν είναι δυνατή η εκκίνηση του Skeincoin: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1222,8 +1222,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Zetacoin-Qt help message to get a list with possible Zetacoin command-line options.</source>
-        <translation>Εμφανιση του Zetacoin-Qt μήνυματος βοήθειας για να πάρετε μια λίστα με τις πιθανές επιλογές Zetacoin γραμμής εντολών.</translation>
+        <source>Show the Skeincoin-Qt help message to get a list with possible Skeincoin command-line options.</source>
+        <translation>Εμφανιση του Skeincoin-Qt μήνυματος βοήθειας για να πάρετε μια λίστα με τις πιθανές επιλογές Skeincoin γραμμής εντολών.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1242,13 +1242,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Zetacoin - Debug window</source>
-        <translation>Zetacoin - Παράθυρο αποσφαλμάτωσης</translation>
+        <source>Skeincoin - Debug window</source>
+        <translation>Skeincoin - Παράθυρο αποσφαλμάτωσης</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Zetacoin Core</source>
-        <translation>Zetacoin Core</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1257,7 +1257,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Zetacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Skeincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Ανοίξτε το αρχείο καταγραφής εντοπισμού σφαλμάτων από τον τρέχοντα κατάλογο δεδομένων. Αυτό μπορεί να πάρει μερικά δευτερόλεπτα για τα μεγάλα αρχεία καταγραφής. </translation>
     </message>
     <message>
@@ -1267,8 +1267,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Zetacoin RPC console.</source>
-        <translation>Καλώς ήρθατε στην Zetacoin RPC κονσόλα.</translation>
+        <source>Welcome to the Skeincoin RPC console.</source>
+        <translation>Καλώς ήρθατε στην Skeincoin RPC κονσόλα.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1451,8 +1451,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Zetacoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση Zetacoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Skeincoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Εισάγετε μια διεύθυνση Skeincoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1475,7 +1475,7 @@ Address: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση Zetacoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Εισάγετε μια διεύθυνση Skeincoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1516,8 +1516,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Zetacoin address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση Zetacoin</translation>
+        <source>Sign the message to prove you own this Skeincoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση Skeincoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1548,12 +1548,12 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση Zetacoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Εισάγετε μια διεύθυνση Skeincoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Zetacoin address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως υπογραφθηκε απο μια συγκεκριμένη διεύθυνση Zetacoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Skeincoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν&apos; αποδείξετε πως υπογραφθηκε απο μια συγκεκριμένη διεύθυνση Skeincoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1568,8 +1568,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Zetacoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Εισάγετε μια διεύθυνση Zetacoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Skeincoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Εισάγετε μια διεύθυνση Skeincoin (π.χ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1578,8 +1578,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Zetacoin signature</source>
-        <translation>Εισαγωγή υπογραφής Zetacoin</translation>
+        <source>Enter Skeincoin signature</source>
+        <translation>Εισαγωγή υπογραφής Skeincoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1652,8 +1652,8 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+25"/>
-        <source>The Zetacoin developers</source>
-        <translation>Οι Zetacoin προγραμματιστές </translation>
+        <source>The Skeincoin developers</source>
+        <translation>Οι Skeincoin προγραμματιστές </translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2190,8 +2190,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Zetacoin version</source>
-        <translation>Έκδοση Zetacoin</translation>
+        <source>Skeincoin version</source>
+        <translation>Έκδοση Skeincoin</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2200,8 +2200,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or zetacoind</source>
-        <translation>Αποστολή εντολής στον εξυπηρετητή ή στο zetacoind</translation>
+        <source>Send command to -server or skeincoind</source>
+        <translation>Αποστολή εντολής στον εξυπηρετητή ή στο skeincoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2220,13 +2220,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: zetacoin.conf)</source>
-        <translation>Ορίστε αρχείο ρυθμίσεων (προεπιλογή: zetacoin.conf)</translation>
+        <source>Specify configuration file (default: skeincoin.conf)</source>
+        <translation>Ορίστε αρχείο ρυθμίσεων (προεπιλογή: skeincoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: zetacoind.pid)</source>
-        <translation>Ορίστε αρχείο pid (προεπιλογή: zetacoind.pid)</translation>
+        <source>Specify pid file (default: skeincoind.pid)</source>
+        <translation>Ορίστε αρχείο pid (προεπιλογή: skeincoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2303,24 +2303,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=zetacoinrpc
+rpcuser=skeincoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Skeincoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=zetacoinrpc
+rpcuser=skeincoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Skeincoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2335,8 +2335,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Zetacoin is probably already running.</source>
-        <translation>Αδυναμία κλειδώματος του φακέλου δεδομένων %s. Πιθανώς το Zetacoin να είναι ήδη ενεργό.</translation>
+        <source>Cannot obtain a lock on data directory %s. Skeincoin is probably already running.</source>
+        <translation>Αδυναμία κλειδώματος του φακέλου δεδομένων %s. Πιθανώς το Skeincoin να είναι ήδη ενεργό.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2381,8 +2381,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Zetacoin will not work properly.</source>
-        <translation>Προειδοποίηση: Παρακαλώ βεβαιωθείτε πως η ημερομηνία κι ώρα του συστήματός σας είναι σωστές. Αν το ρολόι του υπολογιστή σας πάει λάθος, ενδέχεται να μη λειτουργεί σωστά το Zetacoin.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Skeincoin will not work properly.</source>
+        <translation>Προειδοποίηση: Παρακαλώ βεβαιωθείτε πως η ημερομηνία κι ώρα του συστήματός σας είναι σωστές. Αν το ρολόι του υπολογιστή σας πάει λάθος, ενδέχεται να μη λειτουργεί σωστά το Skeincoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2631,8 +2631,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Zetacoin Wiki for SSL setup instructions)</source>
-        <translation>Ρυθμίσεις SSL: (ανατρέξτε στο Zetacoin Wiki για οδηγίες ρυθμίσεων SSL)</translation>
+        <source>SSL options: (see the Skeincoin Wiki for SSL setup instructions)</source>
+        <translation>Ρυθμίσεις SSL: (ανατρέξτε στο Skeincoin Wiki για οδηγίες ρυθμίσεων SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2821,13 +2821,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Zetacoin</source>
-        <translation>Σφάλμα φόρτωσης wallet.dat: Το Πορτοφόλι απαιτεί μια νεότερη έκδοση του Zetacoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Skeincoin</source>
+        <translation>Σφάλμα φόρτωσης wallet.dat: Το Πορτοφόλι απαιτεί μια νεότερη έκδοση του Skeincoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Zetacoin to complete</source>
-        <translation>Απαιτείται η επανεγγραφή του Πορτοφολιού, η οποία θα ολοκληρωθεί στην επανεκκίνηση του Zetacoin</translation>
+        <source>Wallet needed to be rewritten: restart Skeincoin to complete</source>
+        <translation>Απαιτείται η επανεγγραφή του Πορτοφολιού, η οποία θα ολοκληρωθεί στην επανεκκίνηση του Skeincoin</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2886,8 +2886,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Zetacoin is probably already running.</source>
-        <translation>Αδύνατη η σύνδεση με τη θύρα %s αυτού του υπολογιστή. Το Zetacoin είναι πιθανώς ήδη ενεργό.</translation>
+        <source>Unable to bind to %s on this computer. Skeincoin is probably already running.</source>
+        <translation>Αδύνατη η σύνδεση με τη θύρα %s αυτού του υπολογιστή. Το Skeincoin είναι πιθανώς ήδη ενεργό.</translation>
     </message>
     <message>
         <location line="+64"/>

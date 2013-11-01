@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = zetacoin-qt
-macx:TARGET = "Zetacoin-Qt"
+TARGET = skeincoin-qt
+macx:TARGET = "Skeincoin-Qt"
 VERSION = 0.8.2
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
@@ -215,7 +215,9 @@ HEADERS += src/qt/bitcoingui.h \
     src/threadsafety.h \
     src/limitedmap.h \
     src/qt/splashscreen.h \
-    src/qt/intro.h
+    src/qt/intro.h \
+    src/sph_skein.h \
+    src/sph_types.h
 
 SOURCES += src/qt/bitcoin.cpp \
     src/qt/bitcoingui.cpp \
@@ -286,7 +288,8 @@ SOURCES += src/qt/bitcoin.cpp \
     src/leveldb.cpp \
     src/txdb.cpp \
     src/qt/splashscreen.cpp \
-    src/qt/intro.cpp
+    src/qt/intro.cpp \
+    src/skein.c
 
 RESOURCES += src/qt/bitcoin.qrc
 
@@ -315,7 +318,7 @@ SOURCES += src/qt/test/test_main.cpp \
 HEADERS += src/qt/test/uritests.h
 DEPENDPATH += src/qt/test
 QT += testlib
-TARGET = zetacoin-qt_test
+TARGET = skeincoin-qt_test
 DEFINES += BITCOIN_QT_TEST
   macx: CONFIG -= app_bundle
 }

@@ -144,13 +144,13 @@ OBJS= \
     obj/noui.o \
     obj/leveldb.o \
     obj/txdb.o \
-    obj/chainparams.o
+    obj/chainparams.o \
+    obj/skein.o
 
+all: skeincoind
 
-all: zetacoind
-
-test check: test_zetacoin FORCE
-	./test_zetacoin
+test check: test_skeincoin FORCE
+	./test_skeincoin
 
 #
 # LevelDB support
@@ -178,7 +178,14 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-zetacoind: $(OBJS:obj/%=obj/%)
+obj/%.o: %.c
+	$(CXX) -c $(xCXXFLAGS) -fpermissive -MMD -MF $(@:%.o=%.d) -o $@ $<
+	@cp $(@:%.o=%.d) $(@:%.o=%.P); \
+	  sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$$//' \
+	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
+	  rm -f $(@:%.o=%.d)
+      
+skeincoind: $(OBJS:obj/%=obj/%)
 	$(LINK) $(xCXXFLAGS) -o $@ $^ $(xLDFLAGS) $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -190,11 +197,18 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_zetacoin: $(TESTOBJS) $(filter-out obj/init.o obj/zetacoind.o,$(OBJS:obj/%=obj/%))
+obj-test/%.o: test/%.c
+	$(CXX) -c $(TESTDEFS) $(xCXXFLAGS) -fpermissive -MMD -MF $(@:%.o=%.d) -o $@ $<
+	@cp $(@:%.o=%.d) $(@:%.o=%.P); \
+	  sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$$//' \
+	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
+	  rm -f $(@:%.o=%.d)
+
+test_skeincoin: $(TESTOBJS) $(filter-out obj/init.o obj/skeincoind.o,$(OBJS:obj/%=obj/%))
 	$(LINK) $(xCXXFLAGS) -o $@ $(LIBPATHS) $^ $(TESTLIBS) $(xLDFLAGS) $(LIBS)
 
 clean:
-	-rm -f zetacoind test_zetacoin
+	-rm -f skeincoind test_skeincoin
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P
