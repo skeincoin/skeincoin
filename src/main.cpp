@@ -4711,19 +4711,23 @@ void static BitcoinMiner(CWallet *pwallet)
         {
             unsigned int nHashesDone = 0;
 
-            hash = pblock->GetHash();
-            if (hash <= hashTarget){
-                SetThreadPriority(THREAD_PRIORITY_NORMAL);
+            for(int i = 0; i < 1000; i++)
+            {
+                hash = pblock->GetHash();
+                if (hash <= hashTarget){
+                    SetThreadPriority(THREAD_PRIORITY_NORMAL);
 
-                printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
-                pblock->print();
+                    printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+                    pblock->print();
 
-                CheckWork(pblock, *pwalletMain, reservekey);
-                SetThreadPriority(THREAD_PRIORITY_LOWEST);
-                break;
+                    CheckWork(pblock, *pwalletMain, reservekey);
+                    SetThreadPriority(THREAD_PRIORITY_LOWEST);
+                    break;
+                }
+                ++pblock->nNonce;
+                nHashesDone++;
             }
-            ++pblock->nNonce;
-            nHashesDone++;
+            if (hash <= hashTarget){break;}
             
             /*               
             // Check if something found
