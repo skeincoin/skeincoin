@@ -227,7 +227,7 @@ std::string FormatSubVersion(const std::string& name, int nClientVersion, const 
 void AddTimeData(const CNetAddr& ip, int64 nTime);
 void runCommand(std::string strCommand);
 
-
+bool NewThread(void(*pfn)(void*), void* parg);
 
 
 
