@@ -13,6 +13,7 @@
 #include "ui_interface.h"
 #include "checkqueue.h"
 #include "chainparams.h"
+#include "auxpow.h"
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
@@ -1381,22 +1382,6 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     return bnNew.GetCompact();
 }
 
-bool CheckProofOfWork(uint256 hash, unsigned int nBits)
-{
-    CBigNum bnTarget;
-    bnTarget.SetCompact(nBits);
-
-    // Check range
-    if (bnTarget <= 0 || bnTarget > Params().ProofOfWorkLimit())
-        return error("CheckProofOfWork() : nBits below minimum work");
-
-    // Check proof of work matches claimed amount
-    if (hash > bnTarget.getuint256())
-        return error("CheckProofOfWork() : hash doesn't match nBits");
-
-    return true;
-}
-
 // Return maximum amount of blocks that other nodes claim to have
 int GetNumBlocksOfPeers()
 {
@@ -2392,6 +2377,14 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
     }
 
     return true;
+}
+
+bool CBlockIndex::CheckIndex() const
+{
+    if (nVersion & BLOCK_VERSION_AUXPOW)
+        return CheckProofOfWork(auxpow->GetParentBlockHash(), nBits);
+    else 
+        return CheckProofOfWork(GetBlockHash(), nBits);
 }
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)

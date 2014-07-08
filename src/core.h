@@ -1,3 +1,4 @@
+class CValidationState;
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -13,6 +14,58 @@
 
 class CTransaction;
 class CAuxPow;
+
+bool AbortNode(const std::string &strMessage);
+
+/** Capture information about block/transaction validation */
+class CValidationState {
+private:
+    enum mode_state {
+        MODE_VALID,   // everything ok
+        MODE_INVALID, // network rule violation (DoS value may be set)
+        MODE_ERROR,   // run-time error
+    } mode;
+    int nDoS;
+public:
+    CValidationState() : mode(MODE_VALID), nDoS(0) {}
+    bool DoS(int level, bool ret = false) {
+        if (mode == MODE_ERROR)
+            return ret;
+        nDoS += level;
+        mode = MODE_INVALID;
+        return ret;
+    }
+    bool Invalid(bool ret = false) {
+        return DoS(0, ret);
+    }
+    bool Error() {
+        mode = MODE_ERROR;
+        return false;
+    }
+    bool Abort(const std::string &msg) {
+        AbortNode(msg);
+        return Error();
+    }
+    bool IsValid() {
+        return mode == MODE_VALID;
+    }
+    bool IsInvalid() {
+        return mode == MODE_INVALID;
+    }
+    bool IsError() {
+        return mode == MODE_ERROR;
+    }
+    bool IsInvalid(int &nDoSOut) {
+        if (IsInvalid()) {
+            nDoSOut = nDoS;
+            return true;
+        }
+        return false;
+    }
+};
+
+/** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
+bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 
 /** An outpoint - a combination of a transaction hash and an index n into its vout */
 class COutPoint
@@ -684,6 +737,9 @@ public:
 
     std::vector<uint256> GetMerkleBranch(int nIndex) const;
     static uint256 CheckMerkleBranch(uint256 hash, const std::vector<uint256>& vMerkleBranch, int nIndex);
+    
+    bool CheckBlock(int nHeight, CValidationState& state) const;
+
     void print() const;
 };
 

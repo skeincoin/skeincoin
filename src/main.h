@@ -171,8 +171,6 @@ void IncrementExtraNonce(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& 
 void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash1);
 /** Check mined block */
 bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey);
-/** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
-bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 /** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
 unsigned int ComputeMinWork(unsigned int nBase, int64 nTime);
 /** Get the number of active peers */
@@ -843,10 +841,7 @@ public:
         return nHeight+1 >= (int)vBlockIndexByHeight.size() ? NULL : vBlockIndexByHeight[nHeight+1];
     }
 
-    bool CheckIndex() const
-    {
-        return CheckProofOfWork(GetBlockHash(), nBits);
-    }
+    bool CheckIndex() const;
 
     enum { nMedianTimeSpan=11 };
 
@@ -976,53 +971,6 @@ public:
     void print() const
     {
         printf("%s\n", ToString().c_str());
-    }
-};
-
-/** Capture information about block/transaction validation */
-class CValidationState {
-private:
-    enum mode_state {
-        MODE_VALID,   // everything ok
-        MODE_INVALID, // network rule violation (DoS value may be set)
-        MODE_ERROR,   // run-time error
-    } mode;
-    int nDoS;
-public:
-    CValidationState() : mode(MODE_VALID), nDoS(0) {}
-    bool DoS(int level, bool ret = false) {
-        if (mode == MODE_ERROR)
-            return ret;
-        nDoS += level;
-        mode = MODE_INVALID;
-        return ret;
-    }
-    bool Invalid(bool ret = false) {
-        return DoS(0, ret);
-    }
-    bool Error() {
-        mode = MODE_ERROR;
-        return false;
-    }
-    bool Abort(const std::string &msg) {
-        AbortNode(msg);
-        return Error();
-    }
-    bool IsValid() {
-        return mode == MODE_VALID;
-    }
-    bool IsInvalid() {
-        return mode == MODE_INVALID;
-    }
-    bool IsError() {
-        return mode == MODE_ERROR;
-    }
-    bool IsInvalid(int &nDoSOut) {
-        if (IsInvalid()) {
-            nDoSOut = nDoS;
-            return true;
-        }
-        return false;
     }
 };
 

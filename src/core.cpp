@@ -239,6 +239,22 @@ int GetOurChainID()
     return 0x0004;
 }
 
+bool CheckProofOfWork(uint256 hash, unsigned int nBits)
+{
+    CBigNum bnTarget;
+    bnTarget.SetCompact(nBits);
+
+    // Check range
+    if (bnTarget <= 0 || bnTarget > Params().ProofOfWorkLimit())
+        return error("CheckProofOfWork() : nBits below minimum work");
+
+    // Check proof of work matches claimed amount
+    if (hash > bnTarget.getuint256())
+        return error("CheckProofOfWork() : hash doesn't match nBits");
+
+    return true;
+}
+
 uint256 CBlockHeader::GetHash() const
 {
     return HashSkein(BEGIN(nVersion), END(nNonce));
@@ -341,6 +357,64 @@ uint256 CBlock::CheckMerkleBranch(uint256 hash, const std::vector<uint256>& vMer
         nIndex >>= 1;
     }
     return hash;
+}
+
+bool CBlock::CheckBlock(int nHeight, CValidationState &state) const
+{
+    // These are checks that are independent of context
+    // that can be verified before saving an orphan block.
+
+    // Size limits
+    if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
+        return state.DoS(100, error("CheckBlock() : size limits failed"));
+
+    // Check proof of work matches claimed amount
+    if (!::CheckProofOfWork(GetHash(), nBits))
+        return state.DoS(50, error("CheckBlock() : proof of work failed"));
+
+    // Check timestamp
+    if (GetBlockTime() > GetAdjustedTime() + 2 * 60 * 60)
+        return error("CheckBlock() : block timestamp too far in the future");
+
+    // First transaction must be coinbase, the rest must not be
+    if (vtx.empty() || !vtx[0].IsCoinBase())
+        return state.DoS(100, error("CheckBlock() : first tx is not coinbase"));
+    for (unsigned int i = 1; i < vtx.size(); i++)
+        if (vtx[i].IsCoinBase())
+            return state.DoS(100, error("CheckBlock() : more than one coinbase"));
+
+    // Check transactions
+    BOOST_FOREACH(const CTransaction& tx, vtx)
+        if (!CheckTransaction(tx, state))
+            return error("CheckBlock() : CheckTransaction failed");
+
+    // Build the merkle tree already. We need it anyway later, and it makes the
+    // block cache the transaction hashes, which means they don't need to be
+    // recalculated many times during this block's validation.
+    BuildMerkleTree();
+
+    // Check for duplicate txids. This is caught by ConnectInputs(),
+    // but catching it earlier avoids a potential DoS attack:
+    set<uint256> uniqueTx;
+    for (unsigned int i = 0; i < vtx.size(); i++) {
+        uniqueTx.insert(GetTxHash(i));
+    }
+    if (uniqueTx.size() != vtx.size())
+        return state.DoS(100, error("CheckBlock() : duplicate transaction"));
+
+    unsigned int nSigOps = 0;
+    BOOST_FOREACH(const CTransaction& tx, vtx)
+    {
+        nSigOps += GetLegacySigOpCount(tx);
+    }
+    if (nSigOps > MAX_BLOCK_SIGOPS)
+        return state.DoS(100, error("CheckBlock() : out-of-bounds SigOpCount"));
+
+    // Check merkle root
+    if (hashMerkleRoot != BuildMerkleTree())
+        return state.DoS(100, error("CheckBlock() : hashMerkleRoot mismatch"));
+
+    return true;
 }
 
 void CBlock::print() const
