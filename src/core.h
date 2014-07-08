@@ -12,6 +12,7 @@
 #include <stdio.h>
 
 class CTransaction;
+class CAuxPow;
 
 /** An outpoint - a combination of a transaction hash and an index n into its vout */
 class COutPoint
@@ -546,6 +547,17 @@ enum
     BLOCK_VERSION_CHAIN_END      = (1 << 30),
 };
 
+
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, const boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionSerialize ser_action);
+
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionUnserialize ser_action);
+
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, const boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionGetSerializeSize ser_action);
+
+
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
  * requirements.  When they solve the proof-of-work, they broadcast the block
@@ -564,7 +576,9 @@ public:
     unsigned int nTime;
     unsigned int nBits;
     unsigned int nNonce;
-
+    // auxpow header
+    boost::shared_ptr<CAuxPow> auxpow;
+    
     CBlockHeader()
     {
         SetNull();
@@ -589,6 +603,7 @@ public:
         nTime = 0;
         nBits = 0;
         nNonce = 0;
+        auxpow.reset();
     }
 
     bool IsNull() const
@@ -607,6 +622,10 @@ public:
     {
         return (int64)nTime;
     }
+    
+    void SetAuxPow(CAuxPow* pow);
+    
+    bool CheckProofOfWork(int nHeight) const;
 };
 
 

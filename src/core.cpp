@@ -5,6 +5,7 @@
 
 #include "core.h"
 #include "util.h"
+#include "auxpow.h"
 
 std::string COutPoint::ToString() const
 {
@@ -225,9 +226,71 @@ bool CCoins::Spend(int nPos) {
     return Spend(out, undo);
 }
 
+int GetAuxPowStartBlock()
+{
+    if (TestNet())
+        return 0; // Always on testnet
+    else
+        return 1000000; // Never on prodnet
+}
+ 
+int GetOurChainID()
+{
+    return 0x0004;
+}
+
 uint256 CBlockHeader::GetHash() const
 {
     return HashSkein(BEGIN(nVersion), END(nNonce));
+}
+
+void CBlockHeader::SetAuxPow(CAuxPow* pow)
+{
+    if (pow != NULL)
+        nVersion |=  BLOCK_VERSION_AUXPOW;
+    else
+        nVersion &=  ~BLOCK_VERSION_AUXPOW;
+    auxpow.reset(pow);
+}
+
+bool CBlockHeader::CheckProofOfWork(int nHeight) const
+{
+    if (nHeight >= GetAuxPowStartBlock())
+    {
+        // Prevent same work from being submitted twice:
+        // - this block must have our chain ID
+        // - parent block must not have the same chain ID (see CAuxPow::Check)
+        // - index of this chain in chain merkle tree must be pre-determined (see CAuxPow::Check)
+        if (!TestNet() && nHeight != INT_MAX && GetChainID() != GetOurChainID())
+            return error("CheckProofOfWork() : block does not have our chain ID");
+ 
+        if (auxpow.get() != NULL)
+        {
+            if (!auxpow->Check(GetHash(), GetChainID()))
+                return error("CheckProofOfWork() : AUX POW is not valid");
+            // Check proof of work matches claimed amount
+            if (!::CheckProofOfWork(auxpow->GetParentBlockHash(), nBits))
+                return error("CheckProofOfWork() : AUX proof of work failed");
+        }
+        else
+        {
+            // Check proof of work matches claimed amount
+            if (!::CheckProofOfWork(GetHash(), nBits))
+                return error("CheckProofOfWork() : proof of work failed");
+        }
+    }
+    else
+    {
+        if (auxpow.get() != NULL)
+        {
+            return error("CheckProofOfWork() : AUX POW is not allowed at this block");
+        }
+ 
+        // Check proof of work matches claimed amount
+        if (!::CheckProofOfWork(GetHash(), nBits))
+            return error("CheckProofOfWork() : proof of work failed");
+    }
+    return true;
 }
 
 uint256 CBlock::BuildMerkleTree() const

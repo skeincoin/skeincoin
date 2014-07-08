@@ -23,6 +23,8 @@ class CAddress;
 class CInv;
 class CNode;
 
+class CAuxPow;
+
 struct CBlockIndexWorkComparator;
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
@@ -734,7 +736,9 @@ public:
     unsigned int nBits;
     unsigned int nNonce;
 
-
+    // if this is an aux work block
+    boost::shared_ptr<CAuxPow> auxpow;
+    
     CBlockIndex()
     {
         phashBlock = NULL;
@@ -753,6 +757,8 @@ public:
         nTime          = 0;
         nBits          = 0;
         nNonce         = 0;
+        
+        auxpow.reset();
     }
 
     CBlockIndex(CBlockHeader& block)
@@ -773,6 +779,8 @@ public:
         nTime          = block.nTime;
         nBits          = block.nBits;
         nNonce         = block.nNonce;
+        
+        auxpow         = block.auxpow;
     }
 
     CDiskBlockPos GetBlockPos() const {
@@ -803,6 +811,7 @@ public:
         block.nTime          = nTime;
         block.nBits          = nBits;
         block.nNonce         = nNonce;
+        block.auxpow         = auxpow;
         return block;
     }
 
