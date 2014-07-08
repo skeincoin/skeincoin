@@ -533,6 +533,18 @@ public:
     }
 };
 
+enum
+{
+    // primary version
+    BLOCK_VERSION_DEFAULT        = 2,
+
+    // modifiers
+    BLOCK_VERSION_AUXPOW         = (1 << 8),
+
+    // bits allocated for chain ID
+    BLOCK_VERSION_CHAIN_START    = (1 << 16),
+    BLOCK_VERSION_CHAIN_END      = (1 << 30),
+};
 
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
@@ -545,7 +557,7 @@ class CBlockHeader
 {
 public:
     // header
-    static const int CURRENT_VERSION=2;
+    static const int CURRENT_VERSION = BLOCK_VERSION_DEFAULT;
     int nVersion;
     uint256 hashPrevBlock;
     uint256 hashMerkleRoot;
@@ -582,6 +594,11 @@ public:
     bool IsNull() const
     {
         return (nBits == 0);
+    }
+
+    int GetChainID() const
+    {
+        return nVersion / BLOCK_VERSION_CHAIN_START;
     }
 
     uint256 GetHash() const;

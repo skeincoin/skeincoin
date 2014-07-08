@@ -1,129 +1,84 @@
-// Copyright (c) 2011 Vince Durham
+// Copyright (c) 2009-2010 Satoshi Nakamoto
 // Distributed under the MIT/X11 software license, see the accompanying
 // file license.txt or http://www.opensource.org/licenses/mit-license.php.
-#include "headers.h"
-#include "script.h"
-#include "auxpow.h"
-#include "init.h"
+#ifndef BITCOIN_AUXPOW_H
+#define BITCOIN_AUXPOW_H
 
-using namespace std;
-using namespace boost;
+#include "main.h"
 
-unsigned char pchMergedMiningHeader[] = { 0xfa, 0xbe, 'm', 'm' } ;
-
-void RemoveMergedMiningHeader(vector<unsigned char>& vchAux)
+class CAuxPow : public CMerkleTx
 {
-    if (vchAux.begin() != std::search(vchAux.begin(), vchAux.end(), UBEGIN(pchMergedMiningHeader), UEND(pchMergedMiningHeader)))
-        throw runtime_error("merged mining aux too short");
-    vchAux.erase(vchAux.begin(), vchAux.begin() + sizeof(pchMergedMiningHeader));
+public:
+    CAuxPow(const CTransaction& txIn) : CMerkleTx(txIn)
+    {
+    }
+
+    CAuxPow() :CMerkleTx()
+    {
+    }
+
+    // Merkle branch with root vchAux
+    // root must be present inside the coinbase
+    std::vector<uint256> vChainMerkleBranch;
+    // Index of chain in chains merkle tree
+    int nChainIndex;
+    CBlock parentBlock;
+
+    IMPLEMENT_SERIALIZE
+    (
+        nSerSize += SerReadWrite(s, *(CMerkleTx*)this, nType, nVersion, ser_action);
+        nVersion = this->nVersion;
+        READWRITE(vChainMerkleBranch);
+        READWRITE(nChainIndex);
+
+        // Always serialize the saved parent block as header so that the size of CAuxPow
+        // is consistent.
+        nSerSize += SerReadWrite(s, parentBlock, nType | SER_BLOCKHEADERONLY, nVersion, ser_action);
+    )
+
+    bool Check(uint256 hashAuxBlock, int nChainID);
+
+    uint256 GetParentBlockHash()
+    {
+        return parentBlock.GetHash();
+    }
+};
+
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, const boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionGetSerializeSize ser_action)
+{
+    if (nVersion & BLOCK_VERSION_AUXPOW)
+    {
+        return ::GetSerializeSize(*auxpow, nType, nVersion);
+    }
+    return 0;
 }
 
-bool CAuxPow::Check(uint256 hashAuxBlock, int nChainID)
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, const boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionSerialize ser_action)
 {
-    if (nIndex != 0)
-        return error("AuxPow is not a generate");
-
-    if (!fTestNet && parentBlock.GetChainID() == nChainID)
-        return error("Aux POW parent has our chain ID");
-
-    if (vChainMerkleBranch.size() > 30)
-        return error("Aux POW chain merkle branch too long");
-
-    // Check that the chain merkle root is in the coinbase
-    uint256 nRootHash = CBlock::CheckMerkleBranch(hashAuxBlock, vChainMerkleBranch, nChainIndex);
-    vector<unsigned char> vchRootHash(nRootHash.begin(), nRootHash.end());
-    std::reverse(vchRootHash.begin(), vchRootHash.end()); // correct endian
-
-    // Check that we are in the parent block merkle tree
-    if (CBlock::CheckMerkleBranch(GetHash(), vMerkleBranch, nIndex) != parentBlock.hashMerkleRoot)
-        return error("Aux POW merkle root incorrect");
-
-    const CScript script = vin[0].scriptSig;
-
-    // Check that the same work is not submitted twice to our chain.
-    //
-
-    CScript::const_iterator pcHead =
-        std::search(script.begin(), script.end(), UBEGIN(pchMergedMiningHeader), UEND(pchMergedMiningHeader));
-
-    CScript::const_iterator pc =
-        std::search(script.begin(), script.end(), vchRootHash.begin(), vchRootHash.end());
-
-    if (pc == script.end())
-        return error("Aux POW missing chain merkle root in parent coinbase");
-
-    if (pcHead != script.end())
+    if (nVersion & BLOCK_VERSION_AUXPOW)
     {
-        // Enforce only one chain merkle root by checking that a single instance of the merged
-        // mining header exists just before.
-        if (script.end() != std::search(pcHead + 1, script.end(), UBEGIN(pchMergedMiningHeader), UEND(pchMergedMiningHeader)))
-            return error("Multiple merged mining headers in coinbase");
-        if (pcHead + sizeof(pchMergedMiningHeader) != pc)
-            return error("Merged mining header is not just before chain merkle root");
+        return SerReadWrite(s, *auxpow, nType, nVersion, ser_action);
+    }
+    return 0;
+}
+
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionUnserialize ser_action)
+{
+    if (nVersion & BLOCK_VERSION_AUXPOW)
+    {
+        auxpow.reset(new CAuxPow());
+        return SerReadWrite(s, *auxpow, nType, nVersion, ser_action);
     }
     else
     {
-        // For backward compatibility.
-        // Enforce only one chain merkle root by checking that it starts early in the coinbase.
-        // 8-12 bytes are enough to encode extraNonce and nBits.
-        if (pc - script.begin() > 20)
-            return error("Aux POW chain merkle root must start in the first 20 bytes of the parent coinbase");
+        auxpow.reset();
+        return 0;
     }
-
-
-    // Ensure we are at a deterministic point in the merkle leaves by hashing
-    // a nonce and our chain ID and comparing to the index.
-    pc += vchRootHash.size();
-    if (script.end() - pc < 8)
-        return error("Aux POW missing chain merkle tree size and nonce in parent coinbase");
-
-    int nSize;
-    memcpy(&nSize, &pc[0], 4);
-    if (nSize != (1 << vChainMerkleBranch.size()))
-        return error("Aux POW merkle branch size does not match parent coinbase");
-
-    int nNonce;
-    memcpy(&nNonce, &pc[4], 4);
-
-    // Choose a pseudo-random slot in the chain merkle tree
-    // but have it be fixed for a size/nonce/chain combination.
-    //
-    // This prevents the same work from being used twice for the
-    // same chain while reducing the chance that two chains clash
-    // for the same slot.
-    unsigned int rand = nNonce;
-    rand = rand * 1103515245 + 12345;
-    rand += nChainID;
-    rand = rand * 1103515245 + 12345;
-
-    if (nChainIndex != (rand % nSize))
-        return error("Aux POW wrong index");
-
-    return true;
 }
 
-CScript MakeCoinbaseWithAux(unsigned int nBits, unsigned int nExtraNonce, vector<unsigned char>& vchAux)
-{
-    vector<unsigned char> vchAuxWithHeader(UBEGIN(pchMergedMiningHeader), UEND(pchMergedMiningHeader));
-    vchAuxWithHeader.insert(vchAuxWithHeader.end(), vchAux.begin(), vchAux.end());
-
-    // Push OP_2 just in case we want versioning later
-    return CScript() << nBits << nExtraNonce << OP_2 << vchAuxWithHeader;
-}
-
-
-void IncrementExtraNonceWithAux(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& nExtraNonce, int64& nPrevTime, vector<unsigned char>& vchAux)
-{
-    // Update nExtraNonce
-    int64 nNow = max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());
-    if (++nExtraNonce >= 0x7f && nNow > nPrevTime+1)
-    {
-        nExtraNonce = 1;
-        nPrevTime = nNow;
-    }
-
-    pblock->vtx[0].vin[0].scriptSig = MakeCoinbaseWithAux(pblock->nBits, nExtraNonce, vchAux);
-    pblock->hashMerkleRoot = pblock->BuildMerkleTree();
-}
-
-
+extern void RemoveMergedMiningHeader(std::vector<unsigned char>& vchAux);
+extern CScript MakeCoinbaseWithAux(unsigned int nBits, unsigned int nExtraNonce, std::vector<unsigned char>& vchAux);
+#endif

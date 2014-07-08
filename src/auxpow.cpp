@@ -1,7 +1,7 @@
 // Copyright (c) 2011 Vince Durham
 // Distributed under the MIT/X11 software license, see the accompanying
 // file license.txt or http://www.opensource.org/licenses/mit-license.php.
-#include "headers.h"
+#include "auxpow_headers.h"
 #include "script.h"
 #include "auxpow.h"
 #include "init.h"
@@ -23,7 +23,7 @@ bool CAuxPow::Check(uint256 hashAuxBlock, int nChainID)
     if (nIndex != 0)
         return error("AuxPow is not a generate");
 
-    if (!fTestNet && parentBlock.GetChainID() == nChainID)
+    if (!TestNet() && parentBlock.GetChainID() == nChainID)
         return error("Aux POW parent has our chain ID");
 
     if (vChainMerkleBranch.size() > 30)
