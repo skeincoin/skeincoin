@@ -646,6 +646,7 @@ public:
         READWRITE(nTime);
         READWRITE(nBits);
         READWRITE(nNonce);
+        nSerSize += ReadWriteAuxPow(s, auxpow, nType, nVersion, ser_action);
     )
 
     void SetNull()
@@ -705,7 +706,11 @@ public:
     IMPLEMENT_SERIALIZE
     (
         READWRITE(*(CBlockHeader*)this);
-        READWRITE(vtx);
+        // ConnectBlock depends on vtx being last so it can calculate offset
+        if (!(nType & SER_BLOCKHEADERONLY))
+            READWRITE(vtx);
+        else if (fRead)
+            const_cast<CBlock*>(this)->vtx.clear();
     )
 
     void SetNull()

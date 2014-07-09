@@ -292,6 +292,7 @@ static const CRPCCommand vRPCCommands[] =
     { "makekeypair",            &makekeypair,            false,     false },
     { "getworkaux",             &getworkaux,             false,     false },
     { "getauxblock",            &getauxblock,            false,     false },
+    { "buildmerkletree",        &buildmerkletree,        false,     false },
   
 };
 
