@@ -236,7 +236,7 @@ int GetAuxPowStartBlock()
  
 int GetOurChainID()
 {
-    return 0x0004;
+    return 0x1234;
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
