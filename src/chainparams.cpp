@@ -66,6 +66,7 @@ public:
         assert(hashGenesisBlock == uint256("0x0000046cebed69de151ada93a60cb8a5f9490a196399abe714bb83ad5b20f985"));
         assert(genesis.hashMerkleRoot == uint256("0xa4b385e3bc4907593d15be30d69cb28439684893f4dc2e637503cf3156b149a3"));
 
+/*
         vSeeds.push_back(CDNSSeedData("seed1.skeincoin.org", "seed1.skeincoin.org"));
         vSeeds.push_back(CDNSSeedData("seed2.skeincoin.org", "seed2.skeincoin.org"));
         vSeeds.push_back(CDNSSeedData("seed3.skeincoin.org", "seed3.skeincoin.org"));
@@ -73,6 +74,7 @@ public:
         vSeeds.push_back(CDNSSeedData("skeincoin.no-ip.org", "skeincoin.no-ip.org"));
         vSeeds.push_back(CDNSSeedData("skeincoin.strangled.net", "skeincoin.strangled.net"));
         vSeeds.push_back(CDNSSeedData("skeincoin.ignorelist.com", "skeincoin.ignorelist.com"));
+    */
 
         base58Prefixes[PUBKEY_ADDRESS] = 63;
         base58Prefixes[SCRIPT_ADDRESS] = 12;
