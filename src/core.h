@@ -1,4 +1,3 @@
-class CValidationState;
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -14,6 +13,7 @@ class CValidationState;
 
 class CTransaction;
 class CAuxPow;
+class CValidationState;
 
 bool AbortNode(const std::string &strMessage);
 
