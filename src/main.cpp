@@ -2335,6 +2335,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
                 return state.Invalid(error("AcceptBlock() : rejected nVersion=1 block"));
             }
         }
+        /*
         // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
         if (block.nVersion >= 2)
         {
@@ -2347,6 +2348,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
                     return state.DoS(100, error("AcceptBlock() : block height mismatch in coinbase"));
             }
         }
+        */
     }
 
     // Write block to history file
