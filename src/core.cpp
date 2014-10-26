@@ -260,10 +260,12 @@ uint256 CBlockHeader::GetPoWHash() const
     return HashSkein(BEGIN(nVersion), END(nNonce));
 }
 
+/*
 uint256 CBlockHeader::GetHash() const
 {
     return Hash(BEGIN(nVersion), END(nNonce));
 }
+*/
 
 void CBlockHeader::SetAuxPow(CAuxPow* pow)
 {

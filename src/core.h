@@ -674,7 +674,7 @@ public:
 
     uint256 GetPoWHash() const;
 
-    uint256 GetHash() const;
+//    uint256 GetHash() const;
     
     int64 GetBlockTime() const
     {

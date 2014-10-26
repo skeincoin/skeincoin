@@ -383,7 +383,7 @@ Value getworkaux(const Array& params, bool fHelp)
             {
                 Object result;
                 result.push_back(Pair("aux", HexStr(vchAux.begin(), vchAux.end())));
-                result.push_back(Pair("hash", pblock->GetHash().GetHex()));
+                result.push_back(Pair("hash", pblock->GetPoWHash().GetHex()));
                 return result;
             }
         }
@@ -458,17 +458,18 @@ Value getauxblock(const Array& params, bool fHelp)
             pblock->SetAuxPow(new CAuxPow());
 
             // Save
-            mapNewBlock[pblock->GetHash()] = pblock;
+            mapNewBlock[pblock->GetPoWHash()] = pblock;
         }
 
         uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
 
         Object result;
         result.push_back(Pair("target",   HexStr(BEGIN(hashTarget), END(hashTarget))));
-        result.push_back(Pair("hash", pblock->GetHash().GetHex()));
+        result.push_back(Pair("hash", pblock->GetPoWHash().GetHex()));
         result.push_back(Pair("chainid", pblock->GetChainID()));
         
-        printf("getauxblock: hash=%s\n", pblock->GetHash().GetHex().c_str());
+        // printf("getauxblock: hashsha2=%s\n", pblock->GetHash().GetHex().c_str());
+        printf("getauxblock: hashskein=%s\n", pblock->GetPoWHash().GetHex().c_str());
         printf("getauxblock: chainid=%d\n", pblock->GetChainID());
 
         return result;
