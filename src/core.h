@@ -587,10 +587,7 @@ public:
     }
 };
 
-int GetOurChainID()
-{
-    return 0x0123;
-}
+int GetOurChainID();
 
 enum
 {

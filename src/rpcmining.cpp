@@ -479,8 +479,8 @@ Value getauxblock(const Array& params, bool fHelp)
         uint256 hash;
         hash.SetHex(params[0].get_str());
         vector<unsigned char> vchAuxPow = ParseHex(params[1].get_str());
-        CDataStream ss(vchAuxPow, SER_GETHASH|SER_BLOCKHEADERONLY, PROTOCOL_VERSION);
-        // CDataStream ss(vchAuxPow, SER_GETHASH, PROTOCOL_VERSION);
+        // CDataStream ss(vchAuxPow, SER_GETHASH|SER_BLOCKHEADERONLY, PROTOCOL_VERSION);
+        CDataStream ss(vchAuxPow, SER_GETHASH, PROTOCOL_VERSION);
         CAuxPow* pow = new CAuxPow();
         ss >> *pow;
         if (!mapNewBlock.count(hash))

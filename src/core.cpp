@@ -226,6 +226,11 @@ bool CCoins::Spend(int nPos) {
     return Spend(out, undo);
 }
 
+int GetOurChainID()
+{
+    return 0x0123;
+}
+
 int GetAuxPowStartBlock()
 {
     if (TestNet())
