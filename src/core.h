@@ -747,7 +747,7 @@ public:
     std::vector<uint256> GetMerkleBranch(int nIndex) const;
     static uint256 CheckMerkleBranch(uint256 hash, const std::vector<uint256>& vMerkleBranch, int nIndex);
     
-    bool CheckBlock(int nHeight, CValidationState& state, bool fCheckPOW = true) const;
+    bool CheckBlock(CValidationState& state, int nHeight, bool fCheckPOW = true) const;
 
     void print() const;
 };

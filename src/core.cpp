@@ -366,7 +366,7 @@ uint256 CBlock::CheckMerkleBranch(uint256 hash, const std::vector<uint256>& vMer
     return hash;
 }
 
-bool CBlock::CheckBlock(int nHeight, CValidationState &state, bool fCheckPOW) const
+bool CBlock::CheckBlock(CValidationState &state, int nHeight, bool fCheckPOW) const
 {
     // These are checks that are independent of context
     // that can be verified before saving an orphan block.
@@ -376,7 +376,7 @@ bool CBlock::CheckBlock(int nHeight, CValidationState &state, bool fCheckPOW) co
         return state.DoS(100, error("CheckBlock() : size limits failed"));
 
     // Check proof of work matches claimed amount
-    if (fCheckPOW && !::CheckProofOfWork(GetPoWHash(), nBits))
+    if (fCheckPOW && !CheckProofOfWork(nHeight))
         return state.DoS(50, error("CheckBlock() : proof of work failed"));
 
     // Check timestamp
