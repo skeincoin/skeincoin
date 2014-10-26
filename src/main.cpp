@@ -1223,7 +1223,7 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos)
     }
 
     // Check the header
-    if (!CheckProofOfWork(INT_MAX))
+    if (!block.CheckProofOfWork(INT_MAX))
         return error("ReadBlockFromDisk(CBlock&, CDiskBlockPos&) : errors in block header");
 
     return true;
