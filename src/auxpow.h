@@ -40,7 +40,7 @@ public:
 
     uint256 GetParentBlockHash()
     {
-        return parentBlock.GetHash();
+        return parentBlock.GetPoWHash();
     }
 };
 

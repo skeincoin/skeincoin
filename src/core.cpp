@@ -255,9 +255,14 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits)
     return true;
 }
 
-uint256 CBlockHeader::GetHash() const
+uint256 CBlockHeader::GetPoWHash() const
 {
     return HashSkein(BEGIN(nVersion), END(nNonce));
+}
+
+uint256 CBlockHeader::GetHash() const
+{
+    return Hash(BEGIN(nVersion), END(nNonce));
 }
 
 void CBlockHeader::SetAuxPow(CAuxPow* pow)
@@ -282,7 +287,7 @@ bool CBlockHeader::CheckProofOfWork(int nHeight) const
  
         if (auxpow.get() != NULL)
         {
-            if (!auxpow->Check(GetHash(), GetChainID()))
+            if (!auxpow->Check(GetPoWHash(), GetChainID()))
                 return error("CheckProofOfWork() : AUX POW is not valid");
             // Check proof of work matches claimed amount
             if (!::CheckProofOfWork(auxpow->GetParentBlockHash(), nBits))
@@ -291,7 +296,7 @@ bool CBlockHeader::CheckProofOfWork(int nHeight) const
         else
         {
             // Check proof of work matches claimed amount
-            if (!::CheckProofOfWork(GetHash(), nBits))
+            if (!::CheckProofOfWork(GetPoWHash(), nBits))
                 return error("CheckProofOfWork() : proof of work failed");
         }
     }
@@ -303,7 +308,7 @@ bool CBlockHeader::CheckProofOfWork(int nHeight) const
         }
  
         // Check proof of work matches claimed amount
-        if (!::CheckProofOfWork(GetHash(), nBits))
+        if (!::CheckProofOfWork(GetPoWHash(), nBits))
             return error("CheckProofOfWork() : proof of work failed");
     }
     return true;
@@ -369,7 +374,7 @@ bool CBlock::CheckBlock(int nHeight, CValidationState &state) const
         return state.DoS(100, error("CheckBlock() : size limits failed"));
 
     // Check proof of work matches claimed amount
-    if (!::CheckProofOfWork(GetHash(), nBits))
+    if (!::CheckProofOfWork(GetPoWHash(), nBits))
         return state.DoS(50, error("CheckBlock() : proof of work failed"));
 
     // Check timestamp
@@ -420,7 +425,7 @@ bool CBlock::CheckBlock(int nHeight, CValidationState &state) const
 void CBlock::print() const
 {
     printf("CBlock(hash=%s, ver=%d, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%"PRIszu")\n",
-        GetHash().ToString().c_str(),
+        GetPoWHash().ToString().c_str(),
         nVersion,
         hashPrevBlock.ToString().c_str(),
         hashMerkleRoot.ToString().c_str(),

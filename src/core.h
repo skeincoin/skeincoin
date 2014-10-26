@@ -672,8 +672,10 @@ public:
         return nVersion / BLOCK_VERSION_CHAIN_START;
     }
 
-    uint256 GetHash() const;
+    uint256 GetPoWHash() const;
 
+    uint256 GetHash() const;
+    
     int64 GetBlockTime() const
     {
         return (int64)nTime;
