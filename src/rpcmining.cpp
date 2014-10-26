@@ -244,7 +244,7 @@ Value getworkaux(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Skeincoin is downloading blocks...");
 
     static map<uint256, pair<CBlock*, unsigned int> > mapNewBlock;
-    static vector<CBlock*> vNewBlock;
+    static vector<CBlockTemplate*> vNewBlockTemplate;
     static CReserveKey reservekey(pwalletMain);
 
     if (params.size() == 1)
@@ -256,7 +256,7 @@ Value getworkaux(const Array& params, bool fHelp)
         static unsigned int nTransactionsUpdatedLast;
         static CBlockIndex* pindexPrev;
         static int64 nStart;
-        static CBlock* pblock;
+        static CBlockTemplate* pblocktemplate;
         if (pindexPrev != pindexBest ||
             vchAux != vchAuxPrev ||
             (nTransactionsUpdated != nTransactionsUpdatedLast && GetTime() - nStart > 60))
@@ -265,9 +265,9 @@ Value getworkaux(const Array& params, bool fHelp)
             {
                 // Deallocate old blocks since they're obsolete now
                 mapNewBlock.clear();
-                BOOST_FOREACH(CBlock* pblock, vNewBlock)
-                    delete pblock;
-                vNewBlock.clear();
+                BOOST_FOREACH(CBlockTemplate* pblocktemplate, vNewBlockTemplate)
+                    delete pblocktemplate;
+                vNewBlockTemplate.clear();
             }
             nTransactionsUpdatedLast = nTransactionsUpdated;
             pindexPrev = pindexBest;
@@ -275,14 +275,12 @@ Value getworkaux(const Array& params, bool fHelp)
             nStart = GetTime();
 
             // Create new block
-            auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlock(reservekey));
-            if (!pblocktemplate.get())
-                throw JSONRPCError(RPC_MISC_ERROR, "Failed to create block");
-            pblock = &pblocktemplate->block;
-            if (!pblock)
+            pblocktemplate = CreateNewBlock(reservekey);
+            if (!pblocktemplate)
                 throw JSONRPCError(RPC_OUT_OF_MEMORY, "Out of memory");
-            vNewBlock.push_back(pblock);
+            vNewBlockTemplate.push_back(pblocktemplate);
         }
+        CBlock* pblock = &pblocktemplate->block;
 
         // Update nTime
         pblock->nTime = max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());
@@ -315,6 +313,7 @@ Value getworkaux(const Array& params, bool fHelp)
     {
         if (params[0].get_str() != "submit" && params[0].get_str() != "")
             throw JSONRPCError(RPC_INVALID_PARAMETER, "<aux> must be the empty string or 'submit' if work is being submitted");
+            
         // Parse parameters
         vector<unsigned char> vchData = ParseHex(params[1].get_str());
         if (vchData.size() != 128)
@@ -358,7 +357,7 @@ Value getworkaux(const Array& params, bool fHelp)
 
             CAuxPow pow(pblock->vtx[0]);
 
-            for (int i = 3 ; i < params.size() ; i++)
+            for (int i = 3 ; (unsigned int)i < params.size() ; i++)
             {
                 uint256 nHash;
                 nHash.SetHex(params[i].get_str());
@@ -408,7 +407,7 @@ Value getauxblock(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Skeincoin is downloading blocks...");
 
     static map<uint256, CBlock*> mapNewBlock;
-    static vector<CBlock*> vNewBlock;
+    static vector<CBlockTemplate*> vNewBlockTemplate;
     static CReserveKey reservekey(pwalletMain);
 
     if (params.size() == 0)
@@ -417,7 +416,9 @@ Value getauxblock(const Array& params, bool fHelp)
         static unsigned int nTransactionsUpdatedLast;
         static CBlockIndex* pindexPrev;
         static int64 nStart;
+        static CBlockTemplate* pblocktemplate;
         static CBlock* pblock;
+        
         if (pindexPrev != pindexBest ||
             (nTransactionsUpdated != nTransactionsUpdatedLast && GetTime() - nStart > 60))
         {
@@ -425,22 +426,24 @@ Value getauxblock(const Array& params, bool fHelp)
             {
                 // Deallocate old blocks since they're obsolete now
                 mapNewBlock.clear();
-                BOOST_FOREACH(CBlock* pblock, vNewBlock)
-                    delete pblock;
-                vNewBlock.clear();
+                BOOST_FOREACH(CBlockTemplate* pblocktemplate, vNewBlockTemplate)
+                    delete pblocktemplate;
+                vNewBlockTemplate.clear();
             }
             nTransactionsUpdatedLast = nTransactionsUpdated;
             pindexPrev = pindexBest;
             nStart = GetTime();
 
             // Create new block with nonce = 0 and extraNonce = 1
-            auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlock(reservekey));
-            if (!pblocktemplate.get())
-                throw JSONRPCError(RPC_MISC_ERROR, "Failed to create block");
+            pblocktemplate = CreateNewBlock(reservekey);
+            if (!pblocktemplate)
+                throw JSONRPCError(RPC_OUT_OF_MEMORY, "Out of memory");
+            vNewBlockTemplate.push_back(pblocktemplate);
+            
             pblock = &pblocktemplate->block;
             if (!pblock)
                 throw JSONRPCError(RPC_OUT_OF_MEMORY, "Out of memory");
-
+            
             // Update nTime
             pblock->nTime = max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());
             pblock->nNonce = 0;
@@ -454,10 +457,6 @@ Value getauxblock(const Array& params, bool fHelp)
 
             // Save
             mapNewBlock[pblock->GetHash()] = pblock;
-
-            if (!pblock)
-                throw JSONRPCError(RPC_OUT_OF_MEMORY, "Out of memory");
-            vNewBlock.push_back(pblock);
         }
 
         uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
