@@ -412,6 +412,8 @@ Value getauxblock(const Array& params, bool fHelp)
 
     if (params.size() == 0)
     {
+        printf("getauxblock: no params\n");
+        
         // Update block
         static unsigned int nTransactionsUpdatedLast;
         static CBlockIndex* pindexPrev;
@@ -465,10 +467,15 @@ Value getauxblock(const Array& params, bool fHelp)
         result.push_back(Pair("target",   HexStr(BEGIN(hashTarget), END(hashTarget))));
         result.push_back(Pair("hash", pblock->GetHash().GetHex()));
         result.push_back(Pair("chainid", pblock->GetChainID()));
+        
+        printf("getauxblock: hash=%s\n", pblock->GetHash().GetHex().c_str());
+        printf("getauxblock: chainid=%d\n", pblock->GetChainID());
+
         return result;
     }
     else
     {
+        printf("getauxblock: params: %s %s \n", params[0].get_str().c_str(), params[1].get_str().c_str());
         uint256 hash;
         hash.SetHex(params[0].get_str());
         vector<unsigned char> vchAuxPow = ParseHex(params[1].get_str());
@@ -476,17 +483,23 @@ Value getauxblock(const Array& params, bool fHelp)
         CAuxPow* pow = new CAuxPow();
         ss >> *pow;
         if (!mapNewBlock.count(hash))
+        {
+            printf("getauxblock: block not found\n");
             return ::error("getauxblock() : block not found");
+        }
 
         CBlock* pblock = mapNewBlock[hash];
         pblock->SetAuxPow(pow);
 
+        printf("getauxblock: checking work\n");
         if (!CheckWork(pblock, *pwalletMain, reservekey))
         {
+            printf("getauxblock: check work: false\n");
             return false;
         }
         else
         {
+            printf("getauxblock: check work: true\n");
             return true;
         }
     }
