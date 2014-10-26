@@ -4604,7 +4604,10 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
 
     if (hash > hashTarget)
+    {
+        printf("CheckWork insufficient hash: hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
         return false;
+    }
 
     //// debug print
     printf("SkeincoinMiner:\n");
