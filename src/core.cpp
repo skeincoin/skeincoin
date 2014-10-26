@@ -234,11 +234,6 @@ int GetAuxPowStartBlock()
         return 1000000; // Never on prodnet
 }
  
-int GetOurChainID()
-{
-    return 0x1234;
-}
-
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
 {
     CBigNum bnTarget;

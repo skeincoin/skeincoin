@@ -587,6 +587,11 @@ public:
     }
 };
 
+int GetOurChainID()
+{
+    return 0x0123;
+}
+
 enum
 {
     // primary version
@@ -651,7 +656,7 @@ public:
 
     void SetNull()
     {
-        nVersion = CBlockHeader::CURRENT_VERSION;
+        nVersion = CBlockHeader::CURRENT_VERSION | (GetOurChainID() * BLOCK_VERSION_CHAIN_START);
         hashPrevBlock = 0;
         hashMerkleRoot = 0;
         nTime = 0;
