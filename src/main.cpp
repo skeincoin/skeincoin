@@ -2244,7 +2244,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, int Height, bool f
         return state.DoS(100, error("CheckBlock() : size limits failed"));
 
     // Check proof of work matches claimed amount
-    if (fCheckPOW && !CheckProofOfWork(nHeight))
+    if (fCheckPOW && !block.CheckProofOfWork(Height))
         return state.DoS(50, error("CheckBlock() : proof of work failed"));
 
     // Check timestamp
@@ -2820,7 +2820,7 @@ bool VerifyDB(int nCheckLevel, int nCheckDepth)
         if (!ReadBlockFromDisk(block, pindex))
             return error("VerifyDB() : *** ReadBlockFromDisk failed at %d, hash=%s", pindex->nHeight, pindex->GetBlockHash().ToString().c_str());
         // check level 1: verify block validity
-        if (nCheckLevel >= 1 && !CheckBlock(block, state))
+        if (nCheckLevel >= 1 && !CheckBlock(block, state, pindex->nHeight))
             return error("VerifyDB() : *** found bad block at %d, hash=%s\n", pindex->nHeight, pindex->GetBlockHash().ToString().c_str());
         // check level 2: verify undo validity
         if (nCheckLevel >= 2 && pindex) {
