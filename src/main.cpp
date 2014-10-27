@@ -4619,7 +4619,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
             return error("AUX POW parent hash %s is not under target %s", auxpow->GetParentBlockHash().GetHex().c_str(), hashTarget.GetHex().c_str());
 
         //// debug print
-        printf("AUX proof-of-work found  \n     our hash: %s   \n  parent hash: %s  \n       target: %s\n",
+        printf("CheckWork: AUX proof-of-work found  \n     our hash: %s   \n  parent hash: %s  \n       target: %s\n",
                 hash.GetHex().c_str(),
                 auxpow->GetParentBlockHash().GetHex().c_str(),
                 hashTarget.GetHex().c_str());
@@ -4629,13 +4629,12 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         if (hash > hashTarget)
         {
-            printf("CheckWork insufficient hash: hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+            // printf("CheckWork insufficient hash: hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
             return false;
         }
     }
 
     //// debug print
-    printf("SkeincoinMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4644,7 +4643,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("SkeincoinMiner : generated block is stale");
+            return error("CheckWork: Generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4658,7 +4657,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("SkeincoinMiner : ProcessBlock, block not accepted");
+            return error("CheckWork: Block not accepted");
     }
 
     return true;
