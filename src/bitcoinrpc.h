@@ -211,4 +211,9 @@ extern json_spirit::Value gettxoutsetinfo(const json_spirit::Array& params, bool
 extern json_spirit::Value gettxout(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value verifychain(const json_spirit::Array& params, bool fHelp);
 
+extern json_spirit::Value getworkaux(const json_spirit::Array& params, bool fHelp);
+extern json_spirit::Value getauxblock(const json_spirit::Array& params, bool fHelp);
+extern json_spirit::Value buildmerkletree(const json_spirit::Array& params, bool fHelp);
+
+
 #endif

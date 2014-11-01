@@ -52,10 +52,10 @@ public:
         genesis.nNonce   = 2094010698;
         
         //// debug print
-        hashGenesisBlock = genesis.GetHash();
+        hashGenesisBlock = genesis.GetPoWHash();
         //while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
         //    if (++genesis.nNonce==0) break;
-        //    hashGenesisBlock = genesis.GetHash();
+        //    hashGenesisBlock = genesis.GetPoWHash();
         //}
 
         printf("%s\n", hashGenesisBlock.ToString().c_str());
@@ -69,10 +69,12 @@ public:
         vSeeds.push_back(CDNSSeedData("seed1.skeincoin.org", "seed1.skeincoin.org"));
         vSeeds.push_back(CDNSSeedData("seed2.skeincoin.org", "seed2.skeincoin.org"));
         vSeeds.push_back(CDNSSeedData("seed3.skeincoin.org", "seed3.skeincoin.org"));
-        vSeeds.push_back(CDNSSeedData("skeincoin.zapto.org", "skeincoin.zapto.org"));
-        vSeeds.push_back(CDNSSeedData("skeincoin.no-ip.org", "skeincoin.no-ip.org"));
-        vSeeds.push_back(CDNSSeedData("skeincoin.strangled.net", "skeincoin.strangled.net"));
-        vSeeds.push_back(CDNSSeedData("skeincoin.ignorelist.com", "skeincoin.ignorelist.com"));
+        vSeeds.push_back(CDNSSeedData("seed4.skeincoin.org", "seed4.skeincoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed5.skeincoin.org", "seed5.skeincoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed6.skeincoin.org", "seed6.skeincoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed7.skeincoin.org", "seed7.skeincoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed8.skeincoin.org", "seed8.skeincoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed.skeincoin.info", "seed.skeincoin.info"));
 
         base58Prefixes[PUBKEY_ADDRESS] = 63;
         base58Prefixes[SCRIPT_ADDRESS] = 12;
@@ -127,10 +129,10 @@ public:
         genesis.nNonce = 416003859;
                 
         //// debug print
-        hashGenesisBlock = genesis.GetHash();
+        hashGenesisBlock = genesis.GetPoWHash();
         //while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
         //    if (++genesis.nNonce==0) break;
-        //   hashGenesisBlock = genesis.GetHash();
+        //   hashGenesisBlock = genesis.GetPoWHash();
         //}
 
         printf("%s\n", hashGenesisBlock.ToString().c_str());
@@ -168,15 +170,15 @@ public:
         genesis.nTime = 1296688602;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 4;
-        hashGenesisBlock = genesis.GetHash();
+        hashGenesisBlock = genesis.GetPoWHash();
         nDefaultPort = 18444;
         strDataDir = "regtest";
         
         //// debug print
-        hashGenesisBlock = genesis.GetHash();
+        hashGenesisBlock = genesis.GetPoWHash();
         //while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
         //    if (++genesis.nNonce==0) break;
-        //    hashGenesisBlock = genesis.GetHash();
+        //    hashGenesisBlock = genesis.GetPoWHash();
         //}
 
         printf("%s\n", hashGenesisBlock.ToString().c_str());

@@ -95,7 +95,8 @@ OBJS= \
     obj/leveldb.o \
     obj/txdb.o \
     obj/chainparams.o \
-    obj/skein.o
+    obj/skein.o \
+    obj/auxpow.o
 
 all: skeincoind.exe
 
