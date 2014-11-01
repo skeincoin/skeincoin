@@ -236,7 +236,7 @@ int GetAuxPowStartBlock()
     if (TestNet())
         return 0; // Always on testnet
     else
-        return 328800; // Prodnet ~ 5 Nov 2014
+        return 331440; // Prodnet ~ Fri 7 Nov 2014
 }
  
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
