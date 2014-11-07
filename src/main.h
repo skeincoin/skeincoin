@@ -23,8 +23,6 @@ class CAddress;
 class CInv;
 class CNode;
 
-class CAuxPow;
-
 struct CBlockIndexWorkComparator;
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
@@ -167,11 +165,12 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet);
 CBlockTemplate* CreateNewBlock(CReserveKey& reservekey);
 /** Modify the extranonce in a block */
 void IncrementExtraNonce(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& nExtraNonce);
-void IncrementExtraNonceWithAux(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& nExtraNonce, int64& nPrevTime, std::vector<unsigned char>& vchAux);
 /** Do mining precalculation */
 void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash1);
 /** Check mined block */
 bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey);
+/** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
+bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 /** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
 unsigned int ComputeMinWork(unsigned int nBase, int64 nTime);
 /** Get the number of active peers */
@@ -606,7 +605,7 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
 bool AddToBlockIndex(CBlock& block, CValidationState& state, const CDiskBlockPos& pos);
 
 // Context-independent validity checks
-bool CheckBlock(const CBlock& block, CValidationState& state, int Height, bool fCheckPOW = true, bool fCheckMerkleRoot = true);
+bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW = true, bool fCheckMerkleRoot = true);
 
 // Store block on disk
 // if dbp is provided, the file is known to already reside on disk
@@ -735,9 +734,7 @@ public:
     unsigned int nBits;
     unsigned int nNonce;
 
-    // if this is an aux work block
-    boost::shared_ptr<CAuxPow> auxpow;
-    
+
     CBlockIndex()
     {
         phashBlock = NULL;
@@ -756,8 +753,6 @@ public:
         nTime          = 0;
         nBits          = 0;
         nNonce         = 0;
-        
-        auxpow.reset();
     }
 
     CBlockIndex(CBlockHeader& block)
@@ -778,8 +773,6 @@ public:
         nTime          = block.nTime;
         nBits          = block.nBits;
         nNonce         = block.nNonce;
-        
-        auxpow         = block.auxpow;
     }
 
     CDiskBlockPos GetBlockPos() const {
@@ -810,7 +803,6 @@ public:
         block.nTime          = nTime;
         block.nBits          = nBits;
         block.nNonce         = nNonce;
-        block.auxpow         = auxpow;
         return block;
     }
 
@@ -842,7 +834,10 @@ public:
         return nHeight+1 >= (int)vBlockIndexByHeight.size() ? NULL : vBlockIndexByHeight[nHeight+1];
     }
 
-    bool CheckIndex() const;
+    bool CheckIndex() const
+    {
+        return CheckProofOfWork(GetBlockHash(), nBits);
+    }
 
     enum { nMedianTimeSpan=11 };
 
@@ -955,7 +950,7 @@ public:
         block.nTime           = nTime;
         block.nBits           = nBits;
         block.nNonce          = nNonce;
-        return block.GetPoWHash();
+        return block.GetHash();
     }
 
 
@@ -972,6 +967,53 @@ public:
     void print() const
     {
         printf("%s\n", ToString().c_str());
+    }
+};
+
+/** Capture information about block/transaction validation */
+class CValidationState {
+private:
+    enum mode_state {
+        MODE_VALID,   // everything ok
+        MODE_INVALID, // network rule violation (DoS value may be set)
+        MODE_ERROR,   // run-time error
+    } mode;
+    int nDoS;
+public:
+    CValidationState() : mode(MODE_VALID), nDoS(0) {}
+    bool DoS(int level, bool ret = false) {
+        if (mode == MODE_ERROR)
+            return ret;
+        nDoS += level;
+        mode = MODE_INVALID;
+        return ret;
+    }
+    bool Invalid(bool ret = false) {
+        return DoS(0, ret);
+    }
+    bool Error() {
+        mode = MODE_ERROR;
+        return false;
+    }
+    bool Abort(const std::string &msg) {
+        AbortNode(msg);
+        return Error();
+    }
+    bool IsValid() {
+        return mode == MODE_VALID;
+    }
+    bool IsInvalid() {
+        return mode == MODE_INVALID;
+    }
+    bool IsError() {
+        return mode == MODE_ERROR;
+    }
+    bool IsInvalid(int &nDoSOut) {
+        if (IsInvalid()) {
+            nDoSOut = nDoS;
+            return true;
+        }
+        return false;
     }
 };
 

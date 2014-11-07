@@ -5,7 +5,6 @@
 
 #include "core.h"
 #include "util.h"
-#include "auxpow.h"
 
 std::string COutPoint::ToString() const
 {
@@ -226,94 +225,9 @@ bool CCoins::Spend(int nPos) {
     return Spend(out, undo);
 }
 
-int GetOurChainID()
-{
-    return 0x0123;
-}
-
-int GetAuxPowStartBlock()
-{
-    if (TestNet())
-        return 0; // Always on testnet
-    else
-        return 331440; // Prodnet ~ Fri 7 Nov 2014
-}
- 
-bool CheckProofOfWork(uint256 hash, unsigned int nBits)
-{
-    CBigNum bnTarget;
-    bnTarget.SetCompact(nBits);
-
-    // Check range
-    if (bnTarget <= 0 || bnTarget > Params().ProofOfWorkLimit())
-        return error("CheckProofOfWork() : nBits below minimum work");
-
-    // Check proof of work matches claimed amount
-    if (hash > bnTarget.getuint256())
-        return error("CheckProofOfWork() : hash doesn't match nBits");
-
-    return true;
-}
-
-uint256 CBlockHeader::GetPoWHash() const
-{
-    return HashSkein(BEGIN(nVersion), END(nNonce));
-}
-
-/*
 uint256 CBlockHeader::GetHash() const
 {
-    return Hash(BEGIN(nVersion), END(nNonce));
-}
-*/
-
-void CBlockHeader::SetAuxPow(CAuxPow* pow)
-{
-    if (pow != NULL)
-        nVersion |=  BLOCK_VERSION_AUXPOW;
-    else
-        nVersion &=  ~BLOCK_VERSION_AUXPOW;
-    auxpow.reset(pow);
-}
-
-bool CBlockHeader::CheckProofOfWork(int nHeight) const
-{
-    if (nHeight >= GetAuxPowStartBlock())
-    {
-        // Prevent same work from being submitted twice:
-        // - this block must have our chain ID
-        // - parent block must not have the same chain ID (see CAuxPow::Check)
-        // - index of this chain in chain merkle tree must be pre-determined (see CAuxPow::Check)
-        if (!TestNet() && nHeight != INT_MAX && GetChainID() != GetOurChainID())
-            return error("CheckProofOfWork() : block does not have our chain ID");
- 
-        if (auxpow.get() != NULL)
-        {
-            if (!auxpow->Check(GetPoWHash(), GetChainID()))
-                return error("CheckProofOfWork() : AUX POW is not valid");
-            // Check proof of work matches claimed amount
-            if (!::CheckProofOfWork(auxpow->GetParentBlockHash(), nBits))
-                return error("CheckProofOfWork() : AUX proof of work failed");
-        }
-        else
-        {
-            // Check proof of work matches claimed amount
-            if (!::CheckProofOfWork(GetPoWHash(), nBits))
-                return error("CheckProofOfWork() : proof of work failed");
-        }
-    }
-    else
-    {
-        if (auxpow.get() != NULL)
-        {
-            return error("CheckProofOfWork() : AUX POW is not allowed at this block");
-        }
- 
-        // Check proof of work matches claimed amount
-        if (!::CheckProofOfWork(GetPoWHash(), nBits))
-            return error("CheckProofOfWork() : proof of work failed");
-    }
-    return true;
+    return HashSkein(BEGIN(nVersion), END(nNonce));
 }
 
 uint256 CBlock::BuildMerkleTree() const
@@ -366,68 +280,10 @@ uint256 CBlock::CheckMerkleBranch(uint256 hash, const std::vector<uint256>& vMer
     return hash;
 }
 
-bool CBlock::CheckBlock(CValidationState &state, int nHeight, bool fCheckPOW) const
-{
-    // These are checks that are independent of context
-    // that can be verified before saving an orphan block.
-
-    // Size limits
-    if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
-        return state.DoS(100, error("CheckBlock() : size limits failed"));
-
-    // Check proof of work matches claimed amount
-    if (fCheckPOW && !CheckProofOfWork(nHeight))
-        return state.DoS(50, error("CheckBlock() : proof of work failed"));
-
-    // Check timestamp
-    if (GetBlockTime() > GetAdjustedTime() + 2 * 60 * 60)
-        return error("CheckBlock() : block timestamp too far in the future");
-
-    // First transaction must be coinbase, the rest must not be
-    if (vtx.empty() || !vtx[0].IsCoinBase())
-        return state.DoS(100, error("CheckBlock() : first tx is not coinbase"));
-    for (unsigned int i = 1; i < vtx.size(); i++)
-        if (vtx[i].IsCoinBase())
-            return state.DoS(100, error("CheckBlock() : more than one coinbase"));
-
-    // Check transactions
-    BOOST_FOREACH(const CTransaction& tx, vtx)
-        if (!CheckTransaction(tx, state))
-            return error("CheckBlock() : CheckTransaction failed");
-
-    // Build the merkle tree already. We need it anyway later, and it makes the
-    // block cache the transaction hashes, which means they don't need to be
-    // recalculated many times during this block's validation.
-    BuildMerkleTree();
-
-    // Check for duplicate txids. This is caught by ConnectInputs(),
-    // but catching it earlier avoids a potential DoS attack:
-    set<uint256> uniqueTx;
-    for (unsigned int i = 0; i < vtx.size(); i++) {
-        uniqueTx.insert(GetTxHash(i));
-    }
-    if (uniqueTx.size() != vtx.size())
-        return state.DoS(100, error("CheckBlock() : duplicate transaction"));
-
-    unsigned int nSigOps = 0;
-    BOOST_FOREACH(const CTransaction& tx, vtx)
-    {
-        nSigOps += GetLegacySigOpCount(tx);
-    }
-    if (nSigOps > MAX_BLOCK_SIGOPS)
-        return state.DoS(100, error("CheckBlock() : out-of-bounds SigOpCount"));
-
-    // Check merkle root
-    if (hashMerkleRoot != BuildMerkleTree())
-        return state.DoS(100, error("CheckBlock() : hashMerkleRoot mismatch"));
-
-    return true;
-}
-
 void CBlock::print() const
 {
     printf("CBlock(hash=%s, ver=%d, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%"PRIszu")\n",
-        GetPoWHash().ToString().c_str(),
+        GetHash().ToString().c_str(),
         nVersion,
         hashPrevBlock.ToString().c_str(),
         hashMerkleRoot.ToString().c_str(),

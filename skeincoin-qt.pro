@@ -217,9 +217,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/splashscreen.h \
     src/qt/intro.h \
     src/sph_skein.h \
-    src/sph_types.h \
-    src/auxpow_headers.h \
-    src/auxpow.h
+    src/sph_types.h
 
 SOURCES += src/qt/bitcoin.cpp \
     src/qt/bitcoingui.cpp \
@@ -291,8 +289,7 @@ SOURCES += src/qt/bitcoin.cpp \
     src/txdb.cpp \
     src/qt/splashscreen.cpp \
     src/qt/intro.cpp \
-    src/skein.c \
-    src/auxpow.cpp
+    src/skein.c
 
 RESOURCES += src/qt/bitcoin.qrc
 
