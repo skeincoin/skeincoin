@@ -222,7 +222,7 @@ Value listunspent(const Array& params, bool fHelp)
             "    \"address\" : \"address\",  (string) the skeincoin address\n"
             "    \"account\" : \"account\",  (string) The associated account, or \"\" for the default account\n"
             "    \"scriptPubKey\" : \"key\", (string) the script key\n"
-            "    \"amount\" : x.xxx,         (numeric) the transaction amount in btc\n"
+            "    \"amount\" : x.xxx,         (numeric) the transaction amount in skc\n"
             "    \"confirmations\" : n       (numeric) The number of confirmations\n"
             "  }\n"
             "  ,...\n"
@@ -230,8 +230,8 @@ Value listunspent(const Array& params, bool fHelp)
 
             "\nExamples\n"
             + HelpExampleCli("listunspent", "")
-            + HelpExampleCli("listunspent", "6 9999999 \"[\\\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\\\",\\\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\\\"]\"")
-            + HelpExampleRpc("listunspent", "6, 9999999 \"[\\\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\\\",\\\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\\\"]\"")
+            + HelpExampleCli("listunspent", "6 9999999 \"[\\\"SVSsdRkHEy9qAwVXvVFKmbo9t39eFrKi7c\\\",\\\"SdFM8G9PsKgLiyNHqWbFLoRuSrpT5FbWi6\\\"]\"")
+            + HelpExampleRpc("listunspent", "6, 9999999 \"[\\\"SVSsdRkHEy9qAwVXvVFKmbo9t39eFrKi7c\\\",\\\"SdFM8G9PsKgLiyNHqWbFLoRuSrpT5FbWi6\\\"]\"")
         );
 
     RPCTypeCheck(params, list_of(int_type)(int_type)(array_type));
@@ -332,7 +332,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
             "     ]\n"
             "2. \"addresses\"           (string, required) a json object with addresses as keys and amounts as values\n"
             "    {\n"
-            "      \"address\": x.xxx   (numeric, required) The key is the skeincoin address, the value is the btc amount\n"
+            "      \"address\": x.xxx   (numeric, required) The key is the skeincoin address, the value is the skc amount\n"
             "      ,...\n"
             "    }\n"
 
@@ -429,7 +429,7 @@ Value decoderawtransaction(const Array& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc\"   (string) skeincoin address\n"
+            "           \"SdFM8G9PsKgLiyNHqWbFLoRuSrpT5FbWi6\"   (string) skeincoin address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"

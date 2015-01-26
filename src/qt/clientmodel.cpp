@@ -110,8 +110,8 @@ void ClientModel::updateTimer()
         cachedReindexing = fReindex;
         cachedImporting = fImporting;
 
-        emit numBlocksChanged(newNumBlocks);
-    }
+		emit numBlocksChanged(newNumBlocks);
+	}
 
     emit bytesChanged(getTotalBytesRecv(), getTotalBytesSent());
 }
