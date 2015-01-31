@@ -5,7 +5,7 @@ www.skeincoin.org
 
 Copyright (c) 2009-2014 Bitcoin Developers,
 Copyright (c) 2013-2014 Zetacoin Developers,
-Copyright (c) 2013-2014 Skeincoin Developers
+Copyright (c) 2013-2015 Skeincoin Developers
 
 What is Skeincoin?
 -----------------
