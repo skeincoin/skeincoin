@@ -1,11 +1,12 @@
 *.tar.gz
 
 *.exe
-src/bitcoin
-src/bitcoind
-src/bitcoin-cli
+src/skeincoin
+src/skeincoind
+src/skeincoin-cli
 src/test/test_bitcoin
 src/qt/test/test_bitcoin-qt
+src/qt/skeincoin-qt
 
 Makefile.in
 aclocal.m4
