@@ -41,7 +41,7 @@ public:
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
-		
+
         const char* pszTimestamp = "Guardian - 1 Nov 2013 - RBS places troublesome assets worth £38bn in internal 'bad bank'";
         CTransaction txNew;
         txNew.vin.resize(1);
@@ -67,13 +67,13 @@ public:
         assert(hashGenesisBlock == uint256("0x0000046cebed69de151ada93a60cb8a5f9490a196399abe714bb83ad5b20f985"));
         assert(genesis.hashMerkleRoot == uint256("0xa4b385e3bc4907593d15be30d69cb28439684893f4dc2e637503cf3156b149a3"));
 
-        vSeeds.push_back(CDNSSeedData("seed1.skeincoin.org", "seed1.skeincoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed2.skeincoin.org", "seed2.skeincoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed3.skeincoin.org", "seed3.skeincoin.org"));
-        vSeeds.push_back(CDNSSeedData("skeincoin.zapto.org", "skeincoin.zapto.org"));
-        vSeeds.push_back(CDNSSeedData("skeincoin.no-ip.org", "skeincoin.no-ip.org"));
-        vSeeds.push_back(CDNSSeedData("skeincoin.strangled.net", "skeincoin.strangled.net"));
-        vSeeds.push_back(CDNSSeedData("skeincoin.ignorelist.com", "skeincoin.ignorelist.com"));
+        vSeeds.push_back(CDNSSeedData("seed-a.skeincoin.net", "seed-a.skeincoin.net"));
+        vSeeds.push_back(CDNSSeedData("seed-b.skeincoin.net", "seed-b.skeincoin.net"));
+        vSeeds.push_back(CDNSSeedData("seed-c.skeincoin.net", "seed-c.skeincoin.net"));
+        vSeeds.push_back(CDNSSeedData("seed-d.skeincoin.net", "seed-d.skeincoin.net"));
+        vSeeds.push_back(CDNSSeedData("skein1.ignorelist.com", "skein1.ignorelist.com"));
+        vSeeds.push_back(CDNSSeedData("skein2.ignorelist.com", "skein2.ignorelist.com"));
+        vSeeds.push_back(CDNSSeedData("skein3.ignorelist.com", "skein3.ignorelist.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(63);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(12);
