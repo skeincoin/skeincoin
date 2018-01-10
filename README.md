@@ -1,13 +1,13 @@
 Skeincoin integration/staging tree
 ==================================
 
-www.skeincoin.org
+www.skeincoin.co
 
 Copyright (c) 2009-2014 Bitcoin Developers,
 
 Copyright (c) 2013-2014 Zetacoin Developers,
 
-Copyright (c) 2013-2015 Skeincoin Developers
+Copyright (c) 2013-2018 Skeincoin Developers
 
 
 
@@ -21,7 +21,13 @@ out collectively by the network. Skeincoin is also the name of the open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Skeincoin client sofware, see http://www.skeincoin.org/
+the Skeincoin client sofware, see http://www.skeincoin.co/
+
+For latest news and a announcements follow us on Twitter: https://twitter.com/Skeincoin
+
+Public chatroom on Telegram: https://t.me/joinchat/CqeByhFOKhuFmMjWYN356g
+
+Skeincoin can be traded on Cryptopia: https://www.cryptopia.co.nz/Exchange/?market=SKC_BTC
 
 License
 -------
