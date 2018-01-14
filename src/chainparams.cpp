@@ -75,11 +75,11 @@ public:
         vSeeds.push_back(CDNSSeedData("skein2.ignorelist.com", "skein2.ignorelist.com"));
         vSeeds.push_back(CDNSSeedData("skein3.ignorelist.com", "skein3.ignorelist.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(63);
-        base58Prefixes[SCRIPT_ADDRESS] = list_of(12);
-        base58Prefixes[SECRET_KEY] = list_of(226);
-        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E);
-        base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,63);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,12);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1,226);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();;
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();;
 
         // Convert the pnSeeds array into usable address objects.
         for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
@@ -143,11 +143,11 @@ public:
         vSeeds.clear();
         // vSeeds.push_back(CDNSSeedData("skeincoin.test", "test.skeincoin.org"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(56);
-        base58Prefixes[SCRIPT_ADDRESS] = list_of(188);
-        base58Prefixes[SECRET_KEY] = list_of(237);
-        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x35)(0x87)(0xCF);
-        base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x35)(0x83)(0x94);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,56);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,88);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1,237);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
     }
     virtual Network NetworkID() const { return CChainParams::TESTNET; }
 };
@@ -181,9 +181,9 @@ public:
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(0);
-        base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
-        base58Prefixes[SECRET_KEY] = list_of(128);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1,128);
     }
 
     virtual bool RequireRPCPassword() const { return false; }
