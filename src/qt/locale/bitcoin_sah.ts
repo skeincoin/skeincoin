@@ -1,13 +1,6 @@
 <TS language="sah" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    </context>
-<context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Аадырыскын уларытаргар иккитэ баттаа</translation>
-    </message>
     </context>
 <context>
     <name>AddressTableModel</name>
@@ -47,6 +40,9 @@
     </context>
 <context>
     <name>PaymentServer</name>
+    </context>
+<context>
+    <name>PeerTableModel</name>
     </context>
 <context>
     <name>QObject</name>
@@ -95,6 +91,9 @@
     </context>
 <context>
     <name>TransactionView</name>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
     <name>WalletFrame</name>

@@ -1,36 +1,29 @@
 <TS language="pam" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Metung ya ining experimental software.
-Me-distribute ya lalam na ning lisensya na ning MIT/X11 software, lawan ye ing makayabeng file COPYING o http://www.opensource.org/licenses/mit-license.php.
-Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project para gamit king OpenSSL Toolkit(http://www.openssl.org/) at cryptographic software a sinulat ng Eric Young (eay@cryptsoft.com) at UPnp software a sinulat ng Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Karapatan ning Pamangopya</translation>
-    </message>
-    </context>
-<context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Pindutan meng makatidduang besis ban ayalilan me ing address o label</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>I-right click ban alilan ing address o libel</translation>
     </message>
     <message>
         <source>Create a new address</source>
         <translation>Maglalang kang bayung address</translation>
     </message>
     <message>
+        <source>&amp;New</source>
+        <translation>&amp;Bayu</translation>
+    </message>
+    <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Kopyan me ing salukuyan at makipiling address keng system clipboard</translation>
+    </message>
+    <message>
+        <source>&amp;Copy</source>
+        <translation>&amp;Kopyan</translation>
+    </message>
+    <message>
+        <source>C&amp;lose</source>
+        <translation>I&amp;sara</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -45,8 +38,32 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
         <translation>&amp;Ilako</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Reni reng kekang Bitcoin address king pamagpadalang kabayaran. Lawan mulang masalese reng alaga ampo ing address na ning tumanggap bayu ka magpadalang barya.</translation>
+        <source>Choose the address to send coins to</source>
+        <translation>Pilinan ing address a magpadalang coins kang</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Pilinan ing address a tumanggap coins a atin</translation>
+    </message>
+    <message>
+        <source>C&amp;hoose</source>
+        <translation>P&amp;ilinan</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>Address king pamag-Padala</translation>
+    </message>
+    <message>
+        <source>Receiving addresses</source>
+        <translation>Address king pamag-Tanggap</translation>
+    </message>
+    <message>
+        <source>These are your Skeincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Reni reng kekang Skeincoin address king pamagpadalang kabayaran. Lawan mulang masalese reng alaga ampo ing address na ning tumanggap bayu ka magpadalang barya.</translation>
+    </message>
+    <message>
+        <source>These are your Skeincoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Reni reng kekang Skeincoin addresses keng pamananggap bayad. Rerekomenda mi na gumamit kang bayung address keng balang transaksiyon.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -95,10 +112,6 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
         <translation>Pasibayuan ya ing bayung passphrase</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Palub ye ing bayung passphrase king wallet.&lt;br/&gt;Maliari pu sanang gumamit kayung passphrase a maki&lt;/b&gt; 10 or dakal pang miyayaliuang characters&lt;/b&gt;, o ualu o dakal pang salita&lt;/b&gt;</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>I-encrypt ye ing wallet</translation>
     </message>
@@ -131,8 +144,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
         <translation>Kumpirman ya ing wallet encryption</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG BITCOINS&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
+        <translation>Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG SKEINCOINS&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -151,8 +164,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
         <translation>Me-encrypt ne ing wallet</translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Ing Bitcoin ngeni magsara ya ban ayari ing proseso ning pamag-encrypt. Tandanan yu king pamag-encrypt wallet, ali nala aprotektan king kabuuan reng bitcoins yu kareng malware a kasalunsungan atiu kareng computer yu.</translation>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
+        <translation>Ing Skeincoin ngeni magsara ya ban ayari ing proseso ning pamag-encrypt. Tandanan yu king pamag-encrypt wallet, ali nala aprotektan king kabuuan reng skeincoins yu kareng malware a kasalunsungan atiu kareng computer yu.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -218,10 +231,6 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
         <translation>Tuknangan ing aplikasyon</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation>Ipakit ing impormasyun tungkul king Bitcoin</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>Tungkul &amp;Qt</translation>
     </message>
@@ -246,12 +255,12 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
         <translation>&amp;Alilan ing Passphrase...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Magpadalang barya king Bitcoin address</translation>
+        <source>Send coins to a Skeincoin address</source>
+        <translation>Magpadalang barya king Skeincoin address</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation>Alilan ing pipamilian konpigurasion para keng Bitcoin</translation>
+        <source>Modify configuration options for Skeincoin</source>
+        <translation>Alilan ing pipamilian konpigurasion para keng Skeincoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -274,7 +283,7 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
         <translation>&amp;Beripikan ing message...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>Bitcoin</translation>
     </message>
     <message>
@@ -306,36 +315,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
         <translation>Gamit para king Tabs</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
-    </message>
-    <message>
-        <source>Bitcoin Core</source>
-        <translation>Kapilubluban ning Bitcoin</translation>
-    </message>
-    <message>
-        <source>Bitcoin client</source>
-        <translation>Bitcoin client</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n ya ing aktibong koneksion keng Bitcoin network</numerusform><numerusform>%n lareng aktibong koneksion keng Bitcoin network</numerusform></translation>
-    </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Me-prosesu %1 kareng %2 (me-estima) blocks ning kasalesayan ning transaksion.</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n oras</numerusform><numerusform>%n oras</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n aldo</numerusform><numerusform>%n aldo</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n dominggu</numerusform><numerusform>%n dominggu</numerusform></translation>
+        <source>Skeincoin Core</source>
+        <translation>Kapilubluban ning Skeincoin</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -355,7 +336,7 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <source>Information</source>
-        <translation>Impormasion</translation>
+        <translation>&amp;Impormasion</translation>
     </message>
     <message>
         <source>Up to date</source>
@@ -393,10 +374,6 @@ Address: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Maka-&lt;b&gt;encrypt&lt;/b&gt; ya ing wallet at kasalukuyan yang maka-&lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Atin kamalian a milyari. Ali ne magsilbing sumulung pa ing Bitcoin at kailangan na ng tuknang.</translation>
-    </message>
 </context>
 <context>
     <name>ClientModel</name>
@@ -410,10 +387,6 @@ Address: %4
     <message>
         <source>Amount</source>
         <translation>Alaga</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Address</translation>
     </message>
     <message>
         <source>Date</source>
@@ -475,8 +448,8 @@ Address: %4
         <translation>Ing pepalub yung address "%1" ati na yu king aklat dareng address</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Ing pepalub yung address "%1" ali ya katanggap-tanggap a Bitcoin address.</translation>
+        <source>The entered address "%1" is not a valid Skeincoin address.</source>
+        <translation>Ing pepalub yung address "%1" ali ya katanggap-tanggap a Skeincoin address.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -493,12 +466,16 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Kapilubluban ning Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>Kapilubluban ning Skeincoin</translation>
     </message>
     <message>
         <source>version</source>
         <translation>bersion</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>Pipamilian command-line</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -532,8 +509,8 @@ Address: %4
         <translation>Malaus ka</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>Kapilubluban ning Skeincoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -554,24 +531,20 @@ Address: %4
         <translation>&amp;Pun</translation>
     </message>
     <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Mamayad &amp;bayad para king transaksion </translation>
+        <source>Automatically start Skeincoin after logging in to the system.</source>
+        <translation>Umpisan yang antimu ing Skeincoin kaibat mekapag-log in king sistema.</translation>
     </message>
     <message>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
-        <translation>Umpisan yang antimu ing Bitcoin kaibat mekapag-log in king sistema.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Bitcoin on system login</source>
-        <translation>&amp;Umpisan ya ing Bitcoin king pamag-log-in na ning sistema.</translation>
+        <source>&amp;Start Skeincoin on system login</source>
+        <translation>&amp;Umpisan ya ing Skeincoin king pamag-log-in na ning sistema.</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ibuklat yang antimanu ing Bitcoin client port king router. Gagana yamu ini istung ing router mu susuporta yang UPnP at magsilbi ya.</translation>
+        <source>Automatically open the Skeincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ibuklat yang antimanu ing Skeincoin client port king router. Gagana yamu ini istung ing router mu susuporta yang UPnP at magsilbi ya.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -588,14 +561,6 @@ Address: %4
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Port na ning proxy(e.g. 9050)</translation>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>&amp;Bersion na ning SOCKS</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>Bersion a SOCKS ning proxy (e.g 5)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -626,8 +591,8 @@ Address: %4
         <translation>Amanu na ning user interface:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation>Ing amanu na ning user interface maliari yang i-ayus o ilage keni. Ing ayus a ini magsilbi yamu istung pesibayuan meng pasibayu ing Bitcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Skeincoin.</source>
+        <translation>Ing amanu na ning user interface maliari yang i-ayus o ilage keni. Ing ayus a ini magsilbi yamu istung pesibayuan meng pasibayu ing Skeincoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -636,14 +601,6 @@ Address: %4
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Pilinan ing default subdivision unit a ipalto o ipakit king interface at istung magpadala kang barya.</translation>
-    </message>
-    <message>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
-        <translation>Ipakit man ing Bitcoin address king listahan naning transaksion o ali.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Ipakit ing address king listahan naning transaksion</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -669,12 +626,8 @@ Address: %4
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Bitcoin network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Wallet</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Skeincoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Skeincoin network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -701,10 +654,6 @@ Address: %4
         <translation>Ing kekang kasalungsungan kabuuang balanse</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Reng kapilan pamung transaksion&lt;/b&gt;</translation>
-    </message>
-    <message>
         <source>out of sync</source>
         <translation>ali ya maka-sync</translation>
     </message>
@@ -713,16 +662,19 @@ Address: %4
     <name>PaymentServer</name>
     </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Amount</source>
+        <translation>Alaga</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Magpalub kang Bitcoin address(e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     </context>
@@ -769,10 +721,6 @@ Address: %4
         <translation>Kasalungsungan bilang dareng blocks</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Estima kareng kabuuan dareng blocks</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>Tatauling oras na ning block</translation>
     </message>
@@ -797,16 +745,16 @@ Address: %4
         <translation>Debug log file</translation>
     </message>
     <message>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ibuklat ing Bitcoin debug log file menibat king kasalungsungan data directory. Magluat ya ining pilan segundu para kareng mamaragul a log files.</translation>
+        <source>Open the Skeincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ibuklat ing Skeincoin debug log file menibat king kasalungsungan data directory. Magluat ya ining pilan segundu para kareng mamaragul a log files.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>I-Clear ing console</translation>
     </message>
     <message>
-        <source>Welcome to the Bitcoin RPC console.</source>
-        <translation>Malaus kayu king Bitcoin RPC console.</translation>
+        <source>Welcome to the Skeincoin RPC console.</source>
+        <translation>Malaus kayu king Skeincoin RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -948,10 +896,6 @@ Address: %4
         <translation>Ibayad &amp;kang:</translation>
     </message>
     <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ing address nung nokarin ipadala ya ing kabayaran (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Magpalub kang label para king address a ini ban a-iabe me king aklat dareng address</translation>
     </message>
@@ -990,16 +934,12 @@ Address: %4
         <translation>Maliari kang mamirmang mensayi king kekang address bilang patune na keka ya ini. Mimingat mu king pamag-pirmang  e malino uling mapalyari kang mabiktimang phishing attack a manloku keka na pirman me ing sarili mu para king karela. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ing address ban a -pirman ya ing mensayi kayabe ning (e.g.1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Idikit ing address menibat clipboard</translation>
+        <translation>Idikit ing address menibat king clipboard</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -1018,8 +958,8 @@ Address: %4
         <translation>Kopyan ing kasalungsungan pirma king system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Pirman ing mensayi ban patune na keka ya ining Bitcoin address</translation>
+        <source>Sign the message to prove you own this Skeincoin address</source>
+        <translation>Pirman ing mensayi ban patune na keka ya ining Skeincoin address</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1038,12 +978,8 @@ Address: %4
         <translation>&amp;Beripikan ing Mensayi</translation>
     </message>
     <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ing address na ning mensayi nung nokarin me pirma ya ini (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Bitcoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Skeincoin address</source>
+        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Skeincoin address</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1052,10 +988,6 @@ Address: %4
     <message>
         <source>Reset all verify message fields</source>
         <translation>Ibalik king dati reng ngan fields na ning pamag beripikang mensayi</translation>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Magpalub kang Bitcoin address(e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -1113,8 +1045,8 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Kapilubluban ning Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>Kapilubluban ning Skeincoin</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -1204,7 +1136,7 @@ Address: %4
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>ID ning Transaksion</translation>
+        <translation>ID</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -1259,10 +1191,6 @@ Address: %4
     <message>
         <source>Address</source>
         <translation>Address</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Alaga</translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -1428,10 +1356,6 @@ Address: %4
         <translation>Address</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Alaga</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -1444,6 +1368,9 @@ Address: %4
         <translation>para kang</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     </context>
@@ -1460,40 +1387,12 @@ Address: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Pamanggamit:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Listahan dareng commands</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Maniauad saup para kareng command</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Pipamilian:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation>Pilinan ing configuration file(default: bitcoin.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Pilinan ing pid file(default: bitcoind.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Pilinan ing data directory</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Makiramdam king koneksion king &lt;port&gt;(default: 8333 o testnet: 18333)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Mag-maintain peka &lt;n&gt; koneksion keng peers (default: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -1502,18 +1401,6 @@ Address: %4
     <message>
         <source>Specify your own public address</source>
         <translation>Sabyan me ing kekang pampublikong address</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Threshold for disconnecting misbehaving peers (default: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Atin kamalian a milyari kabang ayusan ya ing RPC port %u para keng pamakiramdam king IPv4: %s</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -1534,10 +1421,6 @@ Address: %4
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Kapabaluan: Sobra ya katas ing makalage king -paytxfee. Ini ing maging bayad mu para king bayad na ning transaksion istung pepadala me ing transaksion a ini.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
-        <translation>Kapabaluan: Maliaring pakilawe ing oras at aldo a makalage king kekayung kompyuter nung istu la! Istung ing oras yu mali ya ali ya gumanang masalese ing Bitcoin.</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -1572,80 +1455,16 @@ Address: %4
         <translation>Kamalian: Mababa ne ing espasyu king disk!</translation>
     </message>
     <message>
-        <source>Error: system error: </source>
-        <translation>Kamalian: kamalian na ning sistema:</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Memali ya ing pamakiramdam kareng gang nanung port. Gamita me ini -listen=0 nung buri me ini.</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Me-mali king pamagbasa king impormasion ning block</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Me-mali king pamagbasa keng block</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Me-mali para i-sync ing block index</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Me-mali king pamanyulat king block index</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Me-mali king pamanyulat king block info</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Me-mali king pamanyulat block</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Me-mali king pamanyulat king file info</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>Me-mali king pamanyulat king coin database</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Me-mali king pamanyulat king index ning transaksion</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>Me-mali king pamanyulat king undo data</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Mantun peers gamit ing pamamantun DNS (default: 1 unless -connect)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Pilan la reng block a lawan keng umpisa (default: 288, 0 = all)</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>&amp;Impormasion</translation>
     </message>
     <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Pipamilian ning SSL: (lawen ye ing Bitcoin Wiki para king SSL setup instructions)</translation>
-    </message>
-    <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Magpadalang trace/debug info okeng console kesa keng debug.log file</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Ilage ing pekaditak a dagul na ning block king bytes (default: 0)</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Kamalian ning sistema:</translation>
     </message>
     <message>
         <source>Transaction too large</source>
@@ -1664,20 +1483,8 @@ Address: %4
         <translation>Kapabaluan: Ing bersioin a ini laus ne, kailangan nang mag-upgrade!</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>bersion</translation>
-    </message>
-    <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Password para king JSON-RPC koneksion</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Payagan ya i JSON-RPC koneksion para king metung a IP address</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Magpadalang command king node a gagana king &lt;ip&gt;(default: 127.0.0.1)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
@@ -1688,10 +1495,6 @@ Address: %4
         <translation>I-upgrade ing wallet king pekabayung porma</translation>
     </message>
     <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>I-set ing key pool size king &lt;n&gt;(default: 100)</translation>
-    </message>
-    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>I-scan pasibayu ing block chain para kareng mauaualang transaksion</translation>
     </message>
@@ -1700,20 +1503,8 @@ Address: %4
         <translation>Gumamit OpenSSL(https) para king JSON-RPC koneksion</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Server certificate file (default: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Server private key (default: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Ining saup a mensayi</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Ali ya magsilbing mag-bind keng %s kening kompyuter a ini (bind returned error %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -1728,14 +1519,6 @@ Address: %4
         <translation>Me-mali ya ing pamag-load king wallet.dat: Me-corrupt ya ing wallet</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>Me-mali ya ing pamag-load na ning wallet.dat: Ing wallet mangailangan yang bayung bersion na ning Bitcoin</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
-        <translation>Ing wallet mangailangan yang misulat pasibayu: Umpisan yang pasibayu ing Bitcoin ban ma-kumpleto ya</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>Me-mali ya ing pamag-load king wallet.dat</translation>
     </message>
@@ -1748,10 +1531,6 @@ Address: %4
         <translation>E kilalang network ing mepili king -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>E kilalang -socks proxy version requested: %i</translation>
-    </message>
-    <message>
         <source>Cannot resolve -bind address: '%s'</source>
         <translation>Eya me-resolve ing -bind address: '%s'</translation>
     </message>
@@ -1762,10 +1541,6 @@ Address: %4
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
         <translation>Eya maliari ing alaga keng -paytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Ing alaga e ya katanggap-tanggap</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -1800,20 +1575,8 @@ Address: %4
         <translation>Yari ne ing pamag-load</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Para agamit ing %s a pimamilian</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Mali</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Dapat meng ilage ing rpcpassword=&lt;password&gt; king configuration file:
-%s
-Nung ing file ala ya, gawa ka gamit ing owner-readable-only file permissions.</translation>
     </message>
 </context>
 </TS>

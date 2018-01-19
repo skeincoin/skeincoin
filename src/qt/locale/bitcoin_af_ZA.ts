@@ -1,13 +1,6 @@
 <TS language="af_ZA" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    </context>
-<context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Dubbel-klik om die adres of etiket te wysig</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>Skep 'n nuwe adres</translation>
@@ -49,10 +42,6 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>Herhaal nuwe wagwoord</translation>
-    </message>
-    <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Tik die nuwe wagwoord vir die beursie in.&lt;br/&gt;Gebruik asseblief 'n wagwoord van &lt;b&gt;ten minste 10 ewekansige karakters&lt;/b&gt;, of &lt;b&gt;agt (8) of meer woorde.&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -146,10 +135,6 @@
         <translation>Sluit af</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation>Wys inligting oor Bitcoin</translation>
-    </message>
-    <message>
         <source>Show information about Qt</source>
         <translation>Wys inligting oor Qt</translation>
     </message>
@@ -158,7 +143,7 @@
         <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>Bitcoin</translation>
     </message>
     <message>
@@ -180,10 +165,6 @@
     <message>
         <source>Tabs toolbar</source>
         <translation>Blad nutsbalk</translation>
-    </message>
-    <message>
-        <source>Bitcoin client</source>
-        <translation>Bitcoin klient</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -214,10 +195,6 @@
     <message>
         <source>Amount</source>
         <translation>Bedrag</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adres</translation>
     </message>
     <message>
         <source>Date</source>
@@ -272,10 +249,6 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
@@ -296,29 +269,20 @@
         <source>Form</source>
         <translation>Vorm</translation>
     </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Beursie</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Onlangse transaksies&lt;/b&gt;</translation>
-    </message>
     </context>
 <context>
     <name>PaymentServer</name>
     </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
     </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Die adres waarheen die betaling gestuur moet word (b.v. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     </context>
@@ -412,10 +376,6 @@
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Die adres waarheen die betaling gestuur moet word (b.v. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Message:</source>
         <translation>Boodskap:</translation>
     </message>
@@ -436,10 +396,6 @@
     <message>
         <source>Sign &amp;Message</source>
         <translation>Teken &amp;Boodskap</translation>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Die adres waarheen die betaling gestuur moet word (b.v. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     </context>
 <context>
@@ -531,10 +487,6 @@
     <message>
         <source>Address</source>
         <translation>Adres</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Bedrag</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -648,10 +600,6 @@
         <translation>Adres</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Bedrag</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -664,6 +612,9 @@
         <translation>aan</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     </context>
@@ -680,20 +631,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Gebruik:</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Opsies:</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Luister vir konneksies op &lt;port&gt; (standaard: 8333 of testnet: 18333)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Onderhou op die meeste &lt;n&gt; konneksies na eweknieë (standaard: 125)</translation>
     </message>
     <message>
         <source>Use the test network</source>
@@ -708,20 +647,12 @@
         <translation>Informasie</translation>
     </message>
     <message>
-        <source>System error: </source>
-        <translation>Sisteem fout:</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Hierdie help boodskap</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
         <translation>Laai adresse...</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Ongeldige bedrag</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -743,5 +674,5 @@
         <source>Error</source>
         <translation>Fout</translation>
     </message>
-    </context>
+</context>
 </TS>

@@ -1,33 +1,6 @@
 <TS language="es_MX" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About Bitcoin Core</source>
-        <translation>Acerca de Bitcoin Core</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Bitcoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Bitcoin Core&lt;/b&gt; versión</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Copyright</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Los desarrolladores de Bitcoin Core</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-</context>
-<context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Haga doble clic para editar el domicilio o la etiqueta</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>Crear una dirección nueva</translation>
@@ -89,12 +62,12 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son tus direcciones de Bitcoin para enviar pagos. Siempre revise la cantidad y la dirección receptora antes de enviar monedas</translation>
+        <source>These are your Skeincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son tus direcciones de Skeincoin para enviar pagos. Siempre revise la cantidad y la dirección receptora antes de enviar monedas</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son tus direcciones Bitcoin para recibir pagos. Es recomendado usar una nueva dirección receptora para cada transacción.</translation>
+        <source>These are your Skeincoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son tus direcciones Skeincoin para recibir pagos. Es recomendado usar una nueva dirección receptora para cada transacción.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -114,13 +87,9 @@
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Exportación fallida</translation>
+        <translation>Fallo en la exportación</translation>
     </message>
-    <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>Ocurrio un error al intentar guardar la lista de direcciones en %1</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -151,12 +120,8 @@
         <translation>Repita la nueva contraseña</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Ingrese la nueva contraseña a la cartera&lt;br/&gt;Por favor use una contraseña de&lt;b&gt;10 o más caracteres aleatorios&lt;/b&gt; o &lt;b&gt;ocho o más palabras&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
-        <translation>Encriptar cartera.</translation>
+        <translation>Cartera encriptada.</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
@@ -172,7 +137,7 @@
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Desencriptar cartera</translation>
+        <translation>Desencriptar la cartera</translation>
     </message>
     <message>
         <source>Change passphrase</source>
@@ -187,8 +152,8 @@
         <translation>Confirmar la encriptación de cartera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Advertencia: Si encripta su cartera y pierde su contraseña, &lt;b&gt;PERDERÁ TODOS SUS BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
+        <translation>Advertencia: Si encripta su cartera y pierde su contraseña, &lt;b&gt;PERDERÁ TODOS SUS SKEINCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -203,12 +168,12 @@
         <translation>Cartera encriptada</translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Bitcoin se cerrará para finalizar el proceso de encriptación. Recuerda que encriptar tu cartera no protege completamente a tus bitcoins de ser robadas por malware infectando tu computadora.</translation>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
+        <translation>Skeincoin se cerrará para finalizar el proceso de encriptación. Recuerda que encriptar tu cartera no protege completamente a tus skeincoins de ser robadas por malware infectando tu computadora.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Encriptación de la cartera fallida</translation>
+        <translation>La encriptación de la cartera falló</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -220,11 +185,11 @@
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>El desbloqueo de la cartera falló</translation>
+        <translation>El desbloqueo de la cartera Fallo</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>La contraseña ingresada para la desencriptación de la cartera es incorrecto</translation>
+        <translation>La contraseña ingresada para la des encriptación de la cartera es incorrecto</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
@@ -274,10 +239,6 @@
         <translation>Salir de la aplicación</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation>Mostrar información acerca de Bitcoin</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>Acerca de &amp;Qt</translation>
     </message>
@@ -322,12 +283,12 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección Bitcoin</translation>
+        <source>Send coins to a Skeincoin address</source>
+        <translation>Enviar monedas a una dirección Skeincoin</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation>Modificar las opciones de configuración de Bitcoin</translation>
+        <source>Modify configuration options for Skeincoin</source>
+        <translation>Modificar las opciones de configuración de Skeincoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -366,20 +327,20 @@
         <translation>Pestañas</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>nucleo Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>nucleo Skeincoin</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>opciones de la &amp;Linea de comandos</translation>
     </message>
     <message>
-        <source>Show the Bitcoin Core help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Mostrar mensaje de ayuda del nucleo de Bitcoin para optener una lista con los posibles comandos  de Bitcoin</translation>
+        <source>Show the Skeincoin Core help message to get a list with possible Skeincoin command-line options</source>
+        <translation>Mostrar mensaje de ayuda del nucleo de Skeincoin para optener una lista con los posibles comandos  de Skeincoin</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n Activar conexión a la red de Bitcoin</numerusform><numerusform>%n Activar conexiones a la red de Bitcoin</numerusform></translation>
+        <source>%n active connection(s) to Skeincoin network</source>
+        <translation><numerusform>%n Activar conexión a la red de Skeincoin</numerusform><numerusform>%n Activar conexiones a la red de Skeincoin</numerusform></translation>
     </message>
     <message>
         <source>Up to date</source>
@@ -405,7 +366,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>La cartera esta &lt;b&gt;encriptada&lt;/b&gt; y &lt;b&gt;bloqueada&lt;/b&gt; actualmente </translation>
     </message>
-    </context>
+</context>
 <context>
     <name>ClientModel</name>
     </context>
@@ -430,10 +391,6 @@
     <message>
         <source>Amount</source>
         <translation>Monto</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Domicilio</translation>
     </message>
     <message>
         <source>Date</source>
@@ -533,16 +490,20 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core - Command-line options</source>
-        <translation>Opciones de lineas de comando del nucleo de Bitcoin</translation>
-    </message>
-    <message>
-        <source>Bitcoin Core</source>
-        <translation>nucleo Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>nucleo Skeincoin</translation>
     </message>
     <message>
         <source>version</source>
         <translation>Versión</translation>
+    </message>
+    <message>
+        <source>(%1-bit)</source>
+        <translation>(%1-bit)</translation>
+    </message>
+    <message>
+        <source>About Skeincoin Core</source>
+        <translation>Acerca de Skeincoin Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,6 +536,10 @@
 </context>
 <context>
     <name>Intro</name>
+    <message>
+        <source>Skeincoin Core</source>
+        <translation>nucleo Skeincoin</translation>
+    </message>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -596,29 +561,20 @@
         <source>Form</source>
         <translation>Formulario</translation>
     </message>
-    <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Transacciones recientes&lt;/b&gt;</translation>
-    </message>
     </context>
 <context>
     <name>PaymentServer</name>
-    <message>
-        <source>Net manager warning</source>
-        <translation>advertencia del administrador de red.</translation>
-    </message>
-    <message>
-        <source>Your active proxy doesn't support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>Tu active proxy no soporta SOCKS5, el cual es requerido para solicitud de pago via proxy. </translation>
-    </message>
+    </context>
+<context>
+    <name>PeerTableModel</name>
     </context>
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ingrese una direccion Bitcoin (ejem. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Amount</source>
+        <translation>Monto</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     </context>
@@ -632,8 +588,8 @@
         <translation>&amp;Etiqueta</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Mensaje opcional para agregar a la solicitud de pago, el cual será mostrado cuando la solicitud este abierta. Nota: El mensaje no se manda con el pago a travéz de la red de Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Skeincoin network.</source>
+        <translation>Mensaje opcional para agregar a la solicitud de pago, el cual será mostrado cuando la solicitud este abierta. Nota: El mensaje no se manda con el pago a travéz de la red de Skeincoin.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -753,10 +709,6 @@
         <translation>copiar cambio</translation>
     </message>
     <message>
-        <source>Total Amount %1 (= %2)</source>
-        <translation>Monto total %1(=%2)</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>o</translation>
     </message>
@@ -773,8 +725,8 @@
         <translation>¡La transación fue rechazada! Esto puede ocurrir si algunas de tus monedas en tu cartera han sido gastadas, al igual que si usas una cartera copiada y la monedas fueron gastadas en la copia pero no se marcaron como gastadas.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Advertencia: Dirección de Bitcoin invalida</translation>
+        <source>Warning: Invalid Skeincoin address</source>
+        <translation>Advertencia: Dirección de Skeincoin invalida</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -843,8 +795,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Bitcoin Core is shutting down...</source>
-        <translation>Apagando el nucleo de Bitcoin...</translation>
+        <source>Skeincoin Core is shutting down...</source>
+        <translation>Apagando el nucleo de Skeincoin...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -865,20 +817,16 @@
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Ingrese una direccion Bitcoin (ejem. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
     </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>nucleo Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>nucleo Skeincoin</translation>
     </message>
     <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>El nucleo de Bitcoin de desarrolladores</translation>
+        <source>The Bitcoin Core and Skeincoin Core developers</source>
+        <translation>El nucleo de Skeincoin de desarrolladores</translation>
     </message>
     </context>
 <context>
@@ -943,10 +891,6 @@
     <message>
         <source>Address</source>
         <translation>Domicilio</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Monto</translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -1112,10 +1056,6 @@
         <translation>Domicilio</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Monto</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -1124,6 +1064,9 @@
         <translation>Para</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     <message>
@@ -1156,24 +1099,12 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Uso:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Lista de comandos</translation>
-    </message>
-    <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;categoria&gt; puede ser:</translation>
     </message>
     <message>
         <source>Wallet options:</source>
         <translation>Opciones de cartera:</translation>
-    </message>
-    <message>
-        <source>version</source>
-        <translation>Versión</translation>
     </message>
     <message>
         <source>Loading addresses...</source>

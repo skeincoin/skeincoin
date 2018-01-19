@@ -1,20 +1,25 @@
 <TS language="vi" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    </context>
-<context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Click đúp chuột để chỉnh sửa địa chỉ hoặc nhãn dữ liệu</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>Tạo một địa chỉ mới</translation>
     </message>
     <message>
+        <source>&amp;New</source>
+        <translation>Tạo mới</translation>
+    </message>
+    <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Sao chép các địa chỉ đã được chọn vào bộ nhớ tạm thời của hệ thống</translation>
+    </message>
+    <message>
+        <source>&amp;Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Address</source>
+        <translation>Sao chép địa chỉ</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -56,10 +61,6 @@
         <translation>Số lượng</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Địa chỉ</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(chưa có nhãn)</translation>
     </message>
@@ -89,7 +90,14 @@
     <name>PaymentServer</name>
     </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
+    <message>
+        <source>Amount</source>
+        <translation>Số lượng</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -168,10 +176,6 @@
         <source>Address</source>
         <translation>Địa chỉ</translation>
     </message>
-    <message>
-        <source>Amount</source>
-        <translation>Số lượng</translation>
-    </message>
     </context>
 <context>
     <name>TransactionView</name>
@@ -187,10 +191,9 @@
         <source>Address</source>
         <translation>Địa chỉ</translation>
     </message>
-    <message>
-        <source>Amount</source>
-        <translation>Số lượng</translation>
-    </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
     <name>WalletFrame</name>

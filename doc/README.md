@@ -1,8 +1,5 @@
-Bitcoin 0.9.3 BETA
+Bitcoin Core 0.10.4
 =====================
-
-Copyright (c) 2009-2014 Bitcoin Developers
-
 
 Setup
 ---------------------
@@ -10,7 +7,7 @@ Setup
 
 Running
 ---------------------
-The following are some helpful notes on how to run Bitcoin on your native platform. 
+The following are some helpful notes on how to run Bitcoin on your native platform.
 
 ### Unix
 
@@ -29,7 +26,7 @@ Unpack the files into a directory and run:
 
 Unpack the files into a directory, and then run bitcoin-qt.exe.
 
-### OSX
+### OS X
 
 Drag Bitcoin-Qt to your applications folder, and then run Bitcoin-Qt.
 
@@ -44,9 +41,8 @@ Building
 ---------------------
 The following are developer notes on how to build Bitcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
-- [OSX Build Notes](build-osx.md)
+- [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
-- [Windows Build Notes](build-msw.md)
 
 Development
 ---------------------
@@ -68,9 +64,10 @@ The Bitcoin repo's [root README](https://github.com/bitcoin/bitcoin/blob/master/
 - [Assets Attribution](assets-attribution.md)
 - [Files](files.md)
 - [Tor Support](tor.md)
+- [Init Scripts (systemd/upstart/openrc)](init.md)
 
 License
 ---------------------
 Distributed under the [MIT/X11 software license](http://www.opensource.org/licenses/mit-license.php).
-This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](http://www.openssl.org/). This product includes
+This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](https://www.openssl.org/). This product includes
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.

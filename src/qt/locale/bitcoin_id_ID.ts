@@ -1,43 +1,6 @@
 <TS language="id_ID" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About Bitcoin Core</source>
-        <translation>Mengenai Bitcoin Core</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Bitcoin Core&lt;/b&gt; version</source>
-        <translation>versi &lt;b&gt;Bitcoin Core&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Software ini adalah yang bersifat percobaan.
-
-Dibagikan dengan izin software MIT/X11, bacalah arsip COPYING atau  http://www.opensource.org/licenses/mit-license.php.
-
-Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit OpenSSL (http://www.openssl.org/) dan software kriptografi dibangun oleh Eric Young (eay@cryptsoft.com) dan software UPnP dibangun oleh Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Copyright</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Pembangun Bitcoin Core</translation>
-    </message>
-    </context>
-<context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Klik-ganda untuk mengubah alamat atau label</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>Buat alamat baru</translation>
@@ -99,11 +62,11 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Alamat-alamat menerima</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Alamat-alamat Anda supaya mengirim pembayaran. Periksalah jumlah dan alamat penerima setiap kali Anda mengirim Bitcoin.</translation>
+        <source>These are your Skeincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Alamat-alamat Anda supaya mengirim pembayaran. Periksalah jumlah dan alamat penerima setiap kali Anda mengirim Skeincoin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Skeincoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Alamat-alamat Anda supaya menerima pembayaran. Dianjurkan agar Anda menggunakan alamat menerima yang baru untuk setiap transaksi.</translation>
     </message>
     <message>
@@ -126,11 +89,7 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <source>Exporting Failed</source>
         <translation>Proses Ekspor Gagal</translation>
     </message>
-    <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>Ada kesalahan di dalam menyimpan susunan alamat ke %1.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -165,10 +124,6 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Ulangi kata kunci baru</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Masukkan kata kunci baru ke dompet.&lt;br/&gt;Mohon gunakan kata kunci dengan &lt;b&gt;10 karakter atau lebih dengan acak&lt;/b&gt;, atau &lt;b&gt;delapan kata atau lebih&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>Enkripsi dompet</translation>
     </message>
@@ -201,8 +156,8 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Konfirmasi enkripsi dompet</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Perhatian: Jika anda mengenkripsi dompet anda dan lupa kata kuncinya, anda pasti &lt;b&gt;KEHILANGAN SELURUH BITCOIN ANDA&lt;/B&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
+        <translation>Perhatian: Jika anda mengenkripsi dompet anda dan lupa kata kuncinya, anda pasti &lt;b&gt;KEHILANGAN SELURUH SKEINCOIN ANDA&lt;/B&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -217,8 +172,8 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Dompet terenkripsi</translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Bitcoin akan menutup untuk menyelesaikan proses enkripsi. Ingat bahwa dengan mengenkripsi dompet Anda tidak sepenuhnya melindungi bitcoin Anda dari perangkat lunak berbahaya yang menginfeksi komputer Anda.</translation>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
+        <translation>Skeincoin akan menutup untuk menyelesaikan proses enkripsi. Ingat bahwa dengan mengenkripsi dompet Anda tidak sepenuhnya melindungi skeincoin Anda dari perangkat lunak berbahaya yang menginfeksi komputer Anda.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -288,10 +243,6 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Keluar dari aplikasi</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation>Tampilkan informasi mengenai Bitcoin</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>Mengenai &amp;Qt</translation>
     </message>
@@ -324,6 +275,10 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Buka &amp;URI</translation>
     </message>
     <message>
+        <source>Skeincoin Core client</source>
+        <translation>Client Skeincoin Inti</translation>
+    </message>
+    <message>
         <source>Importing blocks from disk...</source>
         <translation>Blok-blok sedang di-impor dari disk</translation>
     </message>
@@ -332,12 +287,12 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Mengindex ulang block di harddisk...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Kirim koin ke alamat Bitcoin</translation>
+        <source>Send coins to a Skeincoin address</source>
+        <translation>Kirim koin ke alamat Skeincoin</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation>Ubah pilihan konfigurasi untuk Bitcoin</translation>
+        <source>Modify configuration options for Skeincoin</source>
+        <translation>Ubah pilihan konfigurasi untuk Skeincoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -360,7 +315,7 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>&amp;Verifikasi pesan...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>Bitcoin</translation>
     </message>
     <message>
@@ -376,6 +331,10 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>&amp;Menerima</translation>
     </message>
     <message>
+        <source>Show information about Skeincoin Core</source>
+        <translation>Tampilkan informasi tentang Skeincoin Inti</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Sunjukkan / Menyembungi</translation>
     </message>
@@ -388,12 +347,12 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Mengenkripsi kunci-kunci pribadi yang dipunyai dompetmu</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Tandalah pesanan dengan alamat-alamat Bitcoin Anda supaya membuktikan pesanan itu dikirim oleh Anda</translation>
+        <source>Sign messages with your Skeincoin addresses to prove you own them</source>
+        <translation>Tandalah pesanan dengan alamat-alamat Skeincoin Anda supaya membuktikan pesanan itu dikirim oleh Anda</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Periksakan pesan-pesan supaya menjaminkan ditandatangani oleh alamat Bitcoin yang terperinci</translation>
+        <source>Verify messages to ensure they were signed with specified Skeincoin addresses</source>
+        <translation>Periksakan pesan-pesan supaya menjaminkan ditandatangani oleh alamat Skeincoin yang terperinci</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -412,20 +371,16 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Baris tab</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Request payments (generates QR codes and skeincoin: URIs)</source>
+        <translation>Permintaan pembayaran (membangkitkan kode QR dan skeincoin: URIs)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Permintaan pembayaran (membangkitkan kode QR dan bitcoin: URIs)</translation>
-    </message>
-    <message>
-        <source>&amp;About Bitcoin Core</source>
-        <translation>&amp;Mengenai Bitcoin Core</translation>
+        <source>&amp;About Skeincoin Core</source>
+        <translation>&amp;Mengenai Skeincoin Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -436,32 +391,24 @@ Produk ini termasuk software yang dibangun oleh Proyek OpenSSL untuk Toolkit Ope
         <translation>Tampilkan daftar alamat dan label yang diterima</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Buka URI bitcoin: atau permintaan pembayaran</translation>
+        <source>Open a skeincoin: URI or payment request</source>
+        <translation>Buka URI skeincoin: atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;pilihan Perintah-baris</translation>
     </message>
     <message>
-        <source>Show the Bitcoin Core help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Tampilkan pesan bantuan Bitcoin Core untuk memberikan daftar pilihan perintah-baris yang memungkinkan dalam aplikasi Bitcoin</translation>
-    </message>
-    <message>
-        <source>Bitcoin client</source>
-        <translation>Klien Bitcoin</translation>
+        <source>Show the Skeincoin Core help message to get a list with possible Skeincoin command-line options</source>
+        <translation>Tampilkan pesan bantuan Skeincoin Core untuk memberikan daftar pilihan perintah-baris yang memungkinkan dalam aplikasi Skeincoin</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n hubungan aktif ke jaringan Bitcoin</numerusform></translation>
+        <source>%n active connection(s) to Skeincoin network</source>
+        <translation><numerusform>%n hubungan aktif ke jaringan Skeincoin</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Sumber blok tidak tersedia...</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>%1 blok-blok riwayat transaksi telah diproses</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -543,10 +490,6 @@ Alamat: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terkunci&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Terjadi kesalahan fatal. Bitcoin tidak bisa lagi meneruskan dengan aman dan akan berhenti.</translation>
-    </message>
 </context>
 <context>
     <name>ClientModel</name>
@@ -557,10 +500,6 @@ Alamat: %4
 </context>
 <context>
     <name>CoinControlDialog</name>
-    <message>
-        <source>Coin Control Address Selection</source>
-        <translation>Pilihan alamat pengaturan koin</translation>
-    </message>
     <message>
         <source>Quantity:</source>
         <translation>Kuantitas:</translation>
@@ -580,10 +519,6 @@ Alamat: %4
     <message>
         <source>Fee:</source>
         <translation>Biaya:</translation>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation>Jumlah Yang Sedikit:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -608,10 +543,6 @@ Alamat: %4
     <message>
         <source>Amount</source>
         <translation>Nilai</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Alamat</translation>
     </message>
     <message>
         <source>Date</source>
@@ -674,10 +605,6 @@ Alamat: %4
         <translation>Salin prioritas</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Salin jumlah yang sedikit</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Salin uang kembali</translation>
     </message>
@@ -726,10 +653,6 @@ Alamat: %4
         <translation>tidak satupun</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation>Debu</translation>
-    </message>
-    <message>
         <source>yes</source>
         <translation>ya</translation>
     </message>
@@ -760,18 +683,6 @@ Alamat: %4
     <message>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
         <translation>Label ini akan berubah merah, jika setiap penerima menerima nilai lebih kecil dari %1.</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>Berarti perlu biaya lebih dari %1.</translation>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>Nilai yang kurang dari 0.546 kali biaya pengiriman minimal akan ditampilkan sebagai debu.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Label ini akan berubah merah, jika perubahan itu lebih kecil dari %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -829,8 +740,8 @@ Alamat: %4
         <translation>Alamat yang dimasukkan "%1" sudah ada di dalam buku alamat.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Alamat yang dimasukkan "%1" bukan alamat Bitcoin yang benar.</translation>
+        <source>The entered address "%1" is not a valid Skeincoin address.</source>
+        <translation>Alamat yang dimasukkan "%1" bukan alamat Skeincoin yang benar.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -867,16 +778,16 @@ Alamat: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core - Command-line options</source>
-        <translation>Bitcoin Core - pilihan Perintah-baris</translation>
-    </message>
-    <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versi</translation>
+    </message>
+    <message>
+        <source>About Skeincoin Core</source>
+        <translation>Mengenai Skeincoin Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -910,8 +821,8 @@ Alamat: %4
         <translation>Selamat Datang</translation>
     </message>
     <message>
-        <source>Welcome to Bitcoin Core.</source>
-        <translation>Selamat Datang ke Bitcoin Core</translation>
+        <source>Welcome to Skeincoin Core.</source>
+        <translation>Selamat Datang ke Skeincoin Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -922,26 +833,18 @@ Alamat: %4
         <translation>Menggunakan direktori data yang dipilih Anda:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
-    </message>
-    <message>
-        <source>Error: Specified data directory "%1" can not be created.</source>
-        <translation>Gagal: Direktori untuk data "%1" tidak bisa dibuat.</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Gagal</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>GB di hard disk yang masih tersedia</translation>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n GB dari ruang yang tersedia</numerusform></translation>
     </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(dari %1GB yang diperlu)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -976,32 +879,16 @@ Alamat: %4
         <translation>&amp;Utama</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Biaya transaksi untuk setiap kB yang membantu transaksi Andi diproses cepat (biayanya opsional). Ukuran transaksi biasanya 1kB.</translation>
+        <source>Automatically start Skeincoin after logging in to the system.</source>
+        <translation>Menyalakan Skeincoin secara otomatis setelah masuk ke dalam sistem.</translation>
     </message>
     <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Bayar &amp;biaya transaksi</translation>
-    </message>
-    <message>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
-        <translation>Menyalakan Bitcoin secara otomatis setelah masuk ke dalam sistem.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Bitcoin on system login</source>
-        <translation>&amp;Menyalakan Bitcoin pada login sistem</translation>
+        <source>&amp;Start Skeincoin on system login</source>
+        <translation>&amp;Menyalakan Skeincoin pada login sistem</translation>
     </message>
     <message>
         <source>MB</source>
         <translation>MB</translation>
-    </message>
-    <message>
-        <source>Connect to the Bitcoin network through a SOCKS proxy.</source>
-        <translation>Menghubungkan jaringan Bitcoin lewat proxy SOCKS.</translation>
-    </message>
-    <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>&amp;Hubungkan melalui proxy SOCKS (proxy biasa):</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1048,8 +935,8 @@ Alamat: %4
         <translation>&amp;Perubahan saldo untuk transaksi yang belum dikonfirmasi</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Otomatis membuka port client Bitcoin di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
+        <source>Automatically open the Skeincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Otomatis membuka port client Skeincoin di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1066,14 +953,6 @@ Alamat: %4
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Port proxy (cth. 9050)</translation>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>Versi &amp;SOCKS:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>Versi proxy SOCKS (cth. 5)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1104,8 +983,8 @@ Alamat: %4
         <translation>&amp;Bahasa Antarmuka Pengguna:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation>Tampilan bahasa pengguna dapat diatur disini. Pengaturan ini akan berpengaruh setelah memulai kembali aplikasi Bitcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Skeincoin.</source>
+        <translation>Tampilan bahasa pengguna dapat diatur disini. Pengaturan ini akan berpengaruh setelah memulai kembali aplikasi Skeincoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1114,14 +993,6 @@ Alamat: %4
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Pilihan standar unit yang ingin ditampilkan pada layar aplikasi dan saat mengirim koin.</translation>
-    </message>
-    <message>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
-        <translation>Apakah menampilkan alamat-alamat Bitcoin dalam daftar transaksi atau tidak.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Tampilkan alamat dalam daftar transaksi</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1171,12 +1042,8 @@ Alamat: %4
         <translation>Formulir</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Bitcoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Dompet</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Skeincoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Skeincoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1211,10 +1078,6 @@ Alamat: %4
         <translation>Jumlah saldo Anda sekarang</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Transaksi sebelumnya&lt;/b&gt;</translation>
-    </message>
-    <message>
         <source>out of sync</source>
         <translation>tidak tersinkron</translation>
     </message>
@@ -1226,8 +1089,8 @@ Alamat: %4
         <translation>Penanganan URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI tidak bisa dimengerti! Biasanya oleh karena alamat Bitcoin yang tidak sah atau persoalan tentang parameter-parameter URI.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>Alamat pembayaran salah %1</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1236,10 +1099,6 @@ Alamat: %4
     <message>
         <source>Payment request error</source>
         <translation>Gagalan permintaan pembayaran</translation>
-    </message>
-    <message>
-        <source>Your active proxy doesn't support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>Proxy Anda tidak mendukung SOCKS5, yang diperlu untuk permintaan pembayaran melalui proxy.</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -1263,32 +1122,27 @@ Alamat: %4
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Amount</source>
+        <translation>Nilai</translation>
     </message>
     <message>
-        <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation>Gagal: Tidak ada direktori untuk data "%1".</translation>
+        <source>%1 h</source>
+        <translation>%1 Jam</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Kesalahan: Tidak dapat memproses pengaturan berkas: %1. Hanya menggunakan kunci= nilai sintak.</translation>
+        <source>%1 m</source>
+        <translation>%1 menit</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Gagal: Gabungan -regtest dan -testnet salah</translation>
+        <source>N/A</source>
+        <translation>T/S</translation>
     </message>
-    <message>
-        <source>Bitcoin Core didn't yet exit safely...</source>
-        <translation>Inti Bitcoin belum keluar dengan sempurna...</translation>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Masukkan alamat Bitcoin (cth. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -1363,10 +1217,6 @@ Alamat: %4
         <translation>Jumlah blok terkini</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Perkiraan jumlah blok</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>Waktu blok terakhir</translation>
     </message>
@@ -1407,16 +1257,16 @@ Alamat: %4
         <translation>Berkas catatan debug</translation>
     </message>
     <message>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Buka berkas catatan debug Bitcoin dari direktori data sekarang. Hal ini dapat memakan waktu beberapa detik untuk berkas catatan yang besar.</translation>
+        <source>Open the Skeincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Buka berkas catatan debug Skeincoin dari direktori data sekarang. Hal ini dapat memakan waktu beberapa detik untuk berkas catatan yang besar.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Bersihkan konsol</translation>
     </message>
     <message>
-        <source>Welcome to the Bitcoin RPC console.</source>
-        <translation>Selamat datang ke konsol RPC Bitcoin.</translation>
+        <source>Welcome to the Skeincoin RPC console.</source>
+        <translation>Selamat datang ke konsol RPC Skeincoin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1442,19 +1292,7 @@ Alamat: %4
         <source>%1 GB</source>
         <translation>%1 GB</translation>
     </message>
-    <message>
-        <source>%1 m</source>
-        <translation>%1 menit</translation>
-    </message>
-    <message>
-        <source>%1 h</source>
-        <translation>%1 Jam</translation>
-    </message>
-    <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 Jam %2 menit</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
@@ -1659,10 +1497,6 @@ Alamat: %4
         <translation>Biaya:</translation>
     </message>
     <message>
-        <source>Low Output:</source>
-        <translation>Jumlah Yang Sedikit:</translation>
-    </message>
-    <message>
         <source>After Fee:</source>
         <translation>Dengan Biaya:</translation>
     </message>
@@ -1735,16 +1569,8 @@ Alamat: %4
         <translation>Salin prioritas</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>Salin jumlah yang sedikit</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Salin uang kembali</translation>
-    </message>
-    <message>
-        <source>Total Amount %1 (= %2)</source>
-        <translation>Jumlah Nilai %1 (= %2)</translation>
     </message>
     <message>
         <source>or</source>
@@ -1779,8 +1605,8 @@ Alamat: %4
         <translation>Gagal: Transaksi ditolak. Ini mungkin terjadi jika beberapa dari koin dalam dompet Anda telah digunakan, seperti ketika Anda menggunakan salinan wallet.dat dan beberapa koin telah dibelanjakan dalam salinan tersebut tetapi disini tidak tertandai sebagai terpakai.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Awas: Alamat Bitcoin tidak sah</translation>
+        <source>Warning: Invalid Skeincoin address</source>
+        <translation>Awas: Alamat Skeincoin tidak sah</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1794,14 +1620,6 @@ Alamat: %4
         <source>added as transaction fee</source>
         <translation>ditambahkan sebagai biaya transaksi</translation>
     </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>Permintaan pembayaran telah kadaluarsa</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Alamat pembayaran salah %1</translation>
-    </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
@@ -1812,10 +1630,6 @@ Alamat: %4
     <message>
         <source>Pay &amp;To:</source>
         <translation>Kirim &amp;Ke:</translation>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Alamat pembayaran (cth. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1877,8 +1691,8 @@ Alamat: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Bitcoin Core is shutting down...</source>
-        <translation>Bitcoin Core sementara dimatikan...</translation>
+        <source>Skeincoin Core is shutting down...</source>
+        <translation>Skeincoin Core sementara dimatikan...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1894,10 +1708,6 @@ Alamat: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Tandakan Pesan</translation>
-    </message>
-    <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Alamat yang akan ditandai pesan (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1928,8 +1738,8 @@ Alamat: %4
         <translation>Salin tanda tangan terpilih ke sistem klipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Bitcoin ini</translation>
+        <source>Sign the message to prove you own this Skeincoin address</source>
+        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Skeincoin ini</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1950,10 +1760,6 @@ Alamat: %4
     <message>
         <source>Reset all verify message fields</source>
         <translation>Hapus semua bidang verifikasi pesan</translation>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Masukkan alamat Bitcoin (cth. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -2011,12 +1817,12 @@ Alamat: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Pembangun Bitcoin Core</translation>
+        <source>The Bitcoin Core and Skeincoin Core developers</source>
+        <translation>Pembangun Skeincoin Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2189,10 +1995,6 @@ Alamat: %4
     <message>
         <source>Address</source>
         <translation>Alamat</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Nilai</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
@@ -2402,10 +2204,6 @@ Alamat: %4
         <translation>Alamat</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Nilai</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2418,6 +2216,9 @@ Alamat: %4
         <translation>ke</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     <message>
@@ -2466,40 +2267,12 @@ Alamat: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Penggunaan:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Daftar perintah</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Dapatkan bantuan untuk perintah</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Pilihan:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation>Tentukan berkas konfigurasi (standar: bitcoin.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Tentukan berkas pid (standar: bitcoind.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Tentukan direktori data</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Menerima hubungan pada &lt;port&gt; (standar: 8333 atau testnet: 18333)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Mengatur hubungan paling banyak &lt;n&gt; ke peer (standar: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -2510,20 +2283,8 @@ Alamat: %4
         <translation>Tentukan alamat publik Anda sendiri</translation>
     </message>
     <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Batas untuk memutuskan peer buruk (standar: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Jumlah kedua untuk menjaga peer buruk dari hubung-ulang (standar: 86400)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Menerima perintah baris perintah dan JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Bitcoin Core RPC client version</source>
-        <translation>Versi klien RPC Inti Bitcoin </translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2538,32 +2299,16 @@ Alamat: %4
         <translation>Terima hubungan dari luar (standar: 1 kalau -proxy atau -connect tidak dipilih)</translation>
     </message>
     <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>Sandi yang diterima (biasanya: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Gagal: Transaksi ditolak. Ini mungkin terjadi jika beberapa dari koin dalam dompet Anda telah digunakan, seperti ketika Anda menggunakan salinan wallet.dat dan beberapa koin telah dibelanjakan dalam salinan tersebut tetapi disini tidak tertandai sebagai terpakai.</translation>
-    </message>
-    <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Jalankan perintah ketika perubahan transaksi dompet (%s di cmd digantikan oleh TxID)</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Bitcoin Core is probably already running.</source>
-        <translation>Tidak bisa mengikat dengan %s di computer ini. Kemungkinan Bitcoin Core sudah mulai.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation>Gunakanlah proxy SOCKS5 yang tersendiri supaya menghubungkan peer dengan layanan tersembunyi Tor (biasanya: -proxy)</translation>
+        <source>Unable to bind to %s on this computer. Skeincoin Core is probably already running.</source>
+        <translation>Tidak bisa mengikat dengan %s di computer ini. Kemungkinan Skeincoin Core sudah mulai.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Peringatan: -paytxfee sangat besar! Ini adalah biaya pengiriman yang akan dibayar oleh Anda jika transaksi terkirim.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
-        <translation>Perhatian: Mohon diperiksa pengaturan tanggal dan waktu komputer anda apakah sudah benar! Jika pengaturan waktu salah aplikasi Bitcoin tidak akan berjalan dengan tepat.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2582,16 +2327,8 @@ Alamat: %4
         <translation>(pengaturan awal: 1)</translation>
     </message>
     <message>
-        <source>(default: wallet.dat)</source>
-        <translation>(pengaturan awal: wallet.dat)</translation>
-    </message>
-    <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Coba memulihkan kunci-kunci pribadi dari wallet.dat yang rusak</translation>
-    </message>
-    <message>
-        <source>Bitcoin Core Daemon</source>
-        <translation>Daemon Bitcoin Core</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -2600,10 +2337,6 @@ Alamat: %4
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Jangan menghubungkan node(-node) selain yang di daftar</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation>Hubungkan melalui proxy SOCKS</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -2646,70 +2379,6 @@ Alamat: %4
         <translation>Gagal: Hard disk hampir terisi!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Gagal: Dompet terkunci, transaksi tidak bisa dibuat!</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Error: system error:</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Gagal membaca informasi dari blok</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Gagal membaca blok</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Gagal menyamakan daftar isi blok</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Gagal menulis daftar isi blok</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Gagal menulis info blok</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Gagal menulis blok</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Gagal menulis info arsip</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>Gagal menuliskan ke dalam database koin</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Gagal menulis daftar isi transaksi</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>Gagal menulis ulang data</translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>Biaya untuk setiap kB yang akan ditambahkan ke transaksi yang Anda kirim</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Cari peer dengan daftar alamat DNS (biasanya: 1 jika -connect tidak terpilih)</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>Buatlah koin (biasanya: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Periksakan berapa blok waktu mulai (biasanya: 288, 0 = setiapnya)</translation>
-    </message>
-    <message>
         <source>Importing...</source>
         <translation>mengimpor...</translation>
     </message>
@@ -2726,28 +2395,12 @@ Alamat: %4
         <translation>Deskripsi berkas tidak tersedia dengan cukup.</translation>
     </message>
     <message>
-        <source>RPC client options:</source>
-        <translation>Pilihan RPC klien:</translation>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation>Pililah versi SOCKS untuk -proxy (4 atau 5, biasanya: 5)</translation>
-    </message>
-    <message>
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>Atur ukuran maksimal untuk blok dalam byte (biasanya: %d)</translation>
     </message>
     <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Mengatur jumlah urutan untuk layanan panggilan RPC (pengaturan awal: 4)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Tentukan arsip dompet (dalam direktori data)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation>Perubahan saldo untuk transaksi yang belum dikonfirmasi setelah transaksi terkirim (default: 1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -2756,10 +2409,6 @@ Alamat: %4
     <message>
         <source>Verifying wallet...</source>
         <translation>Dompet sedang diverifikasi...</translation>
-    </message>
-    <message>
-        <source>Wait for RPC server to start</source>
-        <translation>Tunggu sampai server RPC dimulai</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
@@ -2778,8 +2427,8 @@ Alamat: %4
         <translation>Impor blok dari eksternal berkas blk000???.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Bitcoin Core is probably already running.</source>
-        <translation>Tidak bisa mengunci data directory %s. Kemungkinan Bitcoin Core sudah mulai.</translation>
+        <source>Cannot obtain a lock on data directory %s. Skeincoin Core is probably already running.</source>
+        <translation>Tidak bisa mengunci data directory %s. Kemungkinan Skeincoin Core sudah mulai.</translation>
     </message>
     <message>
         <source>Information</source>
@@ -2794,28 +2443,12 @@ Alamat: %4
         <translation>Nilai yang salah untuk -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Jaga daftar transaksi yang lengkap (biasanya: 0)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Dilarang menghubungkan node-node selain &lt;net&gt; (IPv4, IPv6 atau Tor)</translation>
-    </message>
-    <message>
         <source>RPC server options:</source>
         <translation>Opsi server RPC:</translation>
     </message>
     <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Pilihan SSL: (petunjuk pengaturan SSL lihat dalam Bitcoin Wiki)</translation>
-    </message>
-    <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Kirim info jejak/debug ke konsol bukan berkas debug.log</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Atur ukuran minimal untuk blok dalam byte (standar: 0)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -2824,18 +2457,6 @@ Alamat: %4
     <message>
         <source>Signing transaction failed</source>
         <translation>Tandatangani transaksi tergagal</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Menetapkan waktu berakhir koneksi di milidetik (biasanya: 5000)</translation>
-    </message>
-    <message>
-        <source>Start Bitcoin Core Daemon</source>
-        <translation>Memulai Bitcoin Core Daemon</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Kesalahan sistem:</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -2866,24 +2487,12 @@ Alamat: %4
         <translation>Setiap transaksi dalam dompet sedang di-'Zap'...</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>versi</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat rusak, tidak bisa diperbaiki</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Kata sandi untuk hubungan JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Izinkan hubungan JSON-RPC dari alamat IP yang ditentukan</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Kirim perintah ke node berjalan pada &lt;ip&gt; (standar: 127.0.0.1)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
@@ -2894,10 +2503,6 @@ Alamat: %4
         <translation>Perbarui dompet ke format terbaru</translation>
     </message>
     <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Kirim ukuran kolam kunci ke &lt;n&gt; (standar: 100)</translation>
-    </message>
-    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Pindai ulang rantai-blok untuk transaksi dompet yang hilang</translation>
     </message>
@@ -2906,20 +2511,8 @@ Alamat: %4
         <translation>Gunakan OpenSSL (https) untuk hubungan JSON-RPC</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Berkas sertifikat server (standar: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Kunci pribadi server (standar: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Pesan bantuan ini</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Tidak dapat mengikat ke %s dengan komputer ini (ikatan gagal %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -2934,14 +2527,6 @@ Alamat: %4
         <translation>Gagal memuat wallet.dat: Dompet rusak</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>Gagal memuat wallet.dat: Dompet memerlukan versi Bitcoin yang terbaru</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
-        <translation>Dompet diperlukan untuk disimpan-ulang: nyala-ulangkan Bitcoin untuk menyelesaikan</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>Gagal memuat wallet.dat</translation>
     </message>
@@ -2954,10 +2539,6 @@ Alamat: %4
         <translation>Jaringan tidak diketahui yang ditentukan dalam -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Diminta versi proxy -socks tidak diketahui: %i</translation>
-    </message>
-    <message>
         <source>Cannot resolve -bind address: '%s'</source>
         <translation>Tidak dapat menyelesaikan alamat -bind: '%s'</translation>
     </message>
@@ -2968,10 +2549,6 @@ Alamat: %4
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
         <translation>Nilai salah untuk -paytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Nilai salah</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3006,20 +2583,8 @@ Alamat: %4
         <translation>Memuat selesai</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Gunakan pilihan %s</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Gagal</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Anda harus mengatur rpcpassword=&lt;kata sandi&gt; dalam berkas konfigurasi:
-%s
-Jika berkas tidak ada, buatlah dengan permisi berkas hanya-dapat-dibaca-oleh-pemilik.</translation>
     </message>
 </context>
 </TS>

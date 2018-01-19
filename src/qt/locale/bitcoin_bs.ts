@@ -1,8 +1,5 @@
 <TS language="bs" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    </context>
-<context>
     <name>AddressBookPage</name>
     </context>
 <context>
@@ -14,12 +11,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>Bitcoin</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Jezrga</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Jezrga</translation>
     </message>
     </context>
 <context>
@@ -37,15 +34,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Jezrga</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Jezrga</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Jezrga</translation>
     </message>
     </context>
 <context>
@@ -61,11 +58,10 @@
     <name>PaymentServer</name>
     </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
-    <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
-    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -113,8 +109,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Jezrga</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Jezrga</translation>
     </message>
     </context>
 <context>
@@ -151,6 +147,9 @@
         <source>This year</source>
         <translation>Ove godine</translation>
     </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
     <name>WalletFrame</name>

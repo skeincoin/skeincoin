@@ -1,13 +1,6 @@
 <TS language="th_TH" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    </context>
-<context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>ดับเบิ้ลคลิก เพื่อแก้ไขที่อยู่ หรือชื่อ</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>สร้างที่อยู่ใหม่</translation>
@@ -53,10 +46,6 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>กรุณากรอกรหัสผ่านใหม่อีกครั้งหนึ่ง</translation>
-    </message>
-    <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>ใส่รหัสผ่านใหม่ให้กับกระเป๋าเงิน. &lt;br/&gt; กรุณาใช้รหัสผ่านของ &lt;b&gt; 10 หรือแบบสุ่มมากกว่าตัวอักษร &lt;/ b&gt; หรือ &lt;b&gt; แปดหรือมากกว่าคำ &lt;/ b&gt;</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -146,10 +135,6 @@
         <translation>ออกจากโปรแกรม</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation>แสดงข้อมูลเกี่ยวกับ Bitcoin</translation>
-    </message>
-    <message>
         <source>&amp;Options...</source>
         <translation>&amp;ตัวเลือก...</translation>
     </message>
@@ -173,13 +158,9 @@
         <source>Tabs toolbar</source>
         <translation>แถบเครื่องมือ</translation>
     </message>
-    <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
-    </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n ที่ใช้งานการเชื่อมต่อกับเครือข่าย Bitcoin</numerusform></translation>
+        <source>%n active connection(s) to Skeincoin network</source>
+        <translation><numerusform>%n ที่ใช้งานการเชื่อมต่อกับเครือข่าย Skeincoin</numerusform></translation>
     </message>
     <message>
         <source>Up to date</source>
@@ -205,16 +186,12 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>กระเป๋าเงินถูก &lt;b&gt;เข้ารหัส&lt;/b&gt; และในปัจจุบัน &lt;b&gt;ล็อค &lt;/b&gt;</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>ClientModel</name>
     </context>
 <context>
     <name>CoinControlDialog</name>
-    <message>
-        <source>Address</source>
-        <translation>ที่อยู่</translation>
-    </message>
     <message>
         <source>(no label)</source>
         <translation>(ไม่มีชื่อ)</translation>
@@ -288,13 +265,12 @@
         <source>Form</source>
         <translation>รูป</translation>
     </message>
-    <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;รายการทำธุรกรรมล่าสุด&lt;/b&gt;</translation>
-    </message>
     </context>
 <context>
     <name>PaymentServer</name>
+    </context>
+<context>
+    <name>PeerTableModel</name>
     </context>
 <context>
     <name>QObject</name>
@@ -391,6 +367,9 @@
         <source>Address</source>
         <translation>ที่อยู่</translation>
     </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
     <name>WalletFrame</name>

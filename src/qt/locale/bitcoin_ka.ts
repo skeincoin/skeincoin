@@ -1,43 +1,6 @@
 <TS language="ka" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    <message>
-        <source>About Bitcoin Core</source>
-        <translation>Bitcoin Core-ს შესახებ</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Bitcoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Bitcoin Core&lt;/b&gt;-ს ვერსია</translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-პროგრამა ექსპერიმენტულია.
-
-ვრცელდება MIT/X11 ლიცენზიით, იხილე თანდართული ფაილი COPYING ან http://www.opensource.org/licenses/mit-license.php.
-
-პროდუქტი შეიცავს OpenSSL პროექტის ფარგლებში შემუშავებულ პროგრამულ უზრუნველყოფას OpenSSL Toolkit-ში გამოყენებისათვის (http://www.openssl.org/), კრიპტოგრაფიულ პროგრამას, ავტორი ერიქ იანგი (Eric Young, eay@cryptsoft.com) და UPnP-პროგრამას, ავტორი თომას ბერნარდი (Thomas Bernard).</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>საავტორო უფლებები</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Bitcoin Core-ს ავტორები</translation>
-    </message>
-    </context>
-<context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>დააკლიკეთ ორჯერ მისამართის ან ნიშნულის შესაცვლელად</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>ახალი მისამართის შექმნა</translation>
@@ -99,12 +62,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>მიღების მისამართი</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>ეს არის თქვენი Bitcoin-მისამართები გადახდების შესასრულებლად. მონეტების გაგზავნამდე ყოველთვის შეამოწმეთ თანხა და მიმღების მისამართი.</translation>
+        <source>These are your Skeincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>ეს არის თქვენი Skeincoin-მისამართები გადახდების შესასრულებლად. მონეტების გაგზავნამდე ყოველთვის შეამოწმეთ თანხა და მიმღების მისამართი.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>ეს არის თქვენი Bitcoin-მისამართები გადახდების მისაღებად. რეკომენდებულია ყოველი ტრანსაქციისათვის ახალი მიღების მისამართის გამოყენება.</translation>
+        <source>These are your Skeincoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>ეს არის თქვენი Skeincoin-მისამართები გადახდების მისაღებად. რეკომენდებულია ყოველი ტრანსაქციისათვის ახალი მიღების მისამართის გამოყენება.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -126,11 +89,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Exporting Failed</source>
         <translation>ექსპორტი ვერ განხორციელდა</translation>
     </message>
-    <message>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>შეცდომა მისამართების სიის %1-ში შენახვის მცდელობისას.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -165,10 +124,6 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>გაიმეორეთ ახალი ფრაზა-პაროლი</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>შეიყვანეთ საფულის ახალი ფრაზა-პაროლი.&lt;br/&gt;ფრაზა-პაროლი შეადგინეთ &lt;b&gt;არანაკლებ 10 შემთხვევითი სიმბოლოსაგან&lt;/b&gt;, ან &lt;b&gt;რვა და მეტი სიტყვისაგან&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>საფულის დაშიფრვა</translation>
     </message>
@@ -201,7 +156,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>დაადასტურეთ საფულის დაშიფრვა</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
         <translation>ყურადღება: საფულის დაშიფრვის შემდეგ თუ თქვენ დაკარგავთ ფრაზა-პაროლს,  &lt;b&gt;ყველა ბიტქოინი დაგეკარგებათ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -221,8 +176,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>საფულე დაშიფრულია</translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>ახლა Bitcoin დაიხურება დაშიფრვის პროცესის დასასრულებლად. გაითვალისწინეთ, რომ დაშიფრვა სრულად ვერ დაიცავს თქვენს ბითქოინებს თქვენს კომპიუტერში შემოპარული მავნე პროგრამების საშუალებით დატაცებისაგან.</translation>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
+        <translation>ახლა Skeincoin დაიხურება დაშიფრვის პროცესის დასასრულებლად. გაითვალისწინეთ, რომ დაშიფრვა სრულად ვერ დაიცავს თქვენს ბითქოინებს თქვენს კომპიუტერში შემოპარული მავნე პროგრამების საშუალებით დატაცებისაგან.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -292,10 +247,6 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>გასვლა</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation>ინფორმაცია Bitcoin-ის შესახებ</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>&amp;Qt-ს შესახებ</translation>
     </message>
@@ -340,11 +291,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>დისკზე ბლოკების რეინდექსაცია...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>მონეტების გაგზავნა Bitcoin-მისამართზე</translation>
+        <source>Send coins to a Skeincoin address</source>
+        <translation>მონეტების გაგზავნა Skeincoin-მისამართზე</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bitcoin</source>
+        <source>Modify configuration options for Skeincoin</source>
         <translation>Bitcoin-ის საკონფიგურაციო პარამეტრების ცვლილება</translation>
     </message>
     <message>
@@ -368,7 +319,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;ვერიფიკაცია</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>Bitcoin</translation>
     </message>
     <message>
@@ -396,12 +347,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>თქვენი საფულის პირადი გასაღებების დაშიფრვა</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>მესიჯებზე ხელმოწერა თქვენი Bitcoin-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
+        <source>Sign messages with your Skeincoin addresses to prove you own them</source>
+        <translation>მესიჯებზე ხელმოწერა თქვენი Skeincoin-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Bitcoin-მისამართით</translation>
+        <source>Verify messages to ensure they were signed with specified Skeincoin addresses</source>
+        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Skeincoin-მისამართით</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -420,20 +371,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>ბარათების პანელი</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Request payments (generates QR codes and skeincoin: URIs)</source>
+        <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და skeincoin: ბმულები)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და bitcoin: ბმულები)</translation>
-    </message>
-    <message>
-        <source>&amp;About Bitcoin Core</source>
-        <translation>Bitcoin Core-ს შეს&amp;ახებ</translation>
+        <source>&amp;About Skeincoin Core</source>
+        <translation>Skeincoin Core-ს შეს&amp;ახებ</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -444,56 +391,24 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>გამოყენებული მიღების მისამართებისა და ნიშნულების სიის ჩვენება</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>bitcoin: URI-ის ან გადახდის მოთხოვნის გახსნა</translation>
+        <source>Open a skeincoin: URI or payment request</source>
+        <translation>skeincoin: URI-ის ან გადახდის მოთხოვნის გახსნა</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>საკომანდო სტრიქონის ოპ&amp;ციები</translation>
     </message>
     <message>
-        <source>Show the Bitcoin Core help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Bitcoin Core-ს დახმარების ჩვენება Bitcoin-ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
-    </message>
-    <message>
-        <source>Bitcoin client</source>
-        <translation>Bitcoin-კლიენტი</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>აქტიური მიერთებები ბითქოინის ქსელთან: %n</numerusform></translation>
+        <source>Show the Skeincoin Core help message to get a list with possible Skeincoin command-line options</source>
+        <translation>Skeincoin Core-ს დახმარების ჩვენება Skeincoin-ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>ბლოკების წყარო მიუწვდომელია...</translation>
     </message>
     <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>დამუშავებულია ტრანსაქციების ისტორიის %2-დან (სავარაუდოდ) %1 ბლოკი.</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>დამუშავებულია ტრანსაქციების ისტორიის %1 ბლოკი.</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n საათი</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n დღე</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n კვირა</numerusform></translation>
-    </message>
-    <message>
         <source>%1 and %2</source>
         <translation>%1 და %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n წელი</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -555,10 +470,6 @@ Address: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>საფულე &lt;b&gt;დაშიფრულია&lt;/b&gt; და ამჟამად &lt;b&gt;დაბლოკილია&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>ფატალური შეცდომა. Bitcoin ვერ უზრუნველყოფს უსაფრთხო გაგრძელებას, ამიტომ იხურება.</translation>
-    </message>
 </context>
 <context>
     <name>ClientModel</name>
@@ -569,10 +480,6 @@ Address: %4
 </context>
 <context>
     <name>CoinControlDialog</name>
-    <message>
-        <source>Coin Control Address Selection</source>
-        <translation>მონეტების კონტროლის მისამართის არჩევა</translation>
-    </message>
     <message>
         <source>Quantity:</source>
         <translation>რაოდენობა:</translation>
@@ -592,10 +499,6 @@ Address: %4
     <message>
         <source>Fee:</source>
         <translation>საკომისიო:</translation>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation>ქვედა ზღვარი:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -619,11 +522,7 @@ Address: %4
     </message>
     <message>
         <source>Amount</source>
-        <translation>რაოდენობა</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>მისამართი</translation>
+        <translation>თანხა</translation>
     </message>
     <message>
         <source>Date</source>
@@ -686,10 +585,6 @@ Address: %4
         <translation>პრიორიტეტის კოპირება</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>ქვედა ზღვრის კოპირება</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>ხურდის კოპირება</translation>
     </message>
@@ -738,10 +633,6 @@ Address: %4
         <translation>ცარიელი</translation>
     </message>
     <message>
-        <source>Dust</source>
-        <translation>მტვერი</translation>
-    </message>
-    <message>
         <source>yes</source>
         <translation>კი</translation>
     </message>
@@ -772,18 +663,6 @@ Address: %4
     <message>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
         <translation>ნიშნული წითლდება, როცა რომელიმე რეციპიენტი მიიღებს %1-ზე ნაკლებს.</translation>
-    </message>
-    <message>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>ეს ნიშნავს, რომ საკომისიო იქნება მინიმუმ %1.</translation>
-    </message>
-    <message>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>რეტრანსლაციის მინიმალური საკომისიოს 0.546-ზე ნაკლები თანხები ნაჩვენები იქნება როგორც მტვერი.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>ნიშნული წითლდება, როცა ხურდა ნაკლებია %1-ზე.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -841,8 +720,8 @@ Address: %4
         <translation>მისამართი "%1" უკვე არის მისამართების წიგნში.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>შეყვანილი მისამართი "%1" არ არის ვალიდური Bitcoin-მისამართი.</translation>
+        <source>The entered address "%1" is not a valid Skeincoin address.</source>
+        <translation>შეყვანილი მისამართი "%1" არ არის ვალიდური Skeincoin-მისამართი.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -879,16 +758,20 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core - Command-line options</source>
-        <translation>Bitcoin Core - საკომანდო სტრიქონის ოპციები</translation>
-    </message>
-    <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
         <source>version</source>
         <translation>ვერსია</translation>
+    </message>
+    <message>
+        <source>About Skeincoin Core</source>
+        <translation>Skeincoin Core-ს შესახებ</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>კომანდების ზოლის ოპციები</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -926,12 +809,12 @@ Address: %4
         <translation>მოგესალმებით</translation>
     </message>
     <message>
-        <source>Welcome to Bitcoin Core.</source>
-        <translation>მოგესალმებათ Bitcoin Core.</translation>
+        <source>Welcome to Skeincoin Core.</source>
+        <translation>მოგესალმებათ Skeincoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Bitcoin Core will store its data.</source>
-        <translation>ეს პროგრამის პირველი გაშვებაა; შეგიძლიათ მიუთითოთ, სად შეინახოს მონაცემები Bitcoin Core-მ.</translation>
+        <source>As this is the first time the program is launched, you can choose where Skeincoin Core will store its data.</source>
+        <translation>ეს პროგრამის პირველი გაშვებაა; შეგიძლიათ მიუთითოთ, სად შეინახოს მონაცემები Skeincoin Core-მ.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -942,26 +825,14 @@ Address: %4
         <translation>მითითებული კატალოგის გამოყენება:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
-    </message>
-    <message>
-        <source>Error: Specified data directory "%1" can not be created.</source>
-        <translation>შეცდომა: მითითებული მონაცემთა კატალოგი "%1" ვერ შეიქმნა.</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>შეცდომა</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>გიგაბაიტია თავისუფალი</translation>
-    </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(საჭიროა  %1GB)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -996,19 +867,11 @@ Address: %4
         <translation>&amp;მთავარი</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>დამატებითი საკომისიო თითო კილობაიტზე; აჩქარებს ტრანსაქციის შესრულებას. ტრანსაქციების უმეტესობა არის 1 კბ.</translation>
+        <source>Automatically start Skeincoin after logging in to the system.</source>
+        <translation>სისტემაში შესვლის შემდეგ Skeincoin-ის ავტომატური გაშვება.</translation>
     </message>
     <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>ტრანსაქციის სა&amp;ფასურის გადახდა</translation>
-    </message>
-    <message>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
-        <translation>სისტემაში შესვლის შემდეგ Bitcoin-ის ავტომატური გაშვება.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Bitcoin on system login</source>
+        <source>&amp;Start Skeincoin on system login</source>
         <translation>&amp;სისტემაში შესვლისას გაშვება</translation>
     </message>
     <message>
@@ -1022,14 +885,6 @@ Address: %4
     <message>
         <source>Number of script &amp;verification threads</source>
         <translation>სკრიპტის &amp;ვერიფიცირების ნაკადების რაოდენობა</translation>
-    </message>
-    <message>
-        <source>Connect to the Bitcoin network through a SOCKS proxy.</source>
-        <translation>Bitcoin-ქსელზე მიერთება SOCKS-პროქსით.</translation>
-    </message>
-    <message>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>SO&amp;CKS (ნაგულისხმევი) პროქსი მიერთებისათვის:</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1060,8 +915,8 @@ Address: %4
         <translation>დაუდასტურებელი ხურდის გამოყენების აკრძალვის შემდეგ მათი გამოყენება შეუძლებელი იქნება, სანამ ტრანსაქციას არ ექნება ერთი დასტური მაინც. ეს აისახება თქვენი ნაშთის დათვლაზეც.</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>როუტერში Bitcoin-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
+        <source>Automatically open the Skeincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>როუტერში Skeincoin-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1078,14 +933,6 @@ Address: %4
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>პროქსის პორტი (მაგ.: 9050)</translation>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>SOCKS &amp;ვერსია:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>პროქსის SOCKS-ვერსია (მაგ.: 5)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1116,8 +963,8 @@ Address: %4
         <translation>სამომხმარებ&amp;ლო ენა:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation>აქ შეგიძლიათ აირჩიოთ სამომხმარებლო ენა. ძალაში შევა Bitcoin-ის რესტარტის შემდეგ.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Skeincoin.</source>
+        <translation>აქ შეგიძლიათ აირჩიოთ სამომხმარებლო ენა. ძალაში შევა Skeincoin-ის რესტარტის შემდეგ.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1126,14 +973,6 @@ Address: %4
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>აირჩიეთ გასაგზავნი თანხის ნაგულისხმევი ერთეული.</translation>
-    </message>
-    <message>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
-        <translation>ტრანსაქციების სიაში იყოს თუ არა ნაჩვენები Bitcoin-მისამართები.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>მისამართების &amp;ჩვენება სიაში</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1183,12 +1022,8 @@ Address: %4
         <translation>ფორმა</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Bitcoin-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>საფულე</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Skeincoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Skeincoin-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1223,10 +1058,6 @@ Address: %4
         <translation>თქვენი სრული მიმდინარე ბალანსი</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;ბოლო ტრანსაქციები&lt;/b&gt;</translation>
-    </message>
-    <message>
         <source>out of sync</source>
         <translation>არ არის სინქრონიზებული</translation>
     </message>
@@ -1238,8 +1069,8 @@ Address: %4
         <translation>URI-ების დამუშავება</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI-ის დამუშავება ვერ მოხერხდა. შესაძლოა არასწორია Bitcoin-მისამართი ან  URI-ის პარამეტრები.</translation>
+        <source>Invalid payment address %1</source>
+        <translation>გადახდის მისამართი არასწორია: %1</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1250,16 +1081,8 @@ Address: %4
         <translation>გადახდის მოთხოვნის შეცდომა</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>ვერ გაიშვა bitcoin: click-to-pay</translation>
-    </message>
-    <message>
-        <source>Net manager warning</source>
-        <translation>გაფრთხილება ქსელის მენეჯერისაგან</translation>
-    </message>
-    <message>
-        <source>Your active proxy doesn't support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>თქვენს აქტიურ პროქსის არა აქვს SOCKS5-ის მხარდაჭერა, რაც საჭიროა გადახდების პროქსით განხორციელებისათვის.</translation>
+        <source>Cannot start skeincoin: click-to-pay handler</source>
+        <translation>ვერ გაიშვა skeincoin: click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1268,10 +1091,6 @@ Address: %4
     <message>
         <source>Payment request file handling</source>
         <translation>გადახდის მოთხოვნის ფაილის დამუშავება</translation>
-    </message>
-    <message>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation>ვერ ხერხდება გადახდის მოთხოვნის ფაილის წაკითხვა ან დამუშავება! შესაძლოა დაზიანებულია გადახდის მოთხოვნის ფაილი.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
@@ -1284,10 +1103,6 @@ Address: %4
     <message>
         <source>Error communicating with %1: %2</source>
         <translation>ვერ გამოდის კავშირზე %1: %2</translation>
-    </message>
-    <message>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation>ვერ ხერხდება გადახდის მოთხოვნის გარჩევა ან დამუშავება!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
@@ -1303,29 +1118,32 @@ Address: %4
     </message>
 </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Amount</source>
+        <translation>თანხა</translation>
     </message>
     <message>
-        <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation>შეცდომა: მითითებული მონაცემთა კატალოგი "%1" არ არსებობს.</translation>
+        <source>%1 h</source>
+        <translation>%1 სთ</translation>
     </message>
     <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>შეცდომა: -regtest-ისა და -testnet-ის დაუშვებელი კომბინაცია.</translation>
+        <source>%1 m</source>
+        <translation>%1 წთ</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>შეიყვანეთ ბიტკოინ-მისამართი (მაგ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>N/A</source>
+        <translation>მიუწვდ.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>გამო&amp;სახულების შენახვა</translation>
+        <translation>გამო&amp;სახულების შენახვა...</translation>
     </message>
     <message>
         <source>&amp;Copy Image</source>
@@ -1395,10 +1213,6 @@ Address: %4
         <translation>ბლოკების მიმდინარე რაოდენობა</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>ბლოკების სავარაუდო რაოდენობა</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>ბოლო ბლოკის დრო</translation>
     </message>
@@ -1420,7 +1234,7 @@ Address: %4
     </message>
     <message>
         <source>Totals</source>
-        <translation>ჯამი</translation>
+        <translation>სულ:</translation>
     </message>
     <message>
         <source>In:</source>
@@ -1439,16 +1253,16 @@ Address: %4
         <translation>დახვეწის ლოგ-ფაილი</translation>
     </message>
     <message>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>გახსენით Bitcoin-ის დახვეწის ლოგ-ფაილი მიმდინარე კატალოგიდან. დიდი ლოგ-ფაილის შემთხვევაში ამას შეიძლება რამდენიმე წამი მოუნდეს.</translation>
+        <source>Open the Skeincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>გახსენით Skeincoin-ის დახვეწის ლოგ-ფაილი მიმდინარე კატალოგიდან. დიდი ლოგ-ფაილის შემთხვევაში ამას შეიძლება რამდენიმე წამი მოუნდეს.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>კონსოლის გასუფთავება</translation>
     </message>
     <message>
-        <source>Welcome to the Bitcoin RPC console.</source>
-        <translation>მოგესალმებათ Bitcoin-ის RPC კონსოლი.</translation>
+        <source>Welcome to the Skeincoin RPC console.</source>
+        <translation>მოგესალმებათ Skeincoin-ის RPC კონსოლი.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1474,19 +1288,7 @@ Address: %4
         <source>%1 GB</source>
         <translation>%1 GB</translation>
     </message>
-    <message>
-        <source>%1 m</source>
-        <translation>%1 წთ</translation>
-    </message>
-    <message>
-        <source>%1 h</source>
-        <translation>%1 სთ</translation>
-    </message>
-    <message>
-        <source>%1 h %2 m</source>
-        <translation>%1 სთ %2 წთ</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
@@ -1510,7 +1312,7 @@ Address: %4
         <translation>ად&amp;რე გამოყენებული მიღების მისამართის გამოყენება (არ არის რეკომენდებული)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Skeincoin network.</source>
         <translation>არააუცილებელი მესიჯი, რომელიც ერთვის გადახდის მოთხოვნას და ნაჩვენები იქნება მოთხოვნის გახსნისას. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     </message>
     <message>
@@ -1606,7 +1408,7 @@ Address: %4
     </message>
     <message>
         <source>Amount</source>
-        <translation>რაოდენობა</translation>
+        <translation>თანხა</translation>
     </message>
     <message>
         <source>Label</source>
@@ -1641,7 +1443,7 @@ Address: %4
     </message>
     <message>
         <source>Amount</source>
-        <translation>რაოდენობა</translation>
+        <translation>თანხა</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1697,10 +1499,6 @@ Address: %4
     <message>
         <source>Fee:</source>
         <translation>საკომისიო:</translation>
-    </message>
-    <message>
-        <source>Low Output:</source>
-        <translation>ქვედა ზღვარი:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -1779,16 +1577,8 @@ Address: %4
         <translation>პრიორიტეტის კოპირება</translation>
     </message>
     <message>
-        <source>Copy low output</source>
-        <translation>ქვედა ზღვრის კოპირება</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>ხურდის კოპირება</translation>
-    </message>
-    <message>
-        <source>Total Amount %1 (= %2)</source>
-        <translation>ჯამური თანხა %1 (= %2)</translation>
     </message>
     <message>
         <source>or</source>
@@ -1819,8 +1609,8 @@ Address: %4
         <translation>ტრანსაქცია უარყოფილია! შესაძლოა მონეტების ნაწილი თქვენი საფულიდან უკვე გამოყენებულია, რაც შეიძლება მოხდეს wallet.dat-ის ასლის გამოყენებისას, როცა მონეტები გაიგზავნა სხვა ასლიდან, აქ კი არ არის გაგზავნილად მონიშნული.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>ყურადღება: არასწორია Bitcoin-მისამართი</translation>
+        <source>Warning: Invalid Skeincoin address</source>
+        <translation>ყურადღება: არასწორია Skeincoin-მისამართი</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1838,14 +1628,6 @@ Address: %4
         <source>added as transaction fee</source>
         <translation>დამატებულია საკომისიო</translation>
     </message>
-    <message>
-        <source>Payment request expired</source>
-        <translation>გადახდის მოთხოვნას ვადა გაუვიდა</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>გადახდის მისამართი არასწორია: %1</translation>
-    </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
@@ -1856,10 +1638,6 @@ Address: %4
     <message>
         <source>Pay &amp;To:</source>
         <translation>ადრესა&amp;ტი:</translation>
-    </message>
-    <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>მისამართი, რომლითაც ასრულებთ გადახდას (მაგ.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1906,7 +1684,7 @@ Address: %4
         <translation>შეიყვანეთ ამ მისამართის ნიშნული გამოყენებული მისამართების სიაში დასამატებლად</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <source>A message that was attached to the skeincoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Skeincoin network.</source>
         <translation>მესიჯი, რომელიც თან ერთვის მონეტებს:  URI, რომელიც შეინახება ტრანსაქციასთან ერთად თქვენთვის. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     </message>
     <message>
@@ -1925,8 +1703,8 @@ Address: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Bitcoin Core is shutting down...</source>
-        <translation>Bitcoin Core იხურება...</translation>
+        <source>Skeincoin Core is shutting down...</source>
+        <translation>Skeincoin Core იხურება...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1946,10 +1724,6 @@ Address: %4
     <message>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>ხელმოწერით თქვენ ადასტურებთ, რომ მესიჯი თქვენია. ფრთხილად - არ მოაწეროთ ხელი რაიმე საეჭვოს: ფიშინგური ხრიკებით შეიძლება ის თქვენს მესიჯად გაასაღონ. მოაწერეთ ხელი მხოლოდ იმას, რასაც ყველა წვრილმანში ეთანხმებით.</translation>
-    </message>
-    <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>მისამართი, რომლითაც ხელს აწერთ (მაგ.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1980,7 +1754,7 @@ Address: %4
         <translation>მიმდინარე ხელმოწერის კოპირება კლიპბორდში</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Skeincoin address</source>
         <translation>მოაწერეთ ხელი იმის დასადასტურებლად, რომ ეს მისამართი თქვენია</translation>
     </message>
     <message>
@@ -2004,12 +1778,8 @@ Address: %4
         <translation>შეიყვანეთ ხელმოწერის მისამართი, მესიჯი (დაუკვირდით, რომ ზუსტად იყოს კოპირებული სტრიქონის გადატანები, ჰარები, ტაბულაციები და სხვ) და ხელმოწერა მესიჯის ვერიფიკაციისათვის. მიაქციეთ ყურადღება, რომ რაიმე ზედმეტი არ გაგყვეთ კოპირებისას, რათა არ გახდეთ "man-in-the-middle" შეტევის ობიექტი.</translation>
     </message>
     <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>მისამართი, რომლითაც ხელმოწერილია მესიჯი (მაგ.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Bitcoin-მისამართით</translation>
+        <source>Verify the message to ensure it was signed with the specified Skeincoin address</source>
+        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Skeincoin-მისამართით</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2018,10 +1788,6 @@ Address: %4
     <message>
         <source>Reset all verify message fields</source>
         <translation>ვერიფიკაციის ყველა ველის წაშლა</translation>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>შეიყვანეთ ბიტკოინ-მისამართი (მაგ. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -2079,12 +1845,12 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Core</translation>
     </message>
     <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Bitcoin Core-ს ავტორები</translation>
+        <source>The Bitcoin Core and Skeincoin Core developers</source>
+        <translation>Skeincoin Core-ს ავტორები</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2124,10 +1890,6 @@ Address: %4
         <source>Status</source>
         <translation>სტატუსი</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, დაგზავნილია %n კვანძისათვის</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>თარიღი</translation>
@@ -2159,10 +1921,6 @@ Address: %4
     <message>
         <source>Credit</source>
         <translation>კრედიტი</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>მზად იქნება %n ბლოკის შემდეგ</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2228,10 +1986,6 @@ Address: %4
         <source>, has not been successfully broadcast yet</source>
         <translation>, დაგზავნა არ არის წარმატებით დასრულებული</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>ღიაა კიდევ %n ბლოკისათვის</numerusform></translation>
-    </message>
     <message>
         <source>unknown</source>
         <translation>უცნობია</translation>
@@ -2263,16 +2017,8 @@ Address: %4
         <translation>მისამართი</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>რაოდენობა</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>არ არის მომწიფებული (%1 დასტური, საჭიროა სულ %2)</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>ღიაა კიდევ %n ბლოკისათვის</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -2308,7 +2054,7 @@ Address: %4
     </message>
     <message>
         <source>Received with</source>
-        <translation>მიღებულია</translation>
+        <translation>შემოსულია</translation>
     </message>
     <message>
         <source>Received from</source>
@@ -2316,7 +2062,7 @@ Address: %4
     </message>
     <message>
         <source>Sent to</source>
-        <translation>გაგზავნილია ადრესატთან</translation>
+        <translation>გაგზავნილია</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
@@ -2478,10 +2224,6 @@ Address: %4
         <translation>მისამართი</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>თანხა</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2494,6 +2236,9 @@ Address: %4
         <translation>-</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     <message>
@@ -2546,40 +2291,12 @@ Address: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>გამოყენება:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>ბრძანებები</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>ბრძანების აღწერილობა</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>ოპციები:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation>მიუთითეთ საკონფიგურაციო ფაილი (ნაგულისხმევია: bitcoin.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>მიუთითეთ pid ფაილი (ნაგულისხმევია: bitcoind.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>მიუთითეთ მონაცემთა კატალოგი</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>მიყურადება პორტზე &lt;port&gt; (ნაგულისხმევი: 8333 ან სატესტო ქსელში: 18333)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>არაუმეტეს &lt;n&gt; შეერთებისა პირებზე (ნაგულისხმევი: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -2588,22 +2305,6 @@ Address: %4
     <message>
         <source>Specify your own public address</source>
         <translation>მიუთითეთ თქვენი საჯარო მისამართი</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>არასწორად მოქმედი პირების გათიშვის ზღვარი (ნაგულისხმევი:100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>არასწორად მოქმედი პირების ბლოკირების დრო წამებში (ნაგულისხმევი: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>შეცდომა %u RPC-პორტის მიყურადების ჩართვისას IPv4 მისამართზე: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation> JSON-RPC-შეერთებების მიყურადება პორტზე &lt;port&gt; (ნაგულისხმევი: 8332 ან სატესტო ქსელში: 18332)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -2622,56 +2323,12 @@ Address: %4
         <translation>გარედან შეერთებების დაშვება (ნაგულისხმევი: 1 თუ არ გამოიყენება -proxy ან -connect)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=bitcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Bitcoin Alert" admin@foo.com
-</source>
-        <translation>%s, მიუთითეთ rpcpassword საკონფიგურაციო ფაილში:
-%s
-რეკომენდებულია შემდეგი შემთხვევითი პაროლი:
-rpcuser=bitcoinrpc
-rpcpassword=%s
-(ამის დამახსოვრება არ გჭირდებათ)
-სახელი და პაროლი ერთმანეთს არ უნდა ემთხვეოდეს.
-თუ ფაილი არ არსებობს, შექმენით იგი უფლებებით owner-readable-only.
-ასევე რეკომენდებულია დააყენოთ alertnotify რათა მიიღოთ შეტყობინებები პრობლემების შესახებ;
-მაგალითად: alertnotify=echo %%s | mail -s "Bitcoin Alert" admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>დაშვებული ალგორითმები (ნაგულისხმევი: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>შეცდომა %u RPC-პორტის მიყურადების ჩართვისას IPv6 მისამართზე, ვბრუნდებით IPv4-ზე : %s</translation>
-    </message>
-    <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>მოცემულ მისამართზე მიჯაჭვა მუდმივად მასზე მიყურადებით. გამოიყენეთ [host]:port ფორმა IPv6-სათვის</translation>
     </message>
     <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
-        <translation>შესვლა რეგრესული ტესტირების რეჟიმში; სპეციალური ჯაჭვის გამოყენებით ბლოკების პოვნა ხდება დაუყოვნებლივ. გამოიყენება რეგრესული ტესტირების ინსტრუმენტებისა და პროგრამების შემუშავებისას.</translation>
-    </message>
-    <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
         <translation>გადასვლა რეგრესული ტესტირების რეჟიმში, რომელიც იყენებს სპეციალურ ჯაჭვს ბლოკების დაუყოვნებლივი პოვნის შესაძლებლობით.</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>შეცდომა: ტრანსაქცია უარყოფილია! შესაძლოა მონეტების ნაწილი თქვენი საფულიდან უკვე გამოყენებულია, რაც შეიძლება მოხდეს wallet.dat-ის ასლის გამოყენებისას, როცა მონეტები გაიგზავნა სხვა ასლიდან, აქ კი არ არის გაგზავნილად მონიშნული.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>შეცდომა: ტრანსაქცია მოითხოვს საკომისიოს მინიმუმ %s რაოდენობის, სირთულის ან ბოლოს მიღებული თანხების შესაბამისად!</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -2682,16 +2339,8 @@ rpcpassword=%s
         <translation>ეს არის წინასწარი სატესტო ვერსია - გამოიყენეთ საკუთარი რისკით - არ გამოიყენოთ მოპოვებისა ან კომერციული მიზნებისათვის</translation>
     </message>
     <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
-        <translation>ფარული Tor-სერვისებით პირების წვდომისათვის სხვა SOCKS5 პროქსის გამოყენება (ნაგულისხმევია: -proxy)</translation>
-    </message>
-    <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>ყურადღება:  ძალიან მაღალია -paytxfee - საკომისო, რომელსაც თქვენ გადაიხდით ამ ტრანსაქციის გაგზავნის საფასურად.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
-        <translation>ყურადღება: შეამოწმეთ თქვენი კომპიუტერის სისტემური თარიღი და დრო! თუ ისინი არასწორია, Bitcoin ვერ იმუშავებს კორექტულად.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2718,28 +2367,12 @@ rpcpassword=%s
         <translation>პირადი გასაღებების აღდგენის მცდელობა wallet.dat-იდან</translation>
     </message>
     <message>
-        <source>Bitcoin Core Daemon</source>
-        <translation>Bitcoin Core დემონი</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>ბლოკის შექმნის ოპციები:</translation>
     </message>
     <message>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation>საფულის ტრანსაქციების სიის წაშლა (დიაგნოსტიკის საშუალება; მოიცავს -rescan-ს)</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>შეერთება მხოლოდ მითითებულ კვანძ(ებ)თან</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS proxy</source>
-        <translation>შეერთება SOCKS-პროქსით</translation>
-    </message>
-    <message>
-        <source>Connect to JSON-RPC on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation> JSON-RPC-შეერთება პორტზე &lt;port&gt; (ნაგულისხმევი: 8332 ან სატესტო ქსელში: 18332)</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -2778,72 +2411,8 @@ rpcpassword=%s
         <translation>შეცდომა: დისზე არ არის ადგილი!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>შეცდომა: საფულე დაბლოკილია, ტრანსაქცია ვერ შეიქმნება!</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>შეცდომა: სისტემური შეცდომა:</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>ვერ ხერხდება პორტების მიყურადება. თუ გსურთ, გამოიყენეთ -listen=0.</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>ბლოკის ინფორმაცია არ იკითხება</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>ბლოკი არ იკითხება</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>ბლოკების ინდექსის სინქრონიზება ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>ბლოკების ინდექსის ჩაწერა ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>ბლოკის ინფორმაციის ჩაწერა ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>ბლოკის ჩაწერა ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>ფაილის ინფორმაციის ჩაწერა ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>მონეტების ბაზის ჩაწერა ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>ტრანსაქციების ინდექსის ჩაწერა ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>ცვლილებების გაუქმების მონაცემთა ჩაწერა ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>საკომისო კბ-ზე, რომელიც დაემატება გაგზავნილ ტრანსაქციას</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>პირების ძებნა DNS-ით (ნაგულისხმევი: 1 გარდა -connect-ისა)</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>მონეტების გენერირება (ნაგულისხმევი: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>რამდენი ბლოკი შემოწმდეს გაშვებისას (ნაგულისხმევი: 288, 0 - ყველა)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
@@ -2862,44 +2431,20 @@ rpcpassword=%s
         <translation>არ არის საკმარისი ფაილ-დესკრიპტორები.</translation>
     </message>
     <message>
-        <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation>დაემატოს დახვეწის ინფორმაციას დროის ჭდეები (ნაგულისხმევი: 1)</translation>
-    </message>
-    <message>
-        <source>RPC client options:</source>
-        <translation>RPC კლიენტის ოპციები:</translation>
-    </message>
-    <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>ბლოკთა ჯაჭვის ინდექსის  ხელახლა აგება blk000??.dat ფაილიდან</translation>
-    </message>
-    <message>
-        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation> SOCKS-ვერსიის არჩევა -proxy-სათვის (4 ან 5, ნაგულისხმევი: 5)</translation>
     </message>
     <message>
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>ბლოკის მაქსიმალური ზომის განსაზღვრა ბაიტებში (ნადულისხმევი: %d)</translation>
     </message>
     <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>RPC-ნაკადების რაოდენობა (ნაგულისხმევი: 4)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>მიუთითეთ საფულის ფაილი (კატალოგში)</translation>
     </message>
     <message>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation>დაუდასტურებელი ხურდის გამოყენება ტრანსაქციის გაგზავნისას (ნაგულისხმევი: 1)</translation>
-    </message>
-    <message>
         <source>This is intended for regression testing tools and app development.</source>
         <translation>გამოიყენება რეგრესული ტესტირების ინსტრუმენტებისა და პროგრამების შემუშავებისას.</translation>
-    </message>
-    <message>
-        <source>Usage (deprecated, use bitcoin-cli):</source>
-        <translation>გამოყენება (მოძველებულია, გამოიყენეთ bitcoin-cli):</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -2910,20 +2455,12 @@ rpcpassword=%s
         <translation>საფულის ვერიფიკაცია...</translation>
     </message>
     <message>
-        <source>Wait for RPC server to start</source>
-        <translation>RPC-სერვერის დალოდება გაშვებისათვის</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>საფულე %s მდებარეობს მონაცემთა კატალოგის %s გარეთ</translation>
     </message>
     <message>
         <source>Wallet options:</source>
         <translation>სფულის ოპციები:</translation>
-    </message>
-    <message>
-        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
-        <translation>ყურადღება: მოძველებული არგუმენტი -debugnet იგნორირდება. გამოიყენეთ -debug=net</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2936,10 +2473,6 @@ rpcpassword=%s
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>ბრძანების შესრულება შესაბამისი უწყების მიღებისას ან როცა შეინიშნება საგრძნობი გახლეჩა (cmd-ში %s შეიცვლება მესიჯით)</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation>დახვეწის ინფორმაციის გამოყვანა (ნაგულისხმევი: 0, &lt;category&gt; - არააუცილებელი არგუმენტია)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
@@ -2958,36 +2491,8 @@ rpcpassword=%s
         <translation>დაუშვებელი მნიშვნელობა -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>ტრანსაქციის სრული ინდექსი (ნაგულისხმევი: 0)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>მიღების ბუფერის მაქსიმალური ზომა შეერთებაზე, &lt;n&gt;*1000 ბაიტი (ნაგულისხმევი: 5000)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>გაგზავნის ბუფერის მაქსიმალური ზომა შეერთებაზე, &lt;n&gt;*1000 ბაიტი (ნაგულისხმევი: 5000)</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>ბლოკთა ჯაჭვი მიიღეთ მხოლოდ მაშინ, თუ ემთხვევა შიდა ჩეკპოინტები (ნაგულისხმევი: 1)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>შეერთება მხოლოდ &lt;net&gt; ქსელის კვანძებთან (IPv4, IPv6 ან Tor)</translation>
-    </message>
-    <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL ოპციები: (იხილე Bitcoin Wiki-ში  SSL-ს მოწყობის ინსტრუქციები)</translation>
-    </message>
-    <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>ტრასირების/დახვეწის ინფოს გაგზავნა კონსოლზე debug.log ფაილის ნაცვლად</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>დააყენეთ ბლოკის მინიმალური ზომა ბაიტებში (ნაგულისხმევი: 0)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -2996,14 +2501,6 @@ rpcpassword=%s
     <message>
         <source>Signing transaction failed</source>
         <translation>ტრანსაქციების ხელმოწერა ვერ მოხერხდა</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>მიუთითეთ შეერთების ტაიმაუტი მილიწამებში (ნაგულისხმევი: 5000)</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>სისტემური შეცდომა:</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3016,10 +2513,6 @@ rpcpassword=%s
     <message>
         <source>Transaction too large</source>
         <translation>ტრანსაქცია ძალიან დიდია</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>გამოიყენეთ UPnP მისაყურადებელი პორტის გადასამისამართებლად (ნაგულისხმევი: 0)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -3042,24 +2535,12 @@ rpcpassword=%s
         <translation>ტრანსაქციების ჩახსნა საფულიდან...</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>ვერსია</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat დაზიანებულია, აღდგენა ვერ მოხერხდა</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>პაროლი JSON-RPC-შეერთებისათვის</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>JSON-RPC-შეერთების ნებართვა მითითებული IP მისამართიდან</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>კომანდის გაგზავნა კვანძისათვის, რომელიც გაშვებულია მისამართზე &lt;ip&gt; (ნაგულისხმევი: 127.0.0.1)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
@@ -3070,10 +2551,6 @@ rpcpassword=%s
         <translation>საფულის ფორმატის განახლება</translation>
     </message>
     <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>გასაღების პულის ზომა იქნება &lt;n&gt; (ნაგულისხმევი: 100)</translation>
-    </message>
-    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>ბლოკების ჯაჭვის გადამოწმება საფულეში გამორჩენილ ტრანსაქციებზე</translation>
     </message>
@@ -3082,20 +2559,8 @@ rpcpassword=%s
         <translation>OpenSSL-ის (https) გამოყენება JSON-RPC-შეერთებებისათვის</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>სერვერის სერტიფიკატის ფაილი (ნაგულისხმევი: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>სერვერის პირადი გასაღები (ნაგულისხმევი: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>ეს ტექსტი</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>ვერ ხერხდება მიბმა %s-თან ამ კომპიუტერზე (მიღებულია შეცდომა %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3110,14 +2575,6 @@ rpcpassword=%s
         <translation>არ იტვირთება wallet.dat: საფულე დაზიანებულია</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>არ იტვირთება wallet.dat: საფულეს სჭირდება Bitcoin-ის ახალი ვერსია</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
-        <translation>საჭიროა საფულის აღდგენა: დაარესტარტეთ Bitcoin </translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>არ იტვირთება wallet.dat</translation>
     </message>
@@ -3130,10 +2587,6 @@ rpcpassword=%s
         <translation>-onlynet-ში მითითებულია უცნობი ქსელი: '%s'</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>მოთხოვნილია -socks პროქსის უცნობი ვერსია: %i</translation>
-    </message>
-    <message>
         <source>Cannot resolve -bind address: '%s'</source>
         <translation>ვერ ხერხდება -bind მისამართის გარკვევა: '%s'</translation>
     </message>
@@ -3144,10 +2597,6 @@ rpcpassword=%s
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
         <translation>დაუშვებელი მნიშვნელობა -paytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>დაუშვებელი თანხა</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3182,20 +2631,8 @@ rpcpassword=%s
         <translation>ჩატვირთვა დასრულებულია</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>%s ოპციის გამოსაყენებლად</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>შეცდომა</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>უნდა დააყენოთ rpcpassword=&lt;password&gt; საკონფიგურაციო ფაილში:
-%s
-თუ ეს ფაილი არ არსებობს, შექმენით იგი უფლებებით owner-readable-only.</translation>
     </message>
 </context>
 </TS>

@@ -1,49 +1,45 @@
 <TS language="es_CL" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
-Este es un software experimental.
-
-Distribuido bajo la licencia MIT/X11, vea el archivo adjunto
-COPYING o http://www.opensource.org/licenses/mit-license.php.
-
-Este producto incluye software desarrollado por OpenSSL Project para su uso en
-el OpenSSL Toolkit (http://www.openssl.org/), software criptográfico escrito por
-Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Copyright</translation>
-    </message>
-    </context>
-<context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Haz doble clic para editar una dirección o etiqueta</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>Haga clic para editar la dirección o etiqueta</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Crea una nueva dirección</translation>
+        <translation>Crea una nueva direCrea una nueva direccióncción</translation>
+    </message>
+    <message>
+        <source>&amp;New</source>
+        <translation>y nueva</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Copia la dirección seleccionada al portapapeles</translation>
     </message>
     <message>
+        <source>&amp;Copy</source>
+        <translation>y copiar</translation>
+    </message>
+    <message>
+        <source>C&amp;lose</source>
+        <translation>C y perder</translation>
+    </message>
+    <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Copia dirección</translation>
     </message>
     <message>
+        <source>Delete the currently selected address from the list</source>
+        <translation>Eliminar la dirección seleccionada de la lista</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportar los datos de la pestaña actual a un archivo</translation>
+    </message>
+    <message>
+        <source>&amp;Export</source>
+        <translation>y exportar</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -92,10 +88,6 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Repite nueva contraseña</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Introduce la nueva contraseña para la billetera.&lt;br/&gt;Por favor utiliza un contraseña de&lt;b&gt;10 o más caracteres aleatorios&lt;/b&gt;, u &lt;b&gt;ocho o más palabras&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>Codificar billetera</translation>
     </message>
@@ -128,8 +120,8 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Confirma la codificación de cartera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Atención: ¡Si codificas tu billetera y pierdes la contraseña perderás &lt;b&gt;TODOS TUS BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
+        <translation>Atención: ¡Si codificas tu billetera y pierdes la contraseña perderás &lt;b&gt;TODOS TUS SKEINCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -148,8 +140,8 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Billetera codificada</translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Bitcoin se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus bitcoins de ser robados por malware que infecte su computador</translation>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
+        <translation>Skeincoin se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus skeincoins de ser robados por malware que infecte su computador</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -215,16 +207,12 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Salir del programa</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation>Muestra información acerca de Bitcoin</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>Acerca de</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Mostrar Información sobre QT</translation>
+        <translation>Mostrar Información sobre Qt</translation>
     </message>
     <message>
         <source>&amp;Options...</source>
@@ -243,16 +231,24 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>&amp;Cambiar la contraseña...</translation>
     </message>
     <message>
+        <source>Open &amp;URI...</source>
+        <translation>Abrir y url...</translation>
+    </message>
+    <message>
+        <source>Skeincoin Core client</source>
+        <translation>cliente skeincoin core</translation>
+    </message>
+    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección bitcoin</translation>
+        <source>Send coins to a Skeincoin address</source>
+        <translation>Enviar monedas a una dirección skeincoin</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation>Modifica las opciones de configuración de bitcoin</translation>
+        <source>Modify configuration options for Skeincoin</source>
+        <translation>Modifica las opciones de configuración de skeincoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -271,7 +267,7 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Abre consola de depuración y diagnóstico</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>Bitcoin</translation>
     </message>
     <message>
@@ -283,11 +279,15 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>&amp;Envía</translation>
     </message>
     <message>
+        <source>&amp;Receive</source>
+        <translation>y recibir</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Mostrar/Ocultar</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Skeincoin addresses to prove you own them</source>
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -307,16 +307,12 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[red-de-pruebas]</translation>
-    </message>
-    <message>
-        <source>Bitcoin client</source>
-        <translation>Cliente Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>bitcoin core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red Bitcoin</numerusform><numerusform>%n conexiones activas hacia la red Bitcoin</numerusform></translation>
+        <source>%n active connection(s) to Skeincoin network</source>
+        <translation><numerusform>%n conexión activa hacia la red Skeincoin</numerusform><numerusform>%n conexiones activas hacia la red Skeincoin</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -377,7 +373,7 @@ Dirección: %4</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>La billetera esta &lt;b&gt;codificada&lt;/b&gt; y actualmente &lt;b&gt;bloqueda&lt;/b&gt;</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>ClientModel</name>
     <message>
@@ -396,16 +392,16 @@ Dirección: %4</translation>
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Dirección</translation>
-    </message>
-    <message>
         <source>Date</source>
         <translation>Fecha</translation>
     </message>
     <message>
         <source>Confirmed</source>
         <translation>Confirmado</translation>
+    </message>
+    <message>
+        <source>Priority</source>
+        <translation>prioridad</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -418,6 +414,18 @@ Dirección: %4</translation>
     <message>
         <source>Copy amount</source>
         <translation>Copiar Cantidad</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>medio</translation>
+    </message>
+    <message>
+        <source>yes</source>
+        <translation>si</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>no</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -459,8 +467,8 @@ Dirección: %4</translation>
         <translation>La dirección introducida "%1" ya esta guardada en la libreta de direcciones.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>La dirección introducida "%1" no es una dirección Bitcoin valida.</translation>
+        <source>The entered address "%1" is not a valid Skeincoin address.</source>
+        <translation>La dirección introducida "%1" no es una dirección Skeincoin valida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -480,6 +488,10 @@ Dirección: %4</translation>
     </context>
 <context>
     <name>HelpMessageDialog</name>
+    <message>
+        <source>Skeincoin Core</source>
+        <translation>bitcoin core</translation>
+    </message>
     <message>
         <source>version</source>
         <translation>versión</translation>
@@ -501,8 +513,12 @@ Dirección: %4</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Welcome</source>
+        <translation>bienvenido</translation>
+    </message>
+    <message>
+        <source>Skeincoin Core</source>
+        <translation>bitcoin core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -511,6 +527,10 @@ Dirección: %4</translation>
     </context>
 <context>
     <name>OpenURIDialog</name>
+    <message>
+        <source>URI:</source>
+        <translation>url:</translation>
+    </message>
     </context>
 <context>
     <name>OptionsDialog</name>
@@ -523,16 +543,12 @@ Dirección: %4</translation>
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Comisión de &amp;transacciónes</translation>
+        <source>Automatically start Skeincoin after logging in to the system.</source>
+        <translation>Inicia Skeincoin automáticamente despues de encender el computador</translation>
     </message>
     <message>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
-        <translation>Inicia Bitcoin automáticamente despues de encender el computador</translation>
-    </message>
-    <message>
-        <source>&amp;Start Bitcoin on system login</source>
-        <translation>&amp;Inicia Bitcoin al iniciar el sistema</translation>
+        <source>&amp;Start Skeincoin on system login</source>
+        <translation>&amp;Inicia Skeincoin al iniciar el sistema</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -543,8 +559,12 @@ Dirección: %4</translation>
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Bitcoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
+        <source>Expert</source>
+        <translation>experto</translation>
+    </message>
+    <message>
+        <source>Automatically open the Skeincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automáticamente el puerto del cliente Skeincoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -561,6 +581,11 @@ Dirección: %4</translation>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Puerto del servidor proxy (ej. 9050)</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>y windows
+</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -591,10 +616,6 @@ Dirección: %4</translation>
         <translation>Elige la subdivisión por defecto para mostrar cantidaded en la interfaz cuando se envien monedas</translation>
     </message>
     <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Muestra direcciones en el listado de transaccioines</translation>
-    </message>
-    <message>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -618,16 +639,8 @@ Dirección: %4</translation>
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Cartera</translation>
-    </message>
-    <message>
         <source>Total:</source>
         <translation>Total:</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Transacciones recientes&lt;/b&gt;</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -642,16 +655,23 @@ Dirección: %4</translation>
     </message>
     </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Amount</source>
+        <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduce una dirección Bitcoin (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>UNKNOWN</source>
+        <translation>DESCONOCIDO</translation>
     </message>
-</context>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -682,6 +702,10 @@ Dirección: %4</translation>
         <translation>&amp;Información</translation>
     </message>
     <message>
+        <source>General</source>
+        <translation>General</translation>
+    </message>
+    <message>
         <source>Startup time</source>
         <translation>Tiempo de inicio</translation>
     </message>
@@ -700,6 +724,11 @@ Dirección: %4</translation>
     <message>
         <source>Block chain</source>
         <translation>Bloquea cadena</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>version
+</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -869,10 +898,6 @@ Dirección: %4</translation>
         <translation>&amp;Pagar a:</translation>
     </message>
     <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>La dirección donde enviar el pago (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Introduce una etiqueta a esta dirección para añadirla a tu guia</translation>
     </message>
@@ -907,10 +932,6 @@ Dirección: %4</translation>
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduce una dirección Bitcoin (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -931,7 +952,7 @@ Dirección: %4</translation>
         <translation>Firma</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Skeincoin address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -947,16 +968,8 @@ Dirección: %4</translation>
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduce una dirección Bitcoin (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Verify &amp;Message</source>
         <translation>&amp;Firmar Mensaje</translation>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduce una dirección Bitcoin (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -964,7 +977,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Por favor, revise la dirección Bitcoin e inténtelo denuevo</translation>
+        <translation>Por favor, revise la dirección Skeincoin e inténtelo denuevo</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -985,6 +998,10 @@ Dirección: %4</translation>
 </context>
 <context>
     <name>SplashScreen</name>
+    <message>
+        <source>Skeincoin Core</source>
+        <translation>bitcoin core</translation>
+    </message>
     <message>
         <source>[testnet]</source>
         <translation>[red-de-pruebas]</translation>
@@ -1120,10 +1137,6 @@ Dirección: %4</translation>
     <message>
         <source>Address</source>
         <translation>Dirección</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Cantidad</translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -1289,10 +1302,6 @@ Dirección: %4</translation>
         <translation>Dirección</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Cantidad</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -1306,6 +1315,9 @@ Dirección: %4</translation>
     </message>
 </context>
 <context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1317,6 +1329,10 @@ Dirección: %4</translation>
 </context>
 <context>
     <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>y exportar</translation>
+    </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportar los datos de la pestaña actual a un archivo</translation>
@@ -1337,54 +1353,14 @@ Dirección: %4</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Uso:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Muestra comandos
-</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Recibir ayuda para un comando
-</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Opciones:
-</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation>Especifica archivo de configuración (predeterminado: bitcoin.conf)
-</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Especifica archivo pid (predeterminado: bitcoin.pid)
 </translation>
     </message>
     <message>
         <source>Specify data directory</source>
         <translation>Especifica directorio para los datos
 </translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Escuchar por conecciones en &lt;puerto&gt; (Por defecto: 8333 o red de prueba: 18333)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Mantener al menos &lt;n&gt; conecciones por cliente (por defecto: 125) </translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Umbral de desconección de clientes con mal comportamiento (por defecto: 100)</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation>Escucha conexiones JSON-RPC en el puerto &lt;port&gt; (predeterminado: 8332 or testnet: 18332)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -1406,10 +1382,6 @@ Dirección: %4</translation>
         <translation>Precaución: -paytxfee es muy alta. Esta es la comisión que pagarás si envias una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
-        <translation>Precaución: Por favor revise que la fecha y hora de tu ordenador son correctas. Si tu reloj está mal configurado Bitcoin no funcionará correctamente.</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Conecta solo al nodo especificado
 </translation>
@@ -1423,38 +1395,6 @@ Dirección: %4</translation>
         <translation>Atención: Poco espacio en el disco duro</translation>
     </message>
     <message>
-        <source>Error: system error: </source>
-        <translation>Error: error de sistema:</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Falló la lectura de la información del bloque</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Falló la lectura del bloque</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Falló sincronización del índice del bloque</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Falló la escritura del bloque del índice</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Falló la escritura de la información del bloque</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Falló la escritura del bloque</translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>Comisión por kB para adicionarla a las transacciones enviadas</translation>
-    </message>
-    <message>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Importar bloques desde el archivo externo blk000??.dat </translation>
     </message>
@@ -1463,28 +1403,8 @@ Dirección: %4</translation>
         <translation>Información</translation>
     </message>
     <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opciones SSL: (ver la Bitcoin Wiki para instrucciones de configuración SSL)</translation>
-    </message>
-    <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Enviar informacion de seguimiento a la consola en vez del archivo debug.log</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Establezca el tamaño mínimo del bloque en bytes (por defecto: 0)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Especifica tiempo de espera para conexion en milisegundos (predeterminado: 5000)</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Error de sistema:</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Intenta usar UPnP para mapear el puerto de escucha (default: 0)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -1504,10 +1424,6 @@ Dirección: %4</translation>
         <translation>Advertencia: Esta versión está obsoleta, se necesita actualizar!</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>versión</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrompió, guardado fallido</translation>
     </message>
@@ -1517,23 +1433,8 @@ Dirección: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Permite conexiones JSON-RPC desde la dirección IP especificada
-</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Envia comando al nodo situado en &lt;ip&gt; (predeterminado: 127.0.0.1)
-</translation>
-    </message>
-    <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Actualizar billetera al formato actual</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Ajusta el numero de claves en reserva &lt;n&gt; (predeterminado: 100)
-</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
@@ -1546,23 +1447,9 @@ Dirección: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Certificado del servidor (Predeterminado: server.cert)
-</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Clave privada del servidor (Predeterminado: server.pem)
-</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Este mensaje de ayuda
 </translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>No es posible escuchar en el %s en este ordenador (bind returned error %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -1578,14 +1465,6 @@ Dirección: %4</translation>
         <translation>Error cargando wallet.dat: Billetera corrupta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>Error cargando wallet.dat: Billetera necesita una vercion reciente de Bitcoin</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
-        <translation>La billetera necesita ser reescrita: reinicie Bitcoin para completar</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>Error cargando wallet.dat</translation>
     </message>
@@ -1596,10 +1475,6 @@ Dirección: %4</translation>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
         <translation>Cantidad inválida para -paytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Cantidad inválida</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -1626,12 +1501,8 @@ Dirección: %4</translation>
         <translation>Carga completa</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Para utilizar la opción %s</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
-    </context>
+</context>
 </TS>
