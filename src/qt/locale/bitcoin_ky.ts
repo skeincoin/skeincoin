@@ -1,8 +1,5 @@
 <TS language="ky" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    </context>
-<context>
     <name>AddressBookPage</name>
     <message>
         <source>Create a new address</source>
@@ -38,7 +35,7 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>Bitcoin</translation>
     </message>
     <message>
@@ -76,10 +73,6 @@
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Address</source>
-        <translation>Дарек</translation>
-    </message>
-    <message>
         <source>Date</source>
         <translation>Дата</translation>
     </message>
@@ -111,10 +104,6 @@
     </context>
 <context>
     <name>Intro</name>
-    <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
-    </message>
     <message>
         <source>Error</source>
         <translation>Ката</translation>
@@ -161,10 +150,6 @@
 <context>
     <name>OverviewPage</name>
     <message>
-        <source>Wallet</source>
-        <translation>Капчык</translation>
-    </message>
-    <message>
         <source>out of sync</source>
         <translation>синхрондоштурулган эмес</translation>
     </message>
@@ -173,11 +158,10 @@
     <name>PaymentServer</name>
     </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
-    <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
-    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -325,6 +309,9 @@
     </message>
     </context>
 <context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -344,12 +331,8 @@
         <translation>Эскертүү</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>версия</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Ката</translation>
     </message>
-    </context>
+</context>
 </TS>

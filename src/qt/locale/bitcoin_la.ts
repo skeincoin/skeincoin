@@ -1,30 +1,6 @@
 <TS language="la" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>Hoc est experimentale programma.
-
-Distributum sub MIT/X11 licentia programmatum, vide comitantem plicam COPYING vel http://www.opensource.org/licenses/mit-license.php.
-
-Hoc productum continet programmata composita ab OpenSSL Project pro utendo in OpenSSL Toolkit (http://www.openssl.org/) et programmata cifrarum scripta ab Eric Young (eay@cryptsoft.com) et UPnP programmata scripta ab Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>Copyright</translation>
-    </message>
-    </context>
-<context>
     <name>AddressBookPage</name>
-    <message>
-        <source>Double-click to edit address or label</source>
-        <translation>Dupliciter-clicca ut inscriptionem vel titulum mutes</translation>
-    </message>
     <message>
         <source>Create a new address</source>
         <translation>Crea novam inscriptionem</translation>
@@ -54,7 +30,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Dele</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Skeincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hae sunt inscriptiones mittendi pensitationes.  Semper inspice quantitatem et inscriptionem accipiendi antequam nummos mittis.</translation>
     </message>
     <message>
@@ -104,10 +80,6 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Itera novam tesseram</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Insero novam tesseram cassidili.&lt;br/&gt;Sodes tessera &lt;b&gt;10 pluriumve fortuitarum litterarum&lt;/b&gt; utere aut &lt;b&gt;octo pluriumve verborum&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>Cifra cassidile</translation>
     </message>
@@ -140,7 +112,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Confirma cifrationem cassidilis</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
         <translation>Monitio: Si cassidile tuum cifras et tesseram amittis, tu &lt;b&gt;AMITTES OMNES TUOS NUMMOS BITOS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -160,8 +132,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Cassidile cifratum</translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Bitcoin iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
+        <translation>Skeincoin iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -227,10 +199,6 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Exi applicatione</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin</source>
-        <translation>Monstra informationem de Bitcoin</translation>
-    </message>
-    <message>
         <source>About &amp;Qt</source>
         <translation>Informatio de &amp;Qt</translation>
     </message>
@@ -263,12 +231,12 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Recreans indicem frustorum in disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Mitte nummos ad inscriptionem Bitcoin</translation>
+        <source>Send coins to a Skeincoin address</source>
+        <translation>Mitte nummos ad inscriptionem Skeincoin</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation>Muta configurationis optiones pro Bitcoin</translation>
+        <source>Modify configuration options for Skeincoin</source>
+        <translation>Muta configurationis optiones pro Skeincoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -291,7 +259,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Verifica nuntium...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>Bitcoin</translation>
     </message>
     <message>
@@ -319,12 +287,12 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus Bitcoin ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Skeincoin addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus Skeincoin ut demonstres te eas possidere</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Bitcoin</translation>
+        <source>Verify messages to ensure they were signed with specified Skeincoin addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Skeincoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -343,32 +311,16 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Tabella instrumentorum "Tabs"</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
-    </message>
-    <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Nucleus</translation>
-    </message>
-    <message>
-        <source>Bitcoin client</source>
-        <translation>Bitcoin cliens</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Nucleus</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n activa conexio ad rete Bitcoin</numerusform><numerusform>%n activae conexiones ad rete Bitcoin</numerusform></translation>
+        <source>%n active connection(s) to Skeincoin network</source>
+        <translation><numerusform>%n activa conexio ad rete Skeincoin</numerusform><numerusform>%n activae conexiones ad rete Skeincoin</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Nulla fons frustorum absens...</translation>
-    </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Perfecta %1 de %2 (aestimato) frusta historiae transactionum.</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>Processae %1 frusta historiae transactionum.</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -442,10 +394,6 @@ Inscriptio: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Cassidile &lt;b&gt;cifratum&lt;/b&gt; est et iam nunc &lt;b&gt;seratum&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Error fatalis accidit.  Bitcoin nondum pergere tute potest, et exibit.</translation>
-    </message>
 </context>
 <context>
     <name>ClientModel</name>
@@ -463,10 +411,6 @@ Inscriptio: %4
     <message>
         <source>Amount</source>
         <translation>Quantitas</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Inscriptio</translation>
     </message>
     <message>
         <source>Date</source>
@@ -532,8 +476,8 @@ Inscriptio: %4
         <translation>Inserta inscriptio "%1" iam in libro inscriptionum est.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Inscriptio inserta "%1" non valida inscriptio Bitcoin est.</translation>
+        <source>The entered address "%1" is not a valid Skeincoin address.</source>
+        <translation>Inscriptio inserta "%1" non valida inscriptio Skeincoin est.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -550,12 +494,16 @@ Inscriptio: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Nucleus</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Nucleus</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versio</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>Optiones mandati initiantis</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -585,8 +533,8 @@ Inscriptio: %4
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Nucleus</translation>
     </message>
     <message>
         <source>Error</source>
@@ -607,20 +555,12 @@ Inscriptio: %4
         <translation>&amp;Princeps</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Optionalis merces transactionum singulis kB quae adiuvat curare tuas transactiones processas esse celeriter.  Plurimi transactiones 1kB sunt.</translation>
+        <source>Automatically start Skeincoin after logging in to the system.</source>
+        <translation>Pelle Skeincoin per se postquam in systema inire.</translation>
     </message>
     <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Solve &amp;mercedem transactionis</translation>
-    </message>
-    <message>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
-        <translation>Pelle Bitcoin per se postquam in systema inire.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Bitcoin on system login</source>
-        <translation>&amp;Pelle Bitcoin cum inire systema</translation>
+        <source>&amp;Start Skeincoin on system login</source>
+        <translation>&amp;Pelle Skeincoin cum inire systema</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -635,8 +575,8 @@ Inscriptio: %4
         <translation>&amp;Rete</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis Bitcoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the Skeincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis Skeincoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -653,14 +593,6 @@ Inscriptio: %4
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Porta vicarii (e.g. 9050)</translation>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>SOCKS &amp;Versio:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>SOCKS versio vicarii (e.g. 5)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -691,8 +623,8 @@ Inscriptio: %4
         <translation>&amp;Lingua monstranda utenti:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Bitcoin iterum initiatum erit.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Skeincoin.</source>
+        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Skeincoin iterum initiatum erit.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -701,14 +633,6 @@ Inscriptio: %4
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Selige praedefinitam unitam subdivisionis monstrare in interfacie et quando nummos mittere</translation>
-    </message>
-    <message>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
-        <translation>Num monstrare inscriptiones Bitcoin in enumeratione transactionum.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Monstra inscriptiones in enumeratione transactionum</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -738,12 +662,8 @@ Inscriptio: %4
         <translation>Schema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Bitcoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Cassidile</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Skeincoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Skeincoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -752,10 +672,6 @@ Inscriptio: %4
     <message>
         <source>Mined balance that has not yet matured</source>
         <translation>Fossum pendendum quod nondum maturum est</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Recentes transactiones&lt;/b&gt;</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -769,25 +685,24 @@ Inscriptio: %4
         <translation>Tractatio URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI intellegi non posse!  Huius causa possit inscriptionem Bitcoin non validam aut URI parametra maleformata.</translation>
+        <source>Cannot start skeincoin: click-to-pay handler</source>
+        <translation>Skeincoin incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
-    <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoin incipere non potest: cliccare-ad-pensandum handler</translation>
-    </message>
+    </context>
+<context>
+    <name>PeerTableModel</name>
     </context>
 <context>
     <name>QObject</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Amount</source>
+        <translation>Quantitas</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Insere inscriptionem Bitcoin (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -838,10 +753,6 @@ Inscriptio: %4
         <translation>Numerus frustorum iam nunc</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>Aestimatus totalis numerus frustorum</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>Hora postremi frusti</translation>
     </message>
@@ -862,16 +773,16 @@ Inscriptio: %4
         <translation>Debug catalogi plica</translation>
     </message>
     <message>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Aperi plicam catalogi de Bitcoin debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
+        <source>Open the Skeincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Aperi plicam catalogi de Skeincoin debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Vacuefac terminale</translation>
     </message>
     <message>
-        <source>Welcome to the Bitcoin RPC console.</source>
-        <translation>Bene ventio in terminale RPC de Bitcoin.</translation>
+        <source>Welcome to the Skeincoin RPC console.</source>
+        <translation>Bene ventio in terminale RPC de Skeincoin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1025,10 +936,6 @@ Inscriptio: %4
         <translation>Pensa &amp;Ad:</translation>
     </message>
     <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Inscriptio cui mittere pensitationem (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Insero titulum huic inscriptioni ut eam in tuum librum inscriptionum addas.</translation>
     </message>
@@ -1071,10 +978,6 @@ Inscriptio: %4
         <translation>Potes nuntios signare inscriptionibus tuis ut demonstres te eas possidere.  Cautus es non amibiguum signare, quia impetus phiscatorum conentur te fallere ut signes identitatem tuam ad eos.  Solas signa sententias cuncte descriptas quibus convenis.</translation>
     </message>
     <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Inscriptio qua signare nuntium (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1099,8 +1002,8 @@ Inscriptio: %4
         <translation>Copia signationem in latibulum systematis</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem Bitcoin a te possessa esse</translation>
+        <source>Sign the message to prove you own this Skeincoin address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem Skeincoin a te possessa esse</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1123,12 +1026,8 @@ Inscriptio: %4
         <translation>Insere inscriptionem signantem, nuntium (cura ut copias intermissiones linearum, spatia, tabs, et cetera exacte) et signationem infra ut nuntium verifices.  Cautus esto ne magis legas in signationem quam in nuntio signato ipso est, ut vites falli ab impetu homo-in-medio.</translation>
     </message>
     <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Inscriptio qua nuntius signatus est (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Bitcoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Skeincoin address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Skeincoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1137,10 +1036,6 @@ Inscriptio: %4
     <message>
         <source>Reset all verify message fields</source>
         <translation>Reconstitue omnes campos verificandi nuntii</translation>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Insere inscriptionem Bitcoin (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -1198,8 +1093,8 @@ Inscriptio: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Nucleus</translation>
+        <source>Skeincoin Core</source>
+        <translation>Skeincoin Nucleus</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -1356,10 +1251,6 @@ Inscriptio: %4
     <message>
         <source>Address</source>
         <translation>Inscriptio</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Quantitas</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
@@ -1533,10 +1424,6 @@ Inscriptio: %4
         <translation>Inscriptio</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Quantitas</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -1549,6 +1436,9 @@ Inscriptio: %4
         <translation>ad</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     </context>
@@ -1589,40 +1479,12 @@ Inscriptio: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>Usus:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>Enumera mandata</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>Accipe auxilium pro mandato</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Optiones:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation>Specifica configurationis plicam (praedefinitum: bitcoin.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Specifica pid plicam (praedefinitum: bitcoin.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>Specifica indicem datorum</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Ausculta pro conexionibus in &lt;porta&gt; (praedefinitum: 8333 vel testnet: 18333)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Manutene non plures quam &lt;n&gt; conexiones ad paria (praedefinitum: 125)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -1631,22 +1493,6 @@ Inscriptio: %4
     <message>
         <source>Specify your own public address</source>
         <translation>Specifica tuam propriam publicam inscriptionem</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Limen pro disconectendo paria improba (praedefinitum: 100)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Numerum secundorum prohibere ne paria improba reconectant (praedefinitum: 86400)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Error erat dum initians portam RPC %u pro auscultando in IPv4: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation>Ausculta pro conexionibus JSON-RPC in &lt;porta&gt; (praedefinitum: 8332 vel testnet: 18332)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -1665,44 +1511,8 @@ Inscriptio: %4
         <translation>Accipe conexiones externas (praedefinitum: 1 nisi -proxy neque -connect)</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=bitcoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Bitcoin Alert" admin@foo.com
-</source>
-        <translation>%s, necesse est te rpcpassword constituere in plica configurationis:
-%s
-Hortatur te hanc fortuitam tesseram uti:
-rpcuser=bitcoinrpc
-rpcpassword=%s
-(non est necesse te hanc tesseram meminisse)
-Nomen usoris et tessera eadem esse NON POSSUNT.
-Si plica non existit, eam crea cum permissionibus ut eius dominus tantum sinitur id legere.
-Quoque hortatur alertnotify constituere ut tu notificetur de problematibus;
-exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Error erat dum initians portam RPC %u pro auscultando in IPv6, labens retrorsum ad IPv4: %s</translation>
-    </message>
-    <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Conglutina ad inscriptionem datam et semper in eam ausculta.  Utere [moderatrum]:porta notationem pro IPv6</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Error: Transactio eiecta est! Hoc possit accidere si alii nummorum in cassidili tuo iam soluti sint, ut si usus es exemplar de wallet.dat et nummi soluti sunt in exemplari sed non hic notati ut soluti.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Error: Huic transactioni necesse est merces saltem %s propter eius magnitudinem, complexitatem, vel usum recentum acceptorum nummorum!</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -1715,10 +1525,6 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Monitio: -paytxfee constitutum valde magnum!  Hoc est merces transactionis solves si mittis transactionem.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
-        <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, Bitcoin non proprie fungetur.</translation>
     </message>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -1773,68 +1579,8 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
         <translation>Error: Inopia spatii disci!</translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Error: Cassidile seratum, non posse transactionem creare!</translation>
-    </message>
-    <message>
-        <source>Error: system error: </source>
-        <translation>Error: systematis error:</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Non potuisse auscultare in ulla porta.  Utere -listen=0 si hoc vis.</translation>
-    </message>
-    <message>
-        <source>Failed to read block info</source>
-        <translation>Non potuisse informationem frusti legere </translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Non potuisse frustum legere</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>Synchronizare indicem frustorum abortum est</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Scribere indicem frustorum abortum est</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>Scribere informationem abortum est</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>Scribere frustum abortum est</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>Scribere informationem plicae abortum est</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>Scribere databasem nummorum abortum est</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>Scribere indicem transactionum abortum est</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>Scribere data pro cancellando mutationes abortum est</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>Inveni paria utendo DNS quaerendo (praedefinitum: 1 nisi -connect)</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: 0)</source>
-        <translation>Genera nummos (praedefinitum: 0)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Quot frusta proba ad initium (praedefinitum: 288, 0 = omnia)</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -1843,10 +1589,6 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
     <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>Restituere indicem catenae frustorum ex activis plicis blk000??.dat</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Constitue numerum filorum ad tractandum RPC postulationes (praedefinitum: 4)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -1873,36 +1615,8 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
         <translation>Quantitas non valida pro -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Manutene completam indicem transactionum (praedefinitum: 0)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Maxima magnitudo memoriae pro datis accipendis singulis conexionibus, &lt;n&gt;*1000 octetis/bytes (praedefinitum: 5000)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Maxima magnitudo memoriae pro datis mittendis singulis conexionibus, &lt;n&gt;*1000 octetis/bytes (praedefinitum: 1000)</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Tantum accipe catenam frustorum convenientem internis lapidibus (praedefinitum: 1)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Tantum conecte ad nodos in rete &lt;net&gt; (IPv4, IPv6 aut Tor)</translation>
-    </message>
-    <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Optiones SSL: (vide vici de Bitcoin pro instructionibus SSL configurationis)</translation>
-    </message>
-    <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Mitte informationem vestigii/debug ad terminale potius quam plicam debug.log</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Constitue minimam magnitudinem frusti in octetis/bytes (praedefinitum: 0)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
@@ -1911,14 +1625,6 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
     <message>
         <source>Signing transaction failed</source>
         <translation>Signandum transactionis abortum est</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Specifica tempumfati conexionis in millisecundis (praedefinitum: 5000)</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>Systematis error:</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -1931,10 +1637,6 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
     <message>
         <source>Transaction too large</source>
         <translation>Transactio nimis magna</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Utere UPnP designare portam auscultandi (praedefinitum: 0)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -1953,24 +1655,12 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
         <translation>Monitio: Haec versio obsoleta est, progressio postulata!</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>versio</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrupta, salvare abortum est</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Tessera pro conexionibus JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Permitte conexionibus JSON-RPC ex inscriptione specificata</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Mitte mandata nodo operanti in &lt;ip&gt; (praedefinitum: 127.0.0.1)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
@@ -1981,10 +1671,6 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
         <translation>Progredere cassidile ad formam recentissimam</translation>
     </message>
     <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Constitue magnitudinem stagni clavium ad &lt;n&gt; (praedefinitum: 100)</translation>
-    </message>
-    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Iterum perlege catenam frustorum propter absentes cassidilis transactiones</translation>
     </message>
@@ -1993,20 +1679,8 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
         <translation>Utere OpenSSL (https) pro conexionibus JSON-RPC</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation>Plica certificationis daemonis moderantis (praedefinitum: server.cert)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Clavis privata daemonis moderans (praedefinitum: server.pem)</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Hic nuntius auxilii</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Non posse conglutinare ad %s in hoc computatro (conglutinare redidit errorem %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -2021,14 +1695,6 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
         <translation>Error legendi wallet.dat: Cassidile corruptum</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio Bitcoin</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
-        <translation>Cassidili necesse erat rescribi: Repelle Bitcoin ut compleas</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>Error legendi wallet.dat</translation>
     </message>
@@ -2041,10 +1707,6 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
         <translation>Ignotum rete specificatum in -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Ignota -socks vicarii versio postulata: %i</translation>
-    </message>
-    <message>
         <source>Cannot resolve -bind address: '%s'</source>
         <translation>Non posse resolvere -bind inscriptonem: '%s'</translation>
     </message>
@@ -2055,10 +1717,6 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
         <translation>Quantitas non valida pro -paytxfee=&lt;quantitas&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Quantitas non valida</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -2093,20 +1751,8 @@ exempli gratia: alertnotify=echo %%s | mail -s "Bitcoin Notificatio" admin@foo.c
         <translation>Completo lengendi</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>Ut utaris optione %s</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Error</translation>
-    </message>
-    <message>
-        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
-%s
-If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Necesse est te rpcpassword=&lt;tesseram&gt; constituere in plica configurationum:
-%s
-Si plica non existat, crea eam cum permissionibus ut solus eius dominus eam legere sinatur.</translation>
     </message>
 </context>
 </TS>

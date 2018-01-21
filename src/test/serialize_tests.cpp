@@ -3,6 +3,11 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "serialize.h"
+#include "streams.h"
+
+#include <stdint.h>
+
+#include <boost/test/unit_test.hpp>
 
 #include <stdint.h>
 

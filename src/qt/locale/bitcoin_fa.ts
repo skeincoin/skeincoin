@@ -1,29 +1,17 @@
 <TS language="fa" version="2.1">
 <context>
-    <name>AboutDialog</name>
-    <message>
-        <source>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>⏎ ⏎ این یک نرم‌افزار آزمایشی است⏎ ⏎ نرم افزار تحت مجوز MIT/X11 منتشر شده است. پروندهٔ COPYING یا نشانی http://www.opensource.org/licenses/mit-license.php. را ببینید⏎ ⏎ این محصول شامل نرم‌افزار  توسعه داده‌شده در پروژهٔ OpenSSL است. در این نرم‌افزار از OpenSSL Toolkit (http://www.openssl.org/) و نرم‌افزار رمزنگاری نوشته شده توسط اریک یانگ (eay@cryptsoft.com) و UPnP توسط توماس برنارد استفاده شده است.</translation>
-    </message>
-    <message>
-        <source>Copyright</source>
-        <translation>حق تألیف</translation>
-    </message>
-    </context>
-<context>
     <name>AddressBookPage</name>
     <message>
-        <source>Double-click to edit address or label</source>
-        <translation>برای ویرایش نشانی یا برچسب دوبار کلیک کنید</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>برای تغییر آدرس و یا برچسب کلیک راست کنید.</translation>
     </message>
     <message>
         <source>Create a new address</source>
         <translation>ایجاد نشانی جدید</translation>
+    </message>
+    <message>
+        <source>&amp;New</source>
+        <translation>&amp;جدید</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -58,8 +46,28 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;حذف</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>Choose the address to send coins to</source>
+        <translation>آدرس مورد نظر برای ارسال کوین ها را انتخاب کنید</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>آدرس موردنظر برای دریافت کوین ها را انتخاب کنید.</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>آدرس های ارسال کننده</translation>
+    </message>
+    <message>
+        <source>Receiving addresses</source>
+        <translation>آدرس های دریافت کننده</translation>
+    </message>
+    <message>
+        <source>These are your Skeincoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>این‌ها نشانی‌های بیت‌کوین شما برای ارسال وجود هستند. همیشه قبل از ارسال سکه‌ها، نشانی دریافت‌کننده و مقدار ارسالی را بررسی کنید.</translation>
+    </message>
+    <message>
+        <source>These are your Skeincoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>این‌ها نشانی‌های بیت‌کوین شما برای دریافت وجوه هستند. توصیه می‌شود یک نشانی دریافت جدید برای هر تبادل استفاده کنید.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -76,6 +84,10 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <source>Comma separated file (*.csv)</source>
         <translation>پروندهٔ نوع CSV جداشونده با کاما (*.csv)</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>استخراج انجام نشد</translation>
     </message>
     </context>
 <context>
@@ -112,10 +124,6 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>تکرار گذرواژهٔ جدید</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>گذرواژهٔ جدید کیف پول خود را وارد کنید.&lt;br/&gt;لطفاً از گذرواژه‌ای با &lt;b&gt;حداقل ۱۰ حرف تصادفی&lt;/b&gt;، یا &lt;b&gt;حداقل هشت کلمه&lt;/b&gt; انتخاب کنید.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
         <translation>رمزنگاری کیف پول</translation>
     </message>
@@ -148,7 +156,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>تأیید رمزنگاری کیف پول</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKEINCOINS&lt;/b&gt;!</source>
         <translation>هشدار: اگر کیف پول خود را رمزنگاری کنید و گذرواژه را فراموش کنید، &lt;b&gt;تمام دارایی بیت‌کوین خود را از دست خواهید داد&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -168,7 +176,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>کیف پول رمزنگاری شد</translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>رمز جدید کیف پول خود را وارد کنید.&lt;br/&gt;از رمز عبوری استفاده کنید که&lt;b&gt; حداقل 10  کاراکتر تصادفی &lt;/b&gt; و یا &lt;b&gt; حداقل 8 حرف داشته باشد.&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Skeincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your skeincoins from being stolen by malware infecting your computer.</source>
         <translation>بیت‌کوین هم اکنون بسته می‌شود تا فرایند رمزگذاری را تمام کند. به خاطر داشته باشید که رمزگذاری کردن کیف پول‌تان نمی‌تواند به طور کامل بیت‌کوین‌های شما را در برابر دزدیده شدن توسط بدافزارهایی که احتمالاً رایانهٔ شما را آلوده می‌کنند، محافظت نماید.</translation>
     </message>
     <message>
@@ -215,6 +227,10 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;بررسی اجمالی</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>گره</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>نمایش بررسی اجمالی کیف پول</translation>
     </message>
@@ -233,10 +249,6 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <source>Quit application</source>
         <translation>خروج از برنامه</translation>
-    </message>
-    <message>
-        <source>Show information about Bitcoin</source>
-        <translation>نمایش اطلاعات در مورد بیت‌کوین</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -263,6 +275,18 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;تغییر گذرواژه...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>$ارسال آدرس ها...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;در حال دریافت آدرس ها...</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI...</source>
+        <translation>باز کردن &amp;آدرس</translation>
+    </message>
+    <message>
         <source>Importing blocks from disk...</source>
         <translation>دریافت بلوک‌ها از دیسک...</translation>
     </message>
@@ -271,11 +295,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>بازنشانی بلوک‌ها روی دیسک...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Skeincoin address</source>
         <translation>ارسال وجه به نشانی بیت‌کوین</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bitcoin</source>
+        <source>Modify configuration options for Skeincoin</source>
         <translation>تغییر و اصلاح تنظیمات پیکربندی بیت‌کوین</translation>
     </message>
     <message>
@@ -299,7 +323,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>با&amp;زبینی پیام...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Skeincoin</source>
         <translation>بیت‌کوین</translation>
     </message>
     <message>
@@ -315,6 +339,10 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;دریافت</translation>
     </message>
     <message>
+        <source>Show information about Skeincoin Core</source>
+        <translation>نمایش اطلاعات در مورد بیت‌کوین</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;نمایش/ عدم نمایش</translation>
     </message>
@@ -327,11 +355,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>رمزنگاری کلیدهای خصوصی متعلق به کیف پول شما</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Skeincoin addresses to prove you own them</source>
         <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی بیت‌کوین خود امضا کنید</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Skeincoin addresses</source>
         <translation>برای حصول اطمینان از اینکه پیام با نشانی بیت‌کوین مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
     </message>
     <message>
@@ -351,32 +379,28 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>نوارابزار برگه‌ها</translation>
     </message>
     <message>
-        <source>[testnet]</source>
-        <translation>[شبکهٔ آزمایش]</translation>
+        <source>Skeincoin Core</source>
+        <translation> هسته Skeincoin </translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation> هسته Bitcoin </translation>
+        <source>&amp;About Skeincoin Core</source>
+        <translation>درباره هسته ی بیت کوین</translation>
     </message>
     <message>
-        <source>Bitcoin client</source>
-        <translation>کلاینت بیت‌کوین</translation>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>نمایش لیست آدرس های ارسال و لیبل ها</translation>
+    </message>
+    <message>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>نمایش لیست آدرس های دریافت و لیبل ها</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
+        <source>%n active connection(s) to Skeincoin network</source>
         <translation><numerusform>%n ارتباط فعال با شبکهٔ بیت‌کوین</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>منبعی برای دریافت بلاک در دسترس نیست...</translation>
-    </message>
-    <message>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>%1 بلاک از مجموع %2 بلاک (تخمینی) تاریخچهٔ تراکنش‌ها پردازش شده است.</translation>
-    </message>
-    <message>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>%1 بلاک از تاریخچهٔ تراکنش‌ها پردازش شده است.</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -450,10 +474,6 @@ Address: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>کیف پول &lt;b&gt;رمزنگاری شده&lt;/b&gt; است و هم‌اکنون &lt;b&gt;قفل&lt;/b&gt; است</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>یک خطای مهلک اتفاق افتاده است. بیت‌کوین نمی‌تواند بدون مشکل به کار خود ادامه دهد و بسته خواهد شد.</translation>
-    </message>
 </context>
 <context>
     <name>ClientModel</name>
@@ -465,24 +485,72 @@ Address: %4
 <context>
     <name>CoinControlDialog</name>
     <message>
+        <source>Coin Selection</source>
+        <translation>انتخاب سکه</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>تعداد:</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>بایت ها:</translation>
+    </message>
+    <message>
         <source>Amount:</source>
         <translation>مبلغ:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>اولویت:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>هزینه:</translation>
+    </message>
+    <message>
+        <source>After Fee:</source>
+        <translation>هزینه ی پسین:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>پول خورد:</translation>
+    </message>
+    <message>
+        <source>Tree mode</source>
+        <translation>مدل درختی</translation>
+    </message>
+    <message>
+        <source>List mode</source>
+        <translation>مدل لیست</translation>
     </message>
     <message>
         <source>Amount</source>
         <translation>مبلغ</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>نشانی</translation>
+        <source>Received with label</source>
+        <translation>دریافت شده با برچسب</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation>دریافت شده با نشانی</translation>
     </message>
     <message>
         <source>Date</source>
         <translation>تاریخ</translation>
     </message>
     <message>
+        <source>Confirmations</source>
+        <translation>تاییدیه ها</translation>
+    </message>
+    <message>
         <source>Confirmed</source>
         <translation>تأیید شده</translation>
+    </message>
+    <message>
+        <source>Priority</source>
+        <translation>اولویت</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -501,6 +569,46 @@ Address: %4
         <translation>کپی شناسهٔ تراکنش</translation>
     </message>
     <message>
+        <source>highest</source>
+        <translation>بیشترین</translation>
+    </message>
+    <message>
+        <source>higher</source>
+        <translation>بیشتر</translation>
+    </message>
+    <message>
+        <source>high</source>
+        <translation>زیاد</translation>
+    </message>
+    <message>
+        <source>medium-high</source>
+        <translation>متوسط رو به بالا</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>متوسط</translation>
+    </message>
+    <message>
+        <source>low-medium</source>
+        <translation>متوسط متمایل به کم</translation>
+    </message>
+    <message>
+        <source>low</source>
+        <translation>کم</translation>
+    </message>
+    <message>
+        <source>lower</source>
+        <translation>کمتر</translation>
+    </message>
+    <message>
+        <source>lowest</source>
+        <translation>کمترین</translation>
+    </message>
+    <message>
+        <source>none</source>
+        <translation>هیچکدام</translation>
+    </message>
+    <message>
         <source>yes</source>
         <translation>بله</translation>
     </message>
@@ -512,7 +620,11 @@ Address: %4
         <source>(no label)</source>
         <translation>(بدون برچسب)</translation>
     </message>
-    </context>
+    <message>
+        <source>(change)</source>
+        <translation>(تغییر)</translation>
+    </message>
+</context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -548,7 +660,7 @@ Address: %4
         <translation>نشانی وارد شده «%1» در حال حاضر در دفترچه وجود دارد.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Skeincoin address.</source>
         <translation>نشانی وارد شده «%1» یک نشانی معتبر بیت‌کوین نیست.</translation>
     </message>
     <message>
@@ -586,12 +698,20 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation> هسته Bitcoin </translation>
+        <source>Skeincoin Core</source>
+        <translation> هسته Skeincoin </translation>
     </message>
     <message>
         <source>version</source>
         <translation>نسخه</translation>
+    </message>
+    <message>
+        <source>About Skeincoin Core</source>
+        <translation>درباره هسته ی بیت کوین</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>گزینه‌های خط‌فرمان</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -629,6 +749,14 @@ Address: %4
         <translation>خوش‌آمدید</translation>
     </message>
     <message>
+        <source>Welcome to Skeincoin Core.</source>
+        <translation>به هسته بیت کوین خوش آمدید.</translation>
+    </message>
+    <message>
+        <source>As this is the first time the program is launched, you can choose where Skeincoin Core will store its data.</source>
+        <translation>از آنجایی که این اولین اجرای برنامه است، شما می‌توانید مسیر ذخیرهٔ داده‌ها را انتخاب کنید.</translation>
+    </message>
+    <message>
         <source>Use the default data directory</source>
         <translation>استفاده از مسیر پیش‌فرض</translation>
     </message>
@@ -637,26 +765,14 @@ Address: %4
         <translation>استفاده از یک مسیر سفارشی:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>بیت‌کوین</translation>
-    </message>
-    <message>
-        <source>Error: Specified data directory "%1" can not be created.</source>
-        <translation>خطا: نمی‌توان پوشه‌ای برای داده‌ها در «%1» ایجاد کرد.</translation>
+        <source>Skeincoin Core</source>
+        <translation> هسته Skeincoin </translation>
     </message>
     <message>
         <source>Error</source>
         <translation>خطا</translation>
     </message>
-    <message>
-        <source>GB of free space available</source>
-        <translation>گیگابات فضا موجود است</translation>
-    </message>
-    <message>
-        <source>(of %1GB needed)</source>
-        <translation>(از %1 گیگابایت فضای مورد نیاز)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     </context>
@@ -671,19 +787,11 @@ Address: %4
         <translation>&amp;عمومی</translation>
     </message>
     <message>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>کارمزد اختیاریِ هر کیلوبایت برای انتقال سریع‌تر تراکنش. اکثر تراکنش‌ها ۱ کیلوبایتی هستند.</translation>
-    </message>
-    <message>
-        <source>Pay transaction &amp;fee</source>
-        <translation>پرداخت &amp;کارمزد تراکنش</translation>
-    </message>
-    <message>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
+        <source>Automatically start Skeincoin after logging in to the system.</source>
         <translation>اجرای خودکار بیت‌کوین در زمان ورود به سیستم.</translation>
     </message>
     <message>
-        <source>&amp;Start Bitcoin on system login</source>
+        <source>&amp;Start Skeincoin on system login</source>
         <translation>&amp;اجرای بیت‌کوین با ورود به سیستم</translation>
     </message>
     <message>
@@ -703,7 +811,7 @@ Address: %4
         <translation>استخراج</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Skeincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>باز کردن خودکار درگاه شبکهٔ بیت‌کوین روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
     </message>
     <message>
@@ -721,14 +829,6 @@ Address: %4
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>درگاه پراکسی (مثال 9050)</translation>
-    </message>
-    <message>
-        <source>SOCKS &amp;Version:</source>
-        <translation>&amp;نسخهٔ SOCKS:</translation>
-    </message>
-    <message>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>نسخهٔ پراکسی SOCKS (مثلاً 5)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -759,7 +859,7 @@ Address: %4
         <translation>زبان &amp;رابط کاربری:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Skeincoin.</source>
         <translation>زبان رابط کاربر می‌تواند در این‌جا تنظیم شود. تنظیمات بعد از ظروع مجدد بیت‌کوین اعمال خواهد شد.</translation>
     </message>
     <message>
@@ -769,14 +869,6 @@ Address: %4
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>انتخاب واحد پول مورد استفاده برای نمایش در پنجره‌ها و برای ارسال سکه.</translation>
-    </message>
-    <message>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
-        <translation>نمایش یا عدم نمایش نشانی‌های بیت‌کوین در لیست تراکنش‌ها.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>نمایش ن&amp;شانی‌ها در فهرست تراکنش‌ها</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -789,6 +881,10 @@ Address: %4
     <message>
         <source>default</source>
         <translation>پیش‌فرض</translation>
+    </message>
+    <message>
+        <source>none</source>
+        <translation>هیچکدام</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
@@ -810,12 +906,8 @@ Address: %4
         <translation>فرم</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Skeincoin network after a connection is established, but this process has not completed yet.</source>
         <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ بیت‌کوین همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>کیف پول</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -838,6 +930,10 @@ Address: %4
         <translation>تراز استخراج شده از معدن که هنوز بالغ نشده است</translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>تراز ها</translation>
+    </message>
+    <message>
         <source>Total:</source>
         <translation>جمع کل:</translation>
     </message>
@@ -846,8 +942,12 @@ Address: %4
         <translation>تراز کل فعلی شما</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;تراکنش‌های اخیر&lt;/b&gt;</translation>
+        <source>Spendable:</source>
+        <translation>:قابل خرج کردن</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>تراکنش های اخیر</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -861,29 +961,36 @@ Address: %4
         <translation>مدیریت URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>نشانی اینترنتی قابل تجزیه و تحلیل نیست! دلیل این وضعیت ممکن است یک نشانی نامعتبر بیت‌کوین و یا پارامترهای ناهنجار در URI بوده باشد.</translation>
+        <source>Payment request rejected</source>
+        <translation>درخواست پرداخت رد شد.</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Payment request error</source>
+        <translation>خطای درخواست پرداخت</translation>
+    </message>
+    <message>
+        <source>Cannot start skeincoin: click-to-pay handler</source>
         <translation>نمی‌توان بیت‌کوین را اجرا کرد: کنترل‌کنندهٔ کلیک-و-پرداخت</translation>
     </message>
     </context>
 <context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>بیت‌کوین</translation>
+        <source>Amount</source>
+        <translation>مبلغ</translation>
     </message>
     <message>
-        <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation>خطا: پوشهٔ مشخص شده برای داده‌ها در «%1» وجود ندارد.</translation>
+        <source>None</source>
+        <translation>هیچکدام</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>یک آدرس بیت‌کوین وارد کنید (مثلاً 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>N/A</source>
+        <translation>ناموجود</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -938,8 +1045,20 @@ Address: %4
         <translation>تعداد فعلی بلوک‌ها</translation>
     </message>
     <message>
-        <source>Estimated total blocks</source>
-        <translation>تعداد تخمینی بلوک‌ها</translation>
+        <source>Received</source>
+        <translation>دریافتی</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>ارسال شده</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>نسخه</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>سرویس ها</translation>
     </message>
     <message>
         <source>Last block time</source>
@@ -966,15 +1085,15 @@ Address: %4
         <translation>فایلِ لاگِ اشکال زدایی</translation>
     </message>
     <message>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>فایلِ لاگِ اشکال زدایی Bitcoin  را از دایرکتوری جاری داده ها باز کنید. این عملیات ممکن است برای فایلهای لاگِ حجیم طولانی شود.</translation>
+        <source>Open the Skeincoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>فایلِ لاگِ اشکال زدایی Skeincoin  را از دایرکتوری جاری داده ها باز کنید. این عملیات ممکن است برای فایلهای لاگِ حجیم طولانی شود.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>پاکسازی کنسول</translation>
     </message>
     <message>
-        <source>Welcome to the Bitcoin RPC console.</source>
+        <source>Welcome to the Skeincoin RPC console.</source>
         <translation>به کنسور RPC بیت‌کوین خوش آمدید.</translation>
     </message>
     <message>
@@ -985,12 +1104,24 @@ Address: %4
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>برای نمایش یک مرور کلی از دستورات ممکن، عبارت &lt;b&gt;help&lt;/b&gt; را بنویسید.</translation>
     </message>
+    <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>&amp;Label:</source>
         <translation>&amp;برچسب:</translation>
+    </message>
+    <message>
+        <source>Show</source>
+        <translation>نمایش</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>حذف کردن</translation>
     </message>
     <message>
         <source>Copy label</source>
@@ -1062,8 +1193,36 @@ Address: %4
         <translation>ارسال سکه</translation>
     </message>
     <message>
+        <source>Quantity:</source>
+        <translation>تعداد:</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>بایت ها:</translation>
+    </message>
+    <message>
         <source>Amount:</source>
         <translation>مبلغ:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>اولویت:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>هزینه:</translation>
+    </message>
+    <message>
+        <source>After Fee:</source>
+        <translation>هزینه ی پسین:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>پول خورد:</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>سریع</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1125,6 +1284,10 @@ Address: %4
         <source>(no label)</source>
         <translation>(بدون برچسب)</translation>
     </message>
+    <message>
+        <source>Are you sure you want to send?</source>
+        <translation>آیا مطمئن هستید که می خواهید ارسال کنید؟</translation>
+    </message>
     </context>
 <context>
     <name>SendCoinsEntry</name>
@@ -1137,16 +1300,24 @@ Address: %4
         <translation>پرداخ&amp;ت به:</translation>
     </message>
     <message>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>نشانی مقصد برای پرداخت (مثلاً 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>برای این نشانی یک برچسب وارد کنید تا در دفترچهٔ آدرس ذخیره شود</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
         <translation>&amp;برچسب:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>انتخاب نشانی پیش‌تر استفاده شده</translation>
+    </message>
+    <message>
+        <source>This is a normal payment.</source>
+        <translation>این یک پرداخت عادی است</translation>
+    </message>
+    <message>
+        <source>The Skeincoin address to send the payment to</source>
+        <translation>نشانی بیت‌کوین برای ارسال پرداخت به آن</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1159,6 +1330,10 @@ Address: %4
     <message>
         <source>Alt+P</source>
         <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Remove this entry</source>
+        <translation>حذف این مدخل</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -1183,8 +1358,12 @@ Address: %4
         <translation>برای احراز اینکه پیام‌ها از جانب شما هستند، می‌توانید آن‌ها را با نشانی خودتان امضا کنید. مراقب باشید چیزی که بدان اطمینان ندارید را امضا نکنید زیرا حملات فیشینگ ممکن است بخواهند از.پیامی با امضای شما سوءاستفاده کنند. تنها مواردی را که حاوی اطلاعات دقیق و قابل قبول برای شما هستند امضا کنید.</translation>
     </message>
     <message>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>نشانی مورد استفاده برای امضا کردن پیام (برای مثال 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The Skeincoin address to sign the message with</source>
+        <translation>نشانی بیت‌کوین برای امضاء پیغام با آن</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>انتخاب نشانی پیش‌تر استفاده شده</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1211,7 +1390,7 @@ Address: %4
         <translation>امضای فعلی را به حافظهٔ سیستم کپی کن</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Skeincoin address</source>
         <translation>برای اثبات تعلق این نشانی به شما، پیام را امضا کنید</translation>
     </message>
     <message>
@@ -1235,11 +1414,11 @@ Address: %4
         <translation>برای شناسایی پیام، نشانیِ امضا کننده و متن پیام را وارد کنید. (مطمئن شوید که فاصله‌ها، تب‌ها و خطوط را عیناً کپی می‌کنید.) مراقب باشید در امضا چیزی بیشتر از آنچه در پیام می‌بینید وجود نداشته باشد تا فریب دزدان اینترنتی و حملات از نوع MITM را نخورید.</translation>
     </message>
     <message>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>نشانی مورد استفاده برای امضا کردن پیام (برای مثال 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The Skeincoin address the message was signed with</source>
+        <translation>نشانی بیت‌کوین که پیغام با آن امضاء شده</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Skeincoin address</source>
         <translation>برای حصول اطمینان از اینکه پیام با نشانی بیت‌کوین مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
     </message>
     <message>
@@ -1249,10 +1428,6 @@ Address: %4
     <message>
         <source>Reset all verify message fields</source>
         <translation>بازنشانی تمام فیلدهای پیام</translation>
-    </message>
-    <message>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>یک نشانی بیت‌کوین وارد کنید (مثلاً 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -1310,8 +1485,12 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation> هسته Bitcoin </translation>
+        <source>Skeincoin Core</source>
+        <translation> هسته Skeincoin </translation>
+    </message>
+    <message>
+        <source>The Bitcoin Core and Skeincoin Core developers</source>
+        <translation>توسعه‌دهندگان هسته بیت‌کوین</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -1320,7 +1499,11 @@ Address: %4
 </context>
 <context>
     <name>TrafficGraphWidget</name>
-    </context>
+    <message>
+        <source>KB/s</source>
+        <translation>کیلوبایت</translation>
+    </message>
+</context>
 <context>
     <name>TransactionDesc</name>
     <message>
@@ -1473,10 +1656,6 @@ Address: %4
         <source>Address</source>
         <translation>نشانی</translation>
     </message>
-    <message>
-        <source>Amount</source>
-        <translation>مبلغ</translation>
-    </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
         <translation><numerusform>باز برای %n بلوک دیگر</numerusform></translation>
@@ -1625,6 +1804,14 @@ Address: %4
         <translation>نمایش جزئیات تراکنش</translation>
     </message>
     <message>
+        <source>Exporting Failed</source>
+        <translation>استخراج انجام نشد</translation>
+    </message>
+    <message>
+        <source>Exporting Successful</source>
+        <translation>استخراج موفق</translation>
+    </message>
+    <message>
         <source>Comma separated file (*.csv)</source>
         <translation>پروندهٔ نوع CSV جداشونده با کاما (*.csv)</translation>
     </message>
@@ -1649,10 +1836,6 @@ Address: %4
         <translation>نشانی</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>مبلغ</translation>
-    </message>
-    <message>
         <source>ID</source>
         <translation>شناسه</translation>
     </message>
@@ -1665,6 +1848,9 @@ Address: %4
         <translation>به</translation>
     </message>
 </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
 <context>
     <name>WalletFrame</name>
     </context>
@@ -1705,40 +1891,12 @@ Address: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Usage:</source>
-        <translation>استفاده:</translation>
-    </message>
-    <message>
-        <source>List commands</source>
-        <translation>نمایش لیست فرمان‌ها</translation>
-    </message>
-    <message>
-        <source>Get help for a command</source>
-        <translation>راهنمایی در مورد یک دستور</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>گزینه‌ها:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
-        <translation>مشخص کردن فایل پیکربندی (پیش‌فرض: bitcoin.conf)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>مشخص کردن فایل شناسهٔ پردازش - pid - (پیش‌فرض: bitcoin.pid)</translation>
-    </message>
-    <message>
         <source>Specify data directory</source>
         <translation>مشخص کردن دایرکتوری داده‌ها</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>پذیرش اتصالات روی پورت &lt;port&gt; (پیش‌فرض: 8833 یا شبکهٔ آزمایشی: 18333)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>حداکثر &lt;n&gt; اتصال با همتایان برقرار شود (پیش‌فرض: ۱۲۵)</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -1747,22 +1905,6 @@ Address: %4
     <message>
         <source>Specify your own public address</source>
         <translation>آدرس عمومی خود را مشخص کنید</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>حد آستانه برای قطع ارتباط با همتایان بدرفتار (پیش‌فرض: ۱۰۰)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>مدت زمان جلوگیری از اتصال مجدد همتایان بدرفتار، به ثانیه (پیش‌فرض: ۸۴۶۰۰)</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>هنگام تنظیم پورت RPC %u برای گوش دادن روی IPv4 خطایی رخ داده است: %s</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation>پورت مورد شنود برای اتصالات JSON-RPC (پیش‌فرض: 8332 برای شبکهٔ تست 18332)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -1785,14 +1927,6 @@ Address: %4
         <translation>مقید به نشانی داده شده باشید و همیشه از آن پیروی کنید. از نشانه گذاری استاندار IPv6 به صورت Host]:Port] استفاده کنید.</translation>
     </message>
     <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>تراکنش پذیرفته نیست! این خطا ممکن است در حالتی رخ داده باشد که مقداری از سکه های شما در کیف پولتان از جایی دیگر، همانند یک کپی از کیف پول اصلی اتان، خرج شده باشد اما در کیف پول اصلی اتان به عنوان مبلغ خرج شده، نشانه گذاری نشده باشد.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>خطا: این تراکنش به علت میزان وجه، دشواری، و یا استفاده از وجوه دریافتی اخیر نیازمند کارمزد به مبلغ حداقل %s است.</translation>
-    </message>
-    <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>هنگامی که یک تراکنش در کیف پولی رخ می دهد، دستور را اجرا کن(%s در دستورات بوسیله ی TxID جایگزین می شود)</translation>
     </message>
@@ -1803,10 +1937,6 @@ Address: %4
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>هشدار: مبلغ paytxfee بسیار بالایی تنظیم شده است! این مبلغ هزینه‌ای است که شما برای تراکنش‌ها پرداخت می‌کنید.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
-        <translation>هشدار: لطفا زمان و تاریخ رایانه خود را تصحیح نمایید! اگر ساعت رایانه شما اشتباه باشد bitcoin ممکن است صحیح کار نکند</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -1841,64 +1971,16 @@ Address: %4
         <translation>خطا در بازگشایی پایگاه داده ی بلوک</translation>
     </message>
     <message>
-        <source>Error: system error: </source>
-        <translation>خطا: خطای سامانه:</translation>
+        <source>Error: Disk space is low!</source>
+        <translation>خطا: فضای دیسک کم است!</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>شنیدن هر گونه درگاه انجام پذیر نیست. ازlisten=0  برای اینکار استفاده کیند.</translation>
     </message>
     <message>
-        <source>Failed to read block info</source>
-        <translation>خواندن اطلاعات بلوک با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>خواندن بلوک با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to sync block index</source>
-        <translation>همگام سازی فهرست بلوک با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>نوشتن فهرست بلوک با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to write block info</source>
-        <translation>نوشتن اطلاعات بلوک با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to write block</source>
-        <translation>نوشتن بلوک با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to write file info</source>
-        <translation>نوشتن اطلاعات پرونده با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to write to coin database</source>
-        <translation>نوشتن اطلاعات در پایگاه داده ی سکه ها با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to write transaction index</source>
-        <translation>نوشتن فهرست تراکنش ها با شکست مواجه شد</translation>
-    </message>
-    <message>
-        <source>Failed to write undo data</source>
-        <translation>عملیات بازگشت دادن اطلاعات با شکست مواجه شدن</translation>
-    </message>
-    <message>
-        <source>Fee per kB to add to transactions you send</source>
-        <translation>نرخ هر کیلوبایت برای اضافه کردن به تراکنش‌هایی که می‌فرستید</translation>
-    </message>
-    <message>
-        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation>قرینه ها را برای جستجوی DNS بیاب (پیش فرض: 1 مگر در زمان اتصال)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>چند بلوک نیاز است که در ابتدای راه اندازی بررسی شوند(پیش فرض:288 ،0=همه)</translation>
+        <source>Importing...</source>
+        <translation>در حال پیاده‌سازی...</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -1909,48 +1991,20 @@ Address: %4
         <translation>در حال بازبینی کیف پول...</translation>
     </message>
     <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Skeincoin Core will not work properly.</source>
+        <translation>هشدار: تاریخ و ساعت کامپیوتر خود را بررسی کنید. اگر ساعت درست نباشد هسته بیت‌کوین به درستی کار نخواهد کرد.</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>اطلاعات</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>حداکثر بافر دریافت شده بر اساس اتصال &lt;n&gt;*  1000 بایت  (پیش فرض:5000)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>حداکثر بافر دریافت شده بر اساس اتصال &lt;n&gt;*  1000 بایت  (پیش فرض:1000)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>تنها =به گره ها در شبکه متصا شوید  &lt;net&gt; (IPv4, IPv6 or Tor)</translation>
-    </message>
-    <message>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>گزینه ssl (به ویکیbitcoin برای راهنمای راه اندازی ssl مراجعه شود)</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>اطلاعات ردگیری/اشکال‌زدایی را به جای فایل لاگ اشکال‌زدایی به کنسول بفرستید</translation>
     </message>
     <message>
-        <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>حداقل سایز بلاک بر اساس بایت تنظیم شود (پیش فرض: 0)</translation>
-    </message>
-    <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>فایل debug.log  را در startup مشتری کوچک کن (پیش فرض:1 اگر اشکال زدایی روی نداد)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>(میلی ثانیه )فاصله ارتباط خاص</translation>
-    </message>
-    <message>
-        <source>System error: </source>
-        <translation>خطای سامانه</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>از UPnP  برای شناسایی درگاه شنیداری استفاده کنید (پیش فرض:0)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -1969,20 +2023,8 @@ Address: %4
         <translation>هشدار: این نسخه قدیمی است، روزآمدسازی مورد نیاز است</translation>
     </message>
     <message>
-        <source>version</source>
-        <translation>نسخه</translation>
-    </message>
-    <message>
         <source>Password for JSON-RPC connections</source>
         <translation>JSON-RPC عبارت عبور برای ارتباطات</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>از آدرس آی پی خاص JSON-RPC قبول ارتباطات</translation>
-    </message>
-    <message>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>(127.0.0.1پیش فرض: ) &amp;lt;ip&amp;gt; دادن فرمانها برای استفاده گره ها روی</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
@@ -1993,10 +2035,6 @@ Address: %4
         <translation>wallet  را به جدیدترین فرمت روزآمد کنید</translation>
     </message>
     <message>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation> (100پیش فرض:)&amp;lt;n&amp;gt; گذاشتن اندازه کلید روی </translation>
-    </message>
-    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>اسکان مجدد زنجیر بلوکها برای گم والت معامله</translation>
     </message>
@@ -2005,20 +2043,8 @@ Address: %4
         <translation>JSON-RPCبرای ارتباطات   استفاده کنید OpenSSL (https)</translation>
     </message>
     <message>
-        <source>Server certificate file (default: server.cert)</source>
-        <translation> (server.certپیش فرض: )گواهی نامه سرور</translation>
-    </message>
-    <message>
-        <source>Server private key (default: server.pem)</source>
-        <translation>(server.pemپیش فرض: ) کلید خصوصی سرور</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>پیام کمکی</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>امکان اتصال به %s از این رایانه وجود ندارد ( bind returned error %d, %s)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -2033,14 +2059,6 @@ Address: %4
         <translation>خطا در بارگیری wallet.dat: کیف پول خراب شده است</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>خطا در بارگیری wallet.dat: کیف پول به ویرایش جدیدتری از Biticon نیاز دارد</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
-        <translation>سلام</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>خطا در بارگیری wallet.dat</translation>
     </message>
@@ -2053,10 +2071,6 @@ Address: %4
         <translation>شبکه مشخص شده غیرقابل شناسایی در onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>نسخه پراکسی ساکس غیرقابل شناسایی  درخواست شده است: %i</translation>
-    </message>
-    <message>
         <source>Cannot resolve -bind address: '%s'</source>
         <translation>آدرس قابل اتصال- شناسایی نیست %s</translation>
     </message>
@@ -2067,10 +2081,6 @@ Address: %4
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
         <translation>میزان وجه اشتباه برای paytxfee=&lt;میزان وجه&gt;: %s</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>میزان وجه اشتباه</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -2105,12 +2115,8 @@ Address: %4
         <translation>بار گیری انجام شده است</translation>
     </message>
     <message>
-        <source>To use the %s option</source>
-        <translation>برای استفاده از %s از انتخابات</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>خطا</translation>
     </message>
-    </context>
+</context>
 </TS>
