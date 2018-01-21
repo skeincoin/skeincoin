@@ -156,6 +156,10 @@ public:
         vSeeds.push_back(CDNSSeedData("seed-b.skeincoin.net", "seed-b.skeincoin.net"));
         vSeeds.push_back(CDNSSeedData("seed-c.skeincoin.net", "seed-c.skeincoin.net"));
         vSeeds.push_back(CDNSSeedData("seed-d.skeincoin.net", "seed-d.skeincoin.net"));
+        vSeeds.push_back(CDNSSeedData("seed-e.skeincoin.net", "seed-e.skeincoin.net"));
+        vSeeds.push_back(CDNSSeedData("seed-f.skeincoin.net", "seed-f.skeincoin.net"));
+        vSeeds.push_back(CDNSSeedData("seed-g.skeincoin.net", "seed-g.skeincoin.net"));
+        vSeeds.push_back(CDNSSeedData("seed-h.skeincoin.net", "seed-h.skeincoin.net"));
         vSeeds.push_back(CDNSSeedData("skein1.ignorelist.com", "skein1.ignorelist.com"));
         vSeeds.push_back(CDNSSeedData("skein2.ignorelist.com", "skein2.ignorelist.com"));
         vSeeds.push_back(CDNSSeedData("skein3.ignorelist.com", "skein3.ignorelist.com"));
