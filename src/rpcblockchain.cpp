@@ -446,6 +446,26 @@ Value verifychain(const Array& params, bool fHelp)
     return CVerifyDB().VerifyDB(pcoinsTip, nCheckLevel, nCheckDepth);
 }
 
+Object SoftForkMajorityDesc(int minVersion, CBlockIndex* pindex)
+{
+    Object rv;
+    int nFound = 0;
+    int nToCheck = Params().ToCheckBlockUpgradeMajority();
+    int nRequired = Params().EnforceBlockUpgradeMajority();
+    CBlockIndex* pstart = pindex;
+    for (int i = 0; i < nToCheck && pstart != NULL; i++)
+    {
+        if (pstart->nVersion >= minVersion)
+            ++nFound;
+        pstart = pstart->pprev;
+    }
+
+    rv.push_back(Pair("status", nFound >= nRequired));
+    rv.push_back(Pair("found", nFound));
+    rv.push_back(Pair("required", nRequired));
+    return rv;
+}
+
 Value getblockchaininfo(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 0)
@@ -475,6 +495,8 @@ Value getblockchaininfo(const Array& params, bool fHelp)
     obj.push_back(Pair("difficulty",            (double)GetDifficulty()));
     obj.push_back(Pair("verificationprogress",  Checkpoints::GuessVerificationProgress(chainActive.Tip())));
     obj.push_back(Pair("chainwork",             chainActive.Tip()->nChainWork.GetHex()));
+    obj.push_back(Pair("bip66",                 SoftForkMajorityDesc(3, chainActive.Tip())));
+    obj.push_back(Pair("bip65",                 SoftForkMajorityDesc(4, chainActive.Tip())));
     return obj;
 }
 
