@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Skeincoin"
-            VALUE "FileDescription",    "Skeincoin-cli (OSS RPC client for Skeincoin)"
+            VALUE "FileDescription",    "skeincoin-cli (JSON-RPC client for Skeincoin Core)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "skeincoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
-            VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
+            VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "skeincoin-cli.exe"
-            VALUE "ProductName",        "Skeincoin-cli"
+            VALUE "ProductName",        "skeincoin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
