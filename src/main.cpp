@@ -2538,7 +2538,7 @@ static void PruneBlockIndexCandidates() {
         setBlockIndexCandidates.erase(it++);
     }
     // Either the current tip or a successor of it we're working towards is left in setBlockIndexCandidates.
-    assert(!setBlockIndexCandidates.empty());
+    //assert(!setBlockIndexCandidates.empty());
 }
 
 /**

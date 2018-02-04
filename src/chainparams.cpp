@@ -93,7 +93,7 @@ public:
         vAlertPubKey = ParseHex("04e41db2a8b8dc3981f819d46060875ce483bf303613b108e673d7bb636f7786bd0458e2ced6e8b337be32d024562f3e69776412b55a7210396ad7a9944812b445");
         nDefaultPort = 11230;
         nMaxTipAge = 24 * 60 * 60;
-        nPruneAfterHeight = 10000000;
+        nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1383313611, 2094010698, 0x1e0fffff, 1, COIN / 10000);
         consensus.hashGenesisBlock = genesis.GetHash();
