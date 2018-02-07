@@ -30,9 +30,10 @@ from threading import RLock
 from threading import Thread
 import logging
 import copy
+import skeinhash
 
 BIP0031_VERSION = 60000
-MY_VERSION = 60001  # past bip-31 for ping/pong
+MY_VERSION = 70002  # past bip-31 for ping/pong
 MY_SUBVERSION = "/python-mininode-tester:0.0.1/"
 
 MAX_INV_SZ = 50000
@@ -481,8 +482,8 @@ class CBlockHeader(object):
             r += struct.pack("<I", self.nTime)
             r += struct.pack("<I", self.nBits)
             r += struct.pack("<I", self.nNonce)
-            self.sha256 = uint256_from_str(hash256(r))
-            self.hash = hash256(r)[::-1].encode('hex_codec')
+            self.sha256 = uint256_from_str(skeinhash.getPoWHash(r))
+            self.hash = skeinhash.getPoWHash(r)[::-1].encode('hex_codec')
 
     def rehash(self):
         self.sha256 = None
@@ -1098,9 +1099,9 @@ class NodeConn(asyncore.dispatcher):
         "mempool": msg_mempool
     }
     MAGIC_BYTES = {
-        "mainnet": "\xf9\xbe\xb4\xd9",   # mainnet
-        "testnet3": "\x0b\x11\x09\x07",  # testnet3
-        "regtest": "\xfa\xbf\xb5\xda"    # regtest
+        "mainnet": "\xf7\x26\xa1\xbf",   # mainnet
+        "testnet3": "\x07\xa0\x55\x03",  # testnet3
+        "regtest": "\xfa\x0f\xa5\x5a"    # regtest
     }
 
     def __init__(self, dstaddr, dstport, rpc, callback, net="regtest", services=1):
