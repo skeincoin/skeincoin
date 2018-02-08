@@ -179,10 +179,10 @@ class ComparisonTestFramework(BitcoinTestFramework):
 
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("BITCOIND", "bitcoind"),
+                          default=os.getenv("SKEINCOIND", "skeincoind"),
                           help="bitcoind binary to test")
         parser.add_option("--refbinary", dest="refbinary",
-                          default=os.getenv("BITCOIND", "bitcoind"),
+                          default=os.getenv("SKEINCOIND", "skeincoind"),
                           help="bitcoind binary to use for reference nodes (if any)")
 
     def setup_chain(self):
@@ -192,6 +192,6 @@ class ComparisonTestFramework(BitcoinTestFramework):
     def setup_network(self):
         self.nodes = start_nodes(
             self.num_nodes, self.options.tmpdir,
-            extra_args=[['-debug', '-whitelist=127.0.0.1']] * self.num_nodes,
+            extra_args=[['-debug', '-whitelist=127.0.0.1', '-debugexclude=libevent']] * self.num_nodes,
             binary=[self.options.testbinary] +
             [self.options.refbinary]*(self.num_nodes-1))
