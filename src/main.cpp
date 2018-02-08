@@ -1366,6 +1366,20 @@ static const int64_t nMinSubsidy = COIN / 10000;
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
+    // In regtest mode use Bitcoin schedule
+    if (Params().MineBlocksOnDemand()) {
+        int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+        // Force block reward to zero when right shift is undefined.
+        if (halvings >= 64)
+            return 0;
+
+        CAmount nSubsidy = 50 * COIN;
+        // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+        nSubsidy >>= halvings;
+        return nSubsidy;
+    }
+
+    // Skeincoin schedule
     CAmount nSubsidy;
     
     if (nHeight < nReleaseBlocks)
@@ -1622,7 +1636,7 @@ bool CheckTxInputs(const CTransaction& tx, CValidationState& state, const CCoins
 
             // If prev is coinbase, check that it's matured
             if (coins->IsCoinBase()) {
-                if (nSpendHeight - coins->nHeight < COINBASE_MATURITY)
+                if (nSpendHeight - coins->nHeight < (::Params().MineBlocksOnDemand() ? COINBASE_MATURITY_REGTEST : COINBASE_MATURITY))
                     return state.Invalid(false,
                         REJECT_INVALID, "bad-txns-premature-spend-of-coinbase",
                         strprintf("tried to spend coinbase at depth %d", nSpendHeight - coins->nHeight));

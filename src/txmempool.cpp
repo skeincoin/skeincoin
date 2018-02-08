@@ -6,6 +6,7 @@
 #include "txmempool.h"
 
 #include "clientversion.h"
+#include "chainparams.h"
 #include "consensus/consensus.h"
 #include "consensus/validation.h"
 #include "main.h"
@@ -515,7 +516,7 @@ void CTxMemPool::removeForReorg(const CCoinsViewCache *pcoins, unsigned int nMem
                     continue;
                 const CCoins *coins = pcoins->AccessCoins(txin.prevout.hash);
 		if (nCheckFrequency != 0) assert(coins);
-                if (!coins || (coins->IsCoinBase() && ((signed long)nMemPoolHeight) - coins->nHeight < COINBASE_MATURITY)) {
+                if (!coins || (coins->IsCoinBase() && ((signed long)nMemPoolHeight) - coins->nHeight < (Params().MineBlocksOnDemand() ? COINBASE_MATURITY_REGTEST : COINBASE_MATURITY))) {
                     transactionsToRemove.push_back(tx);
                     break;
                 }
