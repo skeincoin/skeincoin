@@ -1,5 +1,5 @@
-// Copyright (c) 2012-2013 The Bitcoin Core developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2012-2015 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "key.h"
@@ -9,6 +9,7 @@
 #include "uint256.h"
 #include "util.h"
 #include "utilstrencodings.h"
+#include "test/test_bitcoin.h"
 
 #include <string>
 #include <vector>
@@ -17,17 +18,17 @@
 
 using namespace std;
 
-static const string strSecret1     ("5HxWvvfubhXpYYpS3tJkw6fq9jE9j18THftkZjHHfmFiWtmAbrj");
-static const string strSecret2     ("5KC4ejrDjv152FGwP386VD1i2NYc5KkfSMyv1nGy1VGDxGHqVY3");
-static const string strSecret1C    ("Kwr371tjA9u2rFSMZjTNun2PXXP3WPZu2afRHTcta6KxEUdm1vEw");
-static const string strSecret2C    ("L3Hq7a8FEQwJkW1M2GNKDW28546Vp5miewcCzSqUD9kCAXrJdS3g");
-static const CBitcoinAddress addr1 ("1QFqqMUD55ZV3PJEJZtaKCsQmjLT6JkjvJ");
-static const CBitcoinAddress addr2 ("1F5y5E5FMc5YzdJtB9hLaUe43GDxEKXENJ");
-static const CBitcoinAddress addr1C("1NoJrossxPBKfCHuJXT4HadJrXRE9Fxiqs");
-static const CBitcoinAddress addr2C("1CRj2HyM1CXWzHAXLQtiGLyggNT9WQqsDs");
+static const string strSecret1     ("8aTUDef37Pp1kwmYth8gQXRituaXS1iGQJqJUQh95yuisopmpnG");
+static const string strSecret2     ("8bh1wTqMFcHGEeE4Dqx1xdmbmYtynLLUYzvTvTgpRhvEKAaCSKs");
+static const string strSecret1C    ("aSfq8qCtKDgWLxjdmA8tvqJ7v74yKQ98ysiC7yaAgzBhpvBW1KMM");
+static const string strSecret2C    ("aY7d9PSQPUinFDJdDh3qEZHrTdnRd6LxcEeypxnkL3bwkyQekjng");
+static const CBitcoinAddress addr1 ("SkYqsCFMoSkgZh5gqzses71yRWZsvBTYTA");
+static const CBitcoinAddress addr2 ("SbNy74rQ5yGkWw6LiagR8Nnch3TNyMGvd4");
+static const CBitcoinAddress addr1C("Sj6Jtef2gkNXBW5MqxS8qUmsWJeewfKuan");
+static const CBitcoinAddress addr2C("SYij48kVjZiiWawysqsnpF8FL9gaKpPNf9");
 
 
-static const string strAddressBad("1HV9Lc3sNHZxwj4Zk6fB38tEmBryq2cBiF");
+static const string strAddressBad("SHV9Lc3sNHZxwj4Zk6fB38tEmBryq2cBiF");
 
 
 #ifdef KEY_TESTS_DUMPINFO
@@ -58,7 +59,7 @@ void dumpKeyInfo(uint256 privkey)
 #endif
 
 
-BOOST_AUTO_TEST_SUITE(key_tests)
+BOOST_FIXTURE_TEST_SUITE(key_tests, BasicTestingSetup)
 
 BOOST_AUTO_TEST_CASE(key_test1)
 {

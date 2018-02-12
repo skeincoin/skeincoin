@@ -9,10 +9,13 @@
     <name>AskPassphraseDialog</name>
     </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>BitcoinGUI</name>
     <message>
         <source>Skeincoin</source>
-        <translation>Bitcoin</translation>
+        <translation>Skeincoin</translation>
     </message>
     <message>
         <source>Skeincoin Core</source>

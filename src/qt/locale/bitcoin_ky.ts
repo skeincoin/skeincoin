@@ -25,6 +25,9 @@
     <name>AskPassphraseDialog</name>
     </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>BitcoinGUI</name>
     <message>
         <source>&amp;Transactions</source>
@@ -36,7 +39,7 @@
     </message>
     <message>
         <source>Skeincoin</source>
-        <translation>Bitcoin</translation>
+        <translation>Skeincoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -123,6 +126,10 @@
         <translation>&amp;Тармак</translation>
     </message>
     <message>
+        <source>W&amp;allet</source>
+        <translation>Капчык</translation>
+    </message>
+    <message>
         <source>&amp;Port:</source>
         <translation>&amp;Порт:</translation>
     </message>
@@ -149,11 +156,7 @@
     </context>
 <context>
     <name>OverviewPage</name>
-    <message>
-        <source>out of sync</source>
-        <translation>синхрондоштурулган эмес</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     </context>
@@ -177,6 +180,10 @@
         <translation>Жалпы</translation>
     </message>
     <message>
+        <source>Network</source>
+        <translation>&amp;Тармак</translation>
+    </message>
+    <message>
         <source>Name</source>
         <translation>Аты</translation>
     </message>
@@ -195,6 +202,10 @@
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
+    <message>
+        <source>&amp;Message:</source>
+        <translation>Билдирүү:</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
@@ -291,10 +302,6 @@
     <message>
         <source>Date</source>
         <translation>Дата</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Дарек</translation>
     </message>
     </context>
 <context>
