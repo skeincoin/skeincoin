@@ -13,7 +13,7 @@ out collectively by the network. Skeincoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Skeincoin Core software, see https://www.bitcoin.org/en/download.
+the Skeincoin Core software, see https://www.skeincoin.co/
 
 License
 -------
