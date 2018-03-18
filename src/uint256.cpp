@@ -129,25 +129,3 @@ static void inline HashFinal(uint32_t& a, uint32_t& b, uint32_t& c)
     c ^= b;
     c -= ((b << 24) | (b >> 8));
 }
-
-uint64_t uint256::GetHash(const uint256& salt) const
-{
-    uint32_t a, b, c;
-    const uint32_t *pn = (const uint32_t*)data;
-    const uint32_t *salt_pn = (const uint32_t*)salt.data;
-    a = b = c = 0xdeadbeef + WIDTH;
-
-    a += pn[0] ^ salt_pn[0];
-    b += pn[1] ^ salt_pn[1];
-    c += pn[2] ^ salt_pn[2];
-    HashMix(a, b, c);
-    a += pn[3] ^ salt_pn[3];
-    b += pn[4] ^ salt_pn[4];
-    c += pn[5] ^ salt_pn[5];
-    HashMix(a, b, c);
-    a += pn[6] ^ salt_pn[6];
-    b += pn[7] ^ salt_pn[7];
-    HashFinal(a, b, c);
-
-    return ((((uint64_t)b) << 32) | c);
-}

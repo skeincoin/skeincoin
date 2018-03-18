@@ -92,6 +92,14 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1518566400; // Feb 14th, 2018
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1550102400; // Feb 14th, 2019
 
+        // Deployment of SegWit (BIP141, BIP143, and BIP147)
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1521590400; // March 21st, 2018
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1553126400; // March 21st, 2019
+
+        // The best chain should have at least this much work.
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000003418b3ccbe5e93bcb39b43");
+
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -101,11 +109,7 @@ public:
         pchMessageStart[1] = 0x26;
         pchMessageStart[2] = 0xa1;
         pchMessageStart[3] = 0xbf;
-//        vAlertPubKey = ParseHex("04e41db2a8b8dc3981f819d46060875ce483bf303613b108e673d7bb636f7786bd0458e2ced6e8b337be32d024562f3e69776412b55a7210396ad7a9944812b445");
-        // Use bitcoin key temporarily for tests to pass
-        vAlertPubKey = ParseHex("04fc9702847840aaf195de8442ebecedf5b095cdbb9bc716bda9110971b28a49e0ead8564ff0db22209e0374782c093bb899692d524e9d6a6956e7c5ecbcd68284");
         nDefaultPort = 11230;
-        nMaxTipAge = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1383313611, 2094010698, 0x1e0fffff, 1, COIN / 10000);
@@ -113,6 +117,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0xa4b385e3bc4907593d15be30d69cb28439684893f4dc2e637503cf3156b149a3"));
         assert(consensus.hashGenesisBlock == uint256S("0x0000046cebed69de151ada93a60cb8a5f9490a196399abe714bb83ad5b20f985"));
 
+        // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("seed-a.skeincoin.net", "seed-a.skeincoin.net"));
         vSeeds.push_back(CDNSSeedData("seed-b.skeincoin.net", "seed-b.skeincoin.net"));
         vSeeds.push_back(CDNSSeedData("seed-c.skeincoin.net", "seed-c.skeincoin.net"));
@@ -191,13 +196,19 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1518566400; // Feb 14th, 2018
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1550102400; // Feb 14th, 2019
 
+        // Deployment of SegWit (BIP141, BIP143, and BIP147)
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1521590400; // March 21st, 2018
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1553126400; // March 21st, 2019
+
+        // The best chain should have at least this much work.
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000001b3fcc3e766e365e4b");
+
         pchMessageStart[0] = 0x07;
         pchMessageStart[1] = 0xa0;
         pchMessageStart[2] = 0x55;
         pchMessageStart[3] = 0x03;
-        vAlertPubKey = ParseHex("0490ce131d0e51eacddb074906fc0be1990214ec9880c2da9bfc15d649236f211e3950670fee0c45f8ea00d425d84da61425778617ba73d64e1880abc4607de965");
         nDefaultPort = 27711;
-        nMaxTipAge = 0x7fffffff;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1382385267, 416003859, 0x1e0fffff, 1, COIN / 10000);
@@ -221,6 +232,7 @@ public:
         fRequireStandard = false;
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = true;
+
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
@@ -260,12 +272,17 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 999999999999ULL;
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 0;
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 999999999999ULL;
+
+        // The best chain should have at least this much work.
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         pchMessageStart[0] = 0xfa;
         pchMessageStart[1] = 0x0f;
         pchMessageStart[2] = 0xa5;
         pchMessageStart[3] = 0x5a;
-        nMaxTipAge = 24 * 60 * 60;
         nDefaultPort = 18444;
         nPruneAfterHeight = 1000;
 
@@ -274,8 +291,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0xa4b385e3bc4907593d15be30d69cb28439684893f4dc2e637503cf3156b149a3"));
         assert(consensus.hashGenesisBlock == uint256S("0x6620ff0f4b001bb6c6999d85a61f406a3b213a4ed0364d1b10a46596fcb09785"));
 
-        vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
-        vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.
+        vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
+        vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
 
         fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = true;
@@ -295,6 +312,12 @@ public:
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
+    }
+
+    void UpdateBIP9Parameters(Consensus::DeploymentPos d, int64_t nStartTime, int64_t nTimeout)
+    {
+        consensus.vDeployments[d].nStartTime = nStartTime;
+        consensus.vDeployments[d].nTimeout = nTimeout;
     }
 };
 static CRegTestParams regTestParams;
@@ -323,3 +346,9 @@ void SelectParams(const std::string& network)
     SelectBaseParams(network);
     pCurrentParams = &Params(network);
 }
+
+void UpdateRegtestBIP9Parameters(Consensus::DeploymentPos d, int64_t nStartTime, int64_t nTimeout)
+{
+    regTestParams.UpdateBIP9Parameters(d, nStartTime, nTimeout);
+}
+ 

@@ -117,9 +117,13 @@ share/BitcoindComparisonTool.jar
 /doc/doxygen/
 
 libbitcoinconsensus.pc
+<<<<<<< HEAD
 
 .idea/*
 cmake-build-debug/*
 
 CMakeLists.txt
 
+=======
+contrib/devtools/split-debug.sh
+>>>>>>> 5d38380328a44a35b122546da880d7d4c7e56847
