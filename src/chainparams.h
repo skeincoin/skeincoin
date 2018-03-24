@@ -15,7 +15,8 @@
 
 struct CDNSSeedData {
     std::string name, host;
-    CDNSSeedData(const std::string &strName, const std::string &strHost) : name(strName), host(strHost) {}
+    bool supportsServiceBitsFiltering;
+    CDNSSeedData(const std::string &strName, const std::string &strHost, bool supportsServiceBitsFilteringIn = false) : name(strName), host(strHost), supportsServiceBitsFiltering(supportsServiceBitsFilteringIn) {}
 };
 
 struct SeedSpec6 {
@@ -54,7 +55,6 @@ public:
 
     const Consensus::Params& GetConsensus() const { return consensus; }
     const CMessageHeader::MessageStartChars& MessageStart() const { return pchMessageStart; }
-    const std::vector<unsigned char>& AlertKey() const { return vAlertPubKey; }
     int GetDefaultPort() const { return nDefaultPort; }
 
     const CBlock& GenesisBlock() const { return genesis; }
@@ -67,7 +67,6 @@ public:
     int64_t Interval() const { return nTargetTimespan / nTargetSpacing; }
     /** Policy: Filter transactions that do not match well-defined patterns */
     bool RequireStandard() const { return fRequireStandard; }
-    int64_t MaxTipAge() const { return nMaxTipAge; }
     uint64_t PruneAfterHeight() const { return nPruneAfterHeight; }
     /** Make miner stop after a block is found. In RPC, don't return until nGenProcLimit blocks are generated */
     bool MineBlocksOnDemand() const { return fMineBlocksOnDemand; }
@@ -84,8 +83,6 @@ protected:
 
     Consensus::Params consensus;
     CMessageHeader::MessageStartChars pchMessageStart;
-    //! Raw pub key bytes for the broadcast alert signing key.
-    std::vector<unsigned char> vAlertPubKey;
     int nDefaultPort;
     uint256 bnProofOfWorkLimit;
     int nSubsidyHalvingInterval;
@@ -126,5 +123,10 @@ CChainParams& Params(const std::string& chain);
  * @throws std::runtime_error when the chain is not supported.
  */
 void SelectParams(const std::string& chain);
+
+/**
+ * Allows modifying the BIP9 regtest parameters.
+ */
+void UpdateRegtestBIP9Parameters(Consensus::DeploymentPos d, int64_t nStartTime, int64_t nTimeout);
 
 #endif // BITCOIN_CHAINPARAMS_H

@@ -123,3 +123,4 @@ cmake-build-debug/*
 
 CMakeLists.txt
 
+contrib/devtools/split-debug.sh

@@ -17,7 +17,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Skeincoin"
-            VALUE "FileDescription",    "skeincoin-cli (JSON-RPC client for Skeincoin Core)"
+            VALUE "FileDescription",    "skeincoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "skeincoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
