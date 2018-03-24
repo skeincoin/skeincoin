@@ -1723,7 +1723,8 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus
 
 static const int64_t nReleaseBlocks = 100;
 static const int64_t nStartSubsidy = 32 * COIN;
-static const int64_t nMinSubsidy = COIN / 10000;
+static const int64_t nMinSubsidy = COIN / 2;
+static const int64_t nReleaseSubsidy = COIN / 10000;
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
@@ -1745,7 +1746,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     
     if (nHeight < nReleaseBlocks)
     {
-        nSubsidy = nMinSubsidy;
+        nSubsidy = nReleaseSubsidy;
     }
     else
     {
